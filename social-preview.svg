@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="50%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="url(#glow)" opacity="0.5"/>
+  <circle cx="1100" cy="530" r="250" fill="url(#glow)" opacity="0.4"/>
+  
+  <!-- Globe emoji as text -->
+  <text x="600" y="180" text-anchor="middle" font-size="100" fill="#fff">🌍</text>
+  
+  <!-- Main Title -->
+  <text x="600" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">
+    Worldwide Meditation
+  </text>
+  <text x="600" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#60a5fa">
+    for Family Unity
+  </text>
+  
+  <!-- Date and Time -->
+  <rect x="350" y="400" width="500" height="70" rx="35" fill="rgba(255,255,255,0.15)"/>
+  <text x="600" y="448" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">
+    📅 January 3, 2026 • 11:02 AM CET
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)">
+    Join thousands uniting in peace, love, and focused intention
+  </text>
+  
+  <!-- Hashtag -->
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#60a5fa">
+    #FamigliaNelBosco #WorldwideMeditation
+  </text>
+</svg>

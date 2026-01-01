@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Social Preview Generator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            background: #333;
+            padding: 20px;
+        }
+        .preview {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #1e40af 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        .preview::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(96, 165, 250, 0.3) 0%, transparent 70%);
+        }
+        .preview::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(96, 165, 250, 0.25) 0%, transparent 70%);
+        }
+        .globe {
+            font-size: 100px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .title {
+            font-size: 56px;
+            font-weight: 800;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .title span {
+            color: #60a5fa;
+        }
+        .date-badge {
+            background: rgba(255,255,255,0.15);
+            padding: 18px 50px;
+            border-radius: 50px;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .date-badge span {
+            font-size: 32px;
+            font-weight: 600;
+            color: white;
+        }
+        .subtitle {
+            font-size: 24px;
+            color: rgba(255,255,255,0.8);
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        .hashtags {
+            font-size: 22px;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .instructions {
+            margin-top: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+        }
+        .instructions h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .instructions p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="preview" id="preview">
+            <div class="globe">🌍</div>
+            <div class="title">
+                Worldwide Meditation<br>
+                <span>for Family Unity</span>
+            </div>
+            <div class="date-badge">
+                <span>📅 January 3, 2026 • 11:02 AM CET</span>
+            </div>
+            <div class="subtitle">Join thousands uniting in peace, love, and focused intention</div>
+            <div class="hashtags">#FamigliaNelBosco #WorldwideMeditation</div>
+        </div>
+        
+        <div class="instructions">
+            <h2>📸 To Create the Social Preview Image:</h2>
+            <p>
+                1. Right-click on the preview above<br>
+                2. Select "Inspect" or press F12<br>
+                3. Right-click on the .preview element<br>
+                4. Choose "Capture node screenshot"<br>
+                5. Save as <strong>social-preview.png</strong> in the project folder
+            </p>
+        </div>
+    </div>
+</body>
+</html>
