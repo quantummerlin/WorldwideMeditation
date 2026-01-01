@@ -201,6 +201,30 @@
                 <div class="section-label">Participez</div>
                 <h2 class="section-title">Rejoignez le Mouvement</h2>
             </div>
+            <!-- Email Signup -->
+            <div class="join-card" style="max-width: 600px; margin: 0 auto 30px;">
+                <h3>📧 Recevez un Rappel</h3>
+                <p>Inscrivez-vous pour recevoir un rappel avant la méditation et des mises à jour sur l'événement.</p>
+                
+                <form action="https://formspree.io/f/mgowrolb" method="POST" class="email-signup-form" id="emailForm">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Votre Nom (optionnel)" class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Votre Adresse Email" required class="form-input">
+                    </div>
+                    <input type="hidden" name="_subject" value="Nouvelle Inscription Méditation!">
+                    <input type="hidden" name="_next" value="https://worldwidemeditation.quantummerlin.com/thank-you.html">
+                    <input type="hidden" name="language" value="French">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        ✨ Comptez sur Moi
+                    </button>
+                </form>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 12px; text-align: center;">
+                    Nous respectons votre vie privée. Pas de spam, jamais.
+                </p>
+            </div>
+            
             <div class="join-card" style="max-width: 600px; margin: 0 auto;">
                 <h3>📢 Passez le Mot</h3>
                 <p>Invitez amis et famille à rejoindre. Plus il y a de participants, plus notre intention collective est forte.</p>
