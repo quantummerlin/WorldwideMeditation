@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Join thousands worldwide for an 11-minute synchronized meditation on January 3, 2026 supporting family reunification and truth.">
+    <meta name="theme-color" content="#2563eb">
+    <title>Worldwide Meditation for Family Unity | January 3, 2026</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles-unity.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌍</span>
+                <span>Family Unity Meditation</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobileMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#time">Find Your Time</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#purpose">Our Purpose</a></li>
+                <li><a href="#join" class="nav-cta">Join Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <!-- Countdown -->
+                <div class="countdown-container">
+                    <div class="countdown-label">
+                        <span class="icon">⏱️</span>
+                        <span>Meditation begins in</span>
+                    </div>
+                    <div class="countdown-display" role="timer" aria-live="polite">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-unit">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-unit">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-unit">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-unit">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    Worldwide Meditation for <span class="highlight">Family Unity</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Thousands of people across the globe uniting in peace, love, and focused intention to support families and truth.
+                </p>
+                
+                <!-- Event Info -->
+                <div class="event-info">
+                    <div class="info-badge">
+                        <span class="icon">📅</span>
+                        <span>January 3, 2026</span>
+                    </div>
+                    <div class="info-badge primary">
+                        <span class="icon">⏰</span>
+                        <span>11:02 AM CET</span>
+                    </div>
+                    <div class="info-badge">
+                        <span class="icon">🕐</span>
+                        <span>11 Minutes</span>
+                    </div>
+                </div>
+                
+                <!-- Buttons -->
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('join').scrollIntoView({behavior: 'smooth'})">
+                        Join the Meditation
+                    </button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('how').scrollIntoView({behavior: 'smooth'})">
+                        Learn How It Works
+                    </button>
+                </div>
+                
+                <!-- Trust Bar -->
+                <div class="trust-bar">
+                    <div class="trust-items">
+                        <div class="trust-item">
+                            <span class="icon">✓</span>
+                            <span>100% Free & Open</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="icon">✓</span>
+                            <span>Non-Political</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="icon">✓</span>
+                            <span>Peaceful & Loving</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="icon">✓</span>
+                            <span>All Welcome</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">What Is This?</div>
+                <h2 class="section-title">A Global Moment of Unity</h2>
+                <p class="section-subtitle">
+                    People from every corner of the world, setting aside 11 minutes to focus together on love, truth, and family.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🌏</div>
+                    <h3>Worldwide Participation</h3>
+                    <p>From Sydney to Los Angeles, London to Tokyo, participants in every timezone will join at the same moment in universal time.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">❤️</div>
+                    <h3>Heart-Centered Focus</h3>
+                    <p>Together we hold intentions of love, peace, and the highest good for all families, especially those facing unjust separation.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Community Support</h3>
+                    <p>This is about standing together. When we unite our intentions, we create a powerful wave of positive energy and awareness.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">✨</div>
+                    <h3>Simple & Accessible</h3>
+                    <p>No special skills required. Just find a quiet space, breathe deeply, and join thousands in peaceful contemplation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time Section -->
+    <section id="time" class="time-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Find Your Time</div>
+                <h2 class="section-title">When to Set Your Alarm</h2>
+                <p class="section-subtitle">
+                    Enter your location to see the exact local time for the meditation.
+                </p>
+            </div>
+            
+            <div class="time-content">
+                <div class="time-finder">
+                    <h3>🔍 Find Your Local Time</h3>
+                    <div class="time-input-group">
+                        <label for="timezoneInput">Enter your city or country:</label>
+                        <input type="text" id="timezoneInput" placeholder="e.g., Sydney, London, New York..." oninput="updateUserTime()">
+                    </div>
+                    
+                    <div class="time-display">
+                        <div class="label">Your meditation time:</div>
+                        <div class="time" id="digitalTime">10:02 AM</div>
+                        <div class="date" id="digitalDate">January 3, 2026</div>
+                        <div class="zone" id="timezoneName">Central European Time</div>
+                    </div>
+                </div>
+                
+                <div class="world-times">
+                    <h3 style="margin-bottom: 20px; font-weight: 700; color: var(--gray-900);">Quick Reference Times</h3>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇮🇹</span>
+                            <span>Rome, Italy</span>
+                        </div>
+                        <div class="time">11:02 AM</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇬🇧</span>
+                            <span>London, UK</span>
+                        </div>
+                        <div class="time">10:02 AM</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇺🇸</span>
+                            <span>New York, USA</span>
+                        </div>
+                        <div class="time">5:02 AM</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇺🇸</span>
+                            <span>Los Angeles, USA</span>
+                        </div>
+                        <div class="time">2:02 AM</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇦🇺</span>
+                            <span>Sydney, Australia</span>
+                        </div>
+                        <div class="time">9:02 PM</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇯🇵</span>
+                            <span>Tokyo, Japan</span>
+                        </div>
+                        <div class="time">7:02 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how" class="how-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Simple Steps</div>
+                <h2 class="section-title">How to Participate</h2>
+                <p class="section-subtitle">
+                    Joining is easy. Here's everything you need to know.
+                </p>
+            </div>
+            
+            <div class="steps-timeline">
+                <div class="step">
+                    <div class="step-marker">1</div>
+                    <div class="step-content">
+                        <h4>Prepare Your Space</h4>
+                        <p>Find a quiet, comfortable place where you won't be disturbed. This could be your bedroom, a peaceful outdoor spot, or anywhere you feel calm.</p>
+                        <span class="step-time">5-10 minutes before</span>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-marker">2</div>
+                    <div class="step-content">
+                        <h4>Center Yourself</h4>
+                        <p>Take a few deep breaths. Close your eyes. Let go of the day's worries. Bring your attention to your heart and connect with feelings of peace and love.</p>
+                        <span class="step-time">2-3 minutes before</span>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-marker">3</div>
+                    <div class="step-content">
+                        <h4>Join the Meditation</h4>
+                        <p>At the designated time, begin your meditation. Hold the intention for truth, clarity, family unity, and the highest good of all. Visualize families reunited in love.</p>
+                        <span class="step-time">11 minutes</span>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-marker">4</div>
+                    <div class="step-content">
+                        <h4>Close with Gratitude</h4>
+                        <p>As you finish, take a moment to feel gratitude for everyone participating worldwide. Know that your peaceful intention has contributed to the collective energy.</p>
+                        <span class="step-time">1-2 minutes after</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purpose Section -->
+    <section id="purpose" class="purpose-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Why We Gather</div>
+                <h2 class="section-title">Our Purpose</h2>
+            </div>
+            
+            <div class="purpose-content">
+                <div class="purpose-text">
+                    <h3>Supporting Families Everywhere</h3>
+                    <p>
+                        Across the world, families face challenges that threaten to separate them. Some are caught in systems that don't always serve their best interests.
+                    </p>
+                    <p>
+                        We come together not in anger or judgment, but in love and support. We believe in the power of collective intention to bring clarity, truth, and positive change.
+                    </p>
+                    <p>
+                        This meditation supports <strong>all families</strong> who need healing, protection, and reunification — including families in Italy whose situation has inspired this gathering.
+                    </p>
+                    
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <span class="icon">💙</span>
+                            <span>Truth & Transparency</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="icon">💚</span>
+                            <span>Family Unity</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="icon">💛</span>
+                            <span>Child Wellbeing</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="icon">💜</span>
+                            <span>Justice & Fairness</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="peaceful-banner">
+                    <div class="icon">🕊️</div>
+                    <h4>This is a Peaceful Gathering</h4>
+                    <p>
+                        We hold no hate, no blame, no negativity. Only love, compassion, and the sincere wish for the highest good of everyone involved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Get Involved</div>
+                <h2 class="section-title">Join the Movement</h2>
+                <p class="section-subtitle">
+                    Add your light to the collective. Every participant matters.
+                </p>
+            </div>
+            
+            <div class="join-card" style="max-width: 600px; margin: 0 auto;">
+                <h3>📢 Spread the Word</h3>
+                <p>Invite friends and family to join. The more people participate, the stronger our collective intention.</p>
+                
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://worldwidemeditation.org" target="_blank" class="share-btn facebook">
+                        Share on Facebook
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=Join%20the%20worldwide%20meditation%20for%20family%20unity%20on%20January%203%2C%202026&url=https://worldwidemeditation.org" target="_blank" class="share-btn twitter">
+                        Share on X / Twitter
+                    </a>
+                    <a href="https://wa.me/?text=Join%20the%20worldwide%20meditation%20for%20family%20unity%20on%20January%203%2C%202026%20https://worldwidemeditation.org" target="_blank" class="share-btn whatsapp">
+                        Share on WhatsApp
+                    </a>
+                </div>
+                
+                <div class="copy-link">
+                    <input type="text" value="https://worldwidemeditation.org" readonly id="copyLinkInput">
+                    <button class="copy-btn" onclick="copyLink()">Copy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-content">
+                <div class="final-icon">🌍</div>
+                <h2>Together, We Are Powerful</h2>
+                <p>
+                    When thousands of hearts beat as one, focused on love and truth, we create ripples of positive change across the world.
+                </p>
+                
+                <div class="final-details">
+                    <div class="final-detail">
+                        <div class="label">Date</div>
+                        <div class="value">January 3, 2026</div>
+                    </div>
+                    <div class="final-detail">
+                        <div class="label">Time</div>
+                        <div class="value">11:02 AM CET</div>
+                    </div>
+                    <div class="final-detail">
+                        <div class="label">Duration</div>
+                        <div class="value">11 Minutes</div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" onclick="document.getElementById('join').scrollIntoView({behavior: 'smooth'})">
+                    Join the Meditation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">🌍 Worldwide Meditation</div>
+            <p class="footer-tagline">United in peace, love, and truth.</p>
+            
+            <div class="footer-links">
+                <a href="awareness-guide.html">Awareness Guide</a>
+                <a href="action-plan.html">Action Plan</a>
+                <a href="#about">About</a>
+                <a href="#join">Contact</a>
+            </div>
+            
+            <p class="footer-note">
+                This is a peaceful, non-political gathering focused on love, healing, and family unity.
+            </p>
+            
+            <p class="copyright">© 2026 Worldwide Meditation. All participation is free and voluntary.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        const eventDate = new Date('January 3, 2026 11:02:00 GMT+0100').getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+            
+            if (distance < 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Timezone Database
+        const timezoneData = {
+            // Europe
+            'italy': { offset: 1, name: 'Central European Time (CET)' },
+            'rome': { offset: 1, name: 'Central European Time (CET)' },
+            'germany': { offset: 1, name: 'Central European Time (CET)' },
+            'berlin': { offset: 1, name: 'Central European Time (CET)' },
+            'france': { offset: 1, name: 'Central European Time (CET)' },
+            'paris': { offset: 1, name: 'Central European Time (CET)' },
+            'spain': { offset: 1, name: 'Central European Time (CET)' },
+            'madrid': { offset: 1, name: 'Central European Time (CET)' },
+            'netherlands': { offset: 1, name: 'Central European Time (CET)' },
+            'amsterdam': { offset: 1, name: 'Central European Time (CET)' },
+            'uk': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
+            'london': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
+            'england': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
+            'portugal': { offset: 0, name: 'Western European Time (WET)' },
+            'lisbon': { offset: 0, name: 'Western European Time (WET)' },
+            'greece': { offset: 2, name: 'Eastern European Time (EET)' },
+            'athens': { offset: 2, name: 'Eastern European Time (EET)' },
+            'finland': { offset: 2, name: 'Eastern European Time (EET)' },
+            'helsinki': { offset: 2, name: 'Eastern European Time (EET)' },
+            
+            // Americas
+            'new york': { offset: -5, name: 'Eastern Time (ET)' },
+            'miami': { offset: -5, name: 'Eastern Time (ET)' },
+            'boston': { offset: -5, name: 'Eastern Time (ET)' },
+            'chicago': { offset: -6, name: 'Central Time (CT)' },
+            'denver': { offset: -7, name: 'Mountain Time (MT)' },
+            'los angeles': { offset: -8, name: 'Pacific Time (PT)' },
+            'san francisco': { offset: -8, name: 'Pacific Time (PT)' },
+            'seattle': { offset: -8, name: 'Pacific Time (PT)' },
+            'canada': { offset: -5, name: 'Eastern Time (ET)' },
+            'toronto': { offset: -5, name: 'Eastern Time (ET)' },
+            'vancouver': { offset: -8, name: 'Pacific Time (PT)' },
+            'brazil': { offset: -3, name: 'Brasilia Time (BRT)' },
+            'sao paulo': { offset: -3, name: 'Brasilia Time (BRT)' },
+            'argentina': { offset: -3, name: 'Argentina Time (ART)' },
+            'mexico': { offset: -6, name: 'Central Time (CT)' },
+            
+            // Asia & Pacific
+            'japan': { offset: 9, name: 'Japan Standard Time (JST)' },
+            'tokyo': { offset: 9, name: 'Japan Standard Time (JST)' },
+            'china': { offset: 8, name: 'China Standard Time (CST)' },
+            'beijing': { offset: 8, name: 'China Standard Time (CST)' },
+            'shanghai': { offset: 8, name: 'China Standard Time (CST)' },
+            'hong kong': { offset: 8, name: 'Hong Kong Time (HKT)' },
+            'singapore': { offset: 8, name: 'Singapore Time (SGT)' },
+            'korea': { offset: 9, name: 'Korea Standard Time (KST)' },
+            'seoul': { offset: 9, name: 'Korea Standard Time (KST)' },
+            'india': { offset: 5.5, name: 'India Standard Time (IST)' },
+            'mumbai': { offset: 5.5, name: 'India Standard Time (IST)' },
+            'delhi': { offset: 5.5, name: 'India Standard Time (IST)' },
+            'thailand': { offset: 7, name: 'Indochina Time (ICT)' },
+            'bangkok': { offset: 7, name: 'Indochina Time (ICT)' },
+            'indonesia': { offset: 7, name: 'Western Indonesia Time (WIB)' },
+            'jakarta': { offset: 7, name: 'Western Indonesia Time (WIB)' },
+            'philippines': { offset: 8, name: 'Philippine Time (PHT)' },
+            'manila': { offset: 8, name: 'Philippine Time (PHT)' },
+            'dubai': { offset: 4, name: 'Gulf Standard Time (GST)' },
+            'uae': { offset: 4, name: 'Gulf Standard Time (GST)' },
+            
+            // Oceania
+            'australia': { offset: 11, name: 'Australian Eastern (AEDT)' },
+            'sydney': { offset: 11, name: 'Australian Eastern (AEDT)' },
+            'melbourne': { offset: 11, name: 'Australian Eastern (AEDT)' },
+            'brisbane': { offset: 10, name: 'Australian Eastern (AEST)' },
+            'perth': { offset: 8, name: 'Australian Western (AWST)' },
+            'new zealand': { offset: 13, name: 'New Zealand (NZDT)' },
+            'auckland': { offset: 13, name: 'New Zealand (NZDT)' },
+            
+            // Africa & Middle East
+            'south africa': { offset: 2, name: 'South African Time (SAST)' },
+            'johannesburg': { offset: 2, name: 'South African Time (SAST)' },
+            'israel': { offset: 2, name: 'Israel Standard Time (IST)' },
+            'tel aviv': { offset: 2, name: 'Israel Standard Time (IST)' },
+            'egypt': { offset: 2, name: 'Eastern European Time (EET)' },
+            'cairo': { offset: 2, name: 'Eastern European Time (EET)' }
+        };
+        
+        function updateUserTime() {
+            const input = document.getElementById('timezoneInput').value.toLowerCase().trim();
+            
+            if (!input) {
+                // Default to CET
+                document.getElementById('digitalTime').textContent = '11:02 AM';
+                document.getElementById('digitalDate').textContent = 'January 3, 2026';
+                document.getElementById('timezoneName').textContent = 'Central European Time';
+                return;
+            }
+            
+            let found = null;
+            for (const [key, data] of Object.entries(timezoneData)) {
+                if (key.includes(input) || input.includes(key)) {
+                    found = data;
+                    break;
+                }
+            }
+            
+            if (found) {
+                const cetHour = 11;
+                const cetMinute = 2;
+                let localHour = cetHour + (found.offset - 1);
+                let dayOffset = 0;
+                
+                if (localHour >= 24) {
+                    localHour -= 24;
+                    dayOffset = 1;
+                } else if (localHour < 0) {
+                    localHour += 24;
+                    dayOffset = -1;
+                }
+                
+                const period = localHour >= 12 ? 'PM' : 'AM';
+                const displayHour = localHour > 12 ? localHour - 12 : (localHour === 0 ? 12 : localHour);
+                
+                let dateStr = 'January 3, 2026';
+                if (dayOffset === 1) dateStr = 'January 4, 2026';
+                if (dayOffset === -1) dateStr = 'January 2, 2026';
+                
+                document.getElementById('digitalTime').textContent = `${displayHour}:02 ${period}`;
+                document.getElementById('digitalDate').textContent = dateStr;
+                document.getElementById('timezoneName').textContent = found.name;
+            }
+        }
+        
+        // Mobile Menu
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const isOpen = navMenu.classList.contains('active');
+            
+            navMenu.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', !isOpen);
+            document.body.classList.toggle('menu-open');
+        }
+        
+        // Close menu when clicking links
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+                document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
+            });
+        });
+        
+        // Copy Link
+        function copyLink() {
+            const input = document.getElementById('copyLinkInput');
+            input.select();
+            document.execCommand('copy');
+            
+            const btn = event.target;
+            btn.textContent = 'Copied!';
+            setTimeout(() => {
+                btn.textContent = 'Copy';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
