@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Share the worldwide meditation event with your friends and family. Copy-paste messages ready for social media.">
+    <meta name="theme-color" content="#2563eb">
+    <title>Share the Meditation | Worldwide Meditation for Family Unity</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://worldwidemeditation.quantummerlin.com/share.html">
+    <meta property="og:title" content="Share the Worldwide Meditation">
+    <meta property="og:description" content="Help spread the word about the worldwide meditation for family unity on January 3, 2026.">
+    <meta property="og:image" content="https://worldwidemeditation.quantummerlin.com/social-preview.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles-unity.css?v=5.0">
+    <style>
+        .share-page-hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #1e40af 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: white;
+        }
+        .share-page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+        .share-page-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .share-content {
+            padding: 60px 0;
+            background: #f8fafc;
+        }
+        
+        .quick-share {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .quick-share h2 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .quick-share-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .quick-share-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 24px;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+        .quick-share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .quick-share-btn.facebook { background: #1877f2; }
+        .quick-share-btn.twitter { background: #000; }
+        .quick-share-btn.telegram { background: #0088cc; }
+        .quick-share-btn.whatsapp { background: #25d366; }
+        .quick-share-btn.email { background: #64748b; }
+        
+        .message-section {
+            margin-bottom: 40px;
+        }
+        .message-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .message-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+        }
+        .message-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .message-label {
+            font-weight: 600;
+            color: #64748b;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .message-text {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #334155;
+            white-space: pre-wrap;
+            margin-bottom: 16px;
+        }
+        .copy-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .copy-btn:hover {
+            background: #1d4ed8;
+        }
+        .copy-btn.copied {
+            background: #16a34a;
+        }
+        
+        .hashtags-section {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+        .hashtags-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: #1e293b;
+        }
+        .hashtags-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .hashtag {
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .hashtag:hover {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .link-section {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            border-radius: 16px;
+            padding: 32px;
+            color: white;
+            text-align: center;
+        }
+        .link-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+        .link-display {
+            background: rgba(255,255,255,0.15);
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            word-break: break-all;
+        }
+        .link-copy-btn {
+            background: white;
+            color: #2563eb;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .link-copy-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .share-page-hero {
+                padding: 100px 20px 40px;
+            }
+            .share-page-hero h1 {
+                font-size: 1.8rem;
+            }
+            .share-content {
+                padding: 40px 0;
+            }
+            .quick-share, .hashtags-section, .link-section, .message-card {
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            .message-section h2 {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌍</span>
+                <span>Family Unity Meditation</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobileMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#situation">The Story</a></li>
+                <li><a href="science.html">The Science</a></li>
+                <li><a href="share.html" class="active">Share</a></li>
+                <li><a href="index.html#join" class="nav-cta">Join Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="share-page-hero">
+        <div class="container">
+            <h1>📢 Share the Meditation</h1>
+            <p>Help spread the word! Every person who joins strengthens our collective intention for family unity.</p>
+        </div>
+    </section>
+
+    <!-- Share Content -->
+    <section class="share-content">
+        <div class="container">
+            
+            <!-- Quick Share Buttons -->
+            <div class="quick-share">
+                <h2>⚡ Quick Share</h2>
+                <div class="quick-share-buttons">
+                    <a href="fb://share/?link=https://worldwidemeditation.quantummerlin.com" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://worldwidemeditation.quantummerlin.com', 'facebook-share', 'width=580,height=500'); return false;" class="quick-share-btn facebook">
+                        📘 Facebook
+                    </a>
+                    <a href="twitter://post?message=Join%20the%20worldwide%20meditation%20for%20family%20unity%20on%20January%203%2C%202026%20%23FamigliaNelBosco%20https://worldwidemeditation.quantummerlin.com" onclick="window.open('https://twitter.com/intent/tweet?text=Join%20the%20worldwide%20meditation%20for%20family%20unity%20on%20January%203%2C%202026%20%23FamigliaNelBosco%20%23WorldwideMeditation&url=https://worldwidemeditation.quantummerlin.com', 'twitter-share', 'width=580,height=500'); return false;" class="quick-share-btn twitter">
+                        ✖️ X (Twitter)
+                    </a>
+                    <a href="tg://msg_url?url=https://worldwidemeditation.quantummerlin.com&text=Join%20the%20worldwide%20meditation%20for%20family%20unity" onclick="window.open('https://t.me/share/url?url=https://worldwidemeditation.quantummerlin.com&text=Join%20the%20worldwide%20meditation%20for%20family%20unity%20on%20January%203%2C%202026%20%23FamigliaNelBosco', 'telegram-share', 'width=580,height=500'); return false;" class="quick-share-btn telegram">
+                        ✈️ Telegram
+                    </a>
+                    <a href="whatsapp://send?text=Join%20the%20worldwide%20meditation%20for%20family%20unity%20on%20January%203%2C%202026%20https://worldwidemeditation.quantummerlin.com" onclick="window.open('https://wa.me/?text=Join%20the%20worldwide%20meditation%20for%20family%20unity%20on%20January%203%2C%202026%20%23FamigliaNelBosco%20https://worldwidemeditation.quantummerlin.com', 'whatsapp-share', 'width=580,height=500'); return false;" class="quick-share-btn whatsapp">
+                        💬 WhatsApp
+                    </a>
+                    <a href="mailto:?subject=Join%20the%20Worldwide%20Meditation&body=I%20wanted%20to%20share%20this%20with%20you%3A%0A%0AOn%20January%203%2C%202026%20at%2011%3A02%20AM%20CET%2C%20thousands%20of%20people%20worldwide%20will%20unite%20in%20an%2011-minute%20meditation%20for%20family%20unity.%0A%0ALearn%20more%3A%20https%3A%2F%2Fworldwidemeditation.quantummerlin.com" class="quick-share-btn email">
+                        ✉️ Email
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copy Link -->
+            <div class="link-section">
+                <h2>🔗 Share This Link</h2>
+                <div class="link-display">worldwidemeditation.quantummerlin.com</div>
+                <button class="link-copy-btn" onclick="copyLink(this)">📋 Copy Link</button>
+            </div>
+            
+            <!-- Hashtags -->
+            <div class="hashtags-section" style="margin-top: 40px;">
+                <h2>🏷️ Use These Hashtags</h2>
+                <div class="hashtags-list">
+                    <span class="hashtag" onclick="copyHashtag(this)">#FamigliaNelBosco</span>
+                    <span class="hashtag" onclick="copyHashtag(this)">#WorldwideMeditation</span>
+                    <span class="hashtag" onclick="copyHashtag(this)">#FamilyUnity</span>
+                    <span class="hashtag" onclick="copyHashtag(this)">#GlobalMeditation</span>
+                    <span class="hashtag" onclick="copyHashtag(this)">#January3rd2026</span>
+                    <span class="hashtag" onclick="copyHashtag(this)">#CollectiveConsciousness</span>
+                    <span class="hashtag" onclick="copyHashtag(this)">#MeditationForPeace</span>
+                    <span class="hashtag" onclick="copyHashtag(this)">#KeepFamiliesTogether</span>
+                </div>
+                <button class="copy-btn" onclick="copyAllHashtags(this)">📋 Copy All Hashtags</button>
+            </div>
+            
+            <!-- Ready-to-Post Messages -->
+            <div class="message-section">
+                <h2>📝 Ready-to-Post Messages</h2>
+                <p style="color: #64748b; margin-bottom: 24px; padding: 0 16px;">Click "Copy" to copy any message, then paste it directly into your social media post.</p>
+                
+                <!-- Short Tweet -->
+                <div class="message-card">
+                    <div class="message-card-header">
+                        <span class="message-label">✖️ Perfect for X (Twitter)</span>
+                    </div>
+                    <div class="message-text" id="msg1">🌍 Join the worldwide meditation for family unity
+
+📅 January 3, 2026
+⏰ 11:02 AM CET
+🕐 11 minutes
+
+Together, we can make a difference.
+
+#FamigliaNelBosco #WorldwideMeditation
+
+worldwidemeditation.quantummerlin.com</div>
+                    <button class="copy-btn" onclick="copyMessage('msg1', this)">📋 Copy Message</button>
+                </div>
+                
+                <!-- Facebook/LinkedIn -->
+                <div class="message-card">
+                    <div class="message-card-header">
+                        <span class="message-label">📘 Perfect for Facebook & LinkedIn</span>
+                    </div>
+                    <div class="message-text" id="msg2">🌍 I'm joining the Worldwide Meditation for Family Unity and I hope you will too.
+
+On January 3, 2026 at 11:02 AM CET, thousands of people across the globe will unite for 11 minutes of focused intention to support an Italian family whose children were unjustly taken.
+
+Scientific research shows that synchronized group meditation can create measurable effects on global consciousness. This is our chance to stand together for family unity and truth.
+
+Will you join us?
+
+🔗 worldwidemeditation.quantummerlin.com
+
+#FamigliaNelBosco #WorldwideMeditation #FamilyUnity #GlobalMeditation</div>
+                    <button class="copy-btn" onclick="copyMessage('msg2', this)">📋 Copy Message</button>
+                </div>
+                
+                <!-- WhatsApp/Telegram -->
+                <div class="message-card">
+                    <div class="message-card-header">
+                        <span class="message-label">💬 Perfect for WhatsApp & Telegram</span>
+                    </div>
+                    <div class="message-text" id="msg3">Hey! 👋
+
+I wanted to share something important with you.
+
+On January 3, 2026 at 11:02 AM CET, there's a worldwide meditation happening to support an Italian family whose children were wrongfully separated from their parents.
+
+It's just 11 minutes of your time, and research shows that synchronized group meditation can have real, measurable effects.
+
+Would you like to join? Here's the link:
+🔗 worldwidemeditation.quantummerlin.com
+
+Let me know if you're in! 🙏</div>
+                    <button class="copy-btn" onclick="copyMessage('msg3', this)">📋 Copy Message</button>
+                </div>
+                
+                <!-- Instagram Caption -->
+                <div class="message-card">
+                    <div class="message-card-header">
+                        <span class="message-label">📸 Perfect for Instagram</span>
+                    </div>
+                    <div class="message-text" id="msg4">🌍 WORLDWIDE MEDITATION FOR FAMILY UNITY
+
+📅 January 3, 2026
+⏰ 11:02 AM CET (check your local time at the link below)
+🕐 Duration: 11 minutes
+
+An Italian family's children were taken from them. The world is coming together to support them through the power of collective intention.
+
+Science backs this: The Princeton Global Consciousness Project has detected measurable effects during moments of global unity.
+
+Link in bio or visit:
+worldwidemeditation.quantummerlin.com
+
+.
+.
+.
+#FamigliaNelBosco #WorldwideMeditation #FamilyUnity #GlobalMeditation #CollectiveConsciousness #MeditationForPeace #KeepFamiliesTogether #January3rd2026 #GroupMeditation #PowerOfIntention</div>
+                    <button class="copy-btn" onclick="copyMessage('msg4', this)">📋 Copy Message</button>
+                </div>
+                
+                <!-- Email -->
+                <div class="message-card">
+                    <div class="message-card-header">
+                        <span class="message-label">✉️ Perfect for Email</span>
+                    </div>
+                    <div class="message-text" id="msg5">Subject: Join me for a worldwide meditation on January 3rd
+
+Hi,
+
+I wanted to share something meaningful with you.
+
+On January 3, 2026 at 11:02 AM CET, thousands of people around the world will unite for an 11-minute meditation supporting an Italian family whose children were unjustly separated from them.
+
+This isn't just wishful thinking—scientific research from Princeton University's Global Consciousness Project has documented measurable effects when large groups focus their intention together.
+
+It only takes 11 minutes. You can join from anywhere.
+
+Learn more and find your local time: worldwidemeditation.quantummerlin.com
+
+I hope you'll join us.
+
+With love</div>
+                    <button class="copy-btn" onclick="copyMessage('msg5', this)">📋 Copy Message</button>
+                </div>
+                
+                <!-- Short & Simple -->
+                <div class="message-card">
+                    <div class="message-card-header">
+                        <span class="message-label">✨ Short & Simple</span>
+                    </div>
+                    <div class="message-text" id="msg6">🌍 January 3, 2026 • 11:02 AM CET • 11 minutes
+
+Join the worldwide meditation for family unity.
+
+worldwidemeditation.quantummerlin.com
+
+#FamigliaNelBosco</div>
+                    <button class="copy-btn" onclick="copyMessage('msg6', this)">📋 Copy Message</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content" style="text-align: center; padding: 40px 0;">
+                <p style="color: rgba(255,255,255,0.7);">Thank you for helping spread the word 💙</p>
+                <p style="margin-top: 16px;">
+                    <a href="index.html" style="color: white; text-decoration: none;">← Back to Home</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyMessage(id, btn) {
+            const text = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                btn.innerHTML = '✅ Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.innerHTML = '📋 Copy Message';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+        
+        function copyLink(btn) {
+            navigator.clipboard.writeText('https://worldwidemeditation.quantummerlin.com').then(() => {
+                btn.innerHTML = '✅ Copied!';
+                setTimeout(() => {
+                    btn.innerHTML = '📋 Copy Link';
+                }, 2000);
+            });
+        }
+        
+        function copyHashtag(el) {
+            navigator.clipboard.writeText(el.textContent).then(() => {
+                const original = el.textContent;
+                el.textContent = '✓ Copied';
+                el.style.background = '#16a34a';
+                el.style.color = 'white';
+                setTimeout(() => {
+                    el.textContent = original;
+                    el.style.background = '';
+                    el.style.color = '';
+                }, 1500);
+            });
+        }
+        
+        function copyAllHashtags(btn) {
+            const hashtags = '#FamigliaNelBosco #WorldwideMeditation #FamilyUnity #GlobalMeditation #January3rd2026 #CollectiveConsciousness #MeditationForPeace #KeepFamiliesTogether';
+            navigator.clipboard.writeText(hashtags).then(() => {
+                btn.innerHTML = '✅ Copied All!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.innerHTML = '📋 Copy All Hashtags';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+        
+        // Mobile Menu
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const isOpen = navMenu.classList.contains('active');
+            
+            navMenu.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', !isOpen);
+            document.body.classList.toggle('menu-open');
+        }
+        
+        // Close menu when clicking links
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+                document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>
