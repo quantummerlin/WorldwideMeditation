@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Schließe dich Tausenden weltweit für eine 11-minütige synchronisierte Meditation am 3. Januar 2026 an, um Familienzusammenführung zu unterstützen.">
+    <meta name="theme-color" content="#2563eb">
+    <title>Weltweite Meditation für Familieneinheit | 3. Januar 2026</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://worldwidemeditation.quantummerlin.com/de/">
+    <meta property="og:title" content="Weltweite Meditation für Familieneinheit">
+    <meta property="og:image" content="https://worldwidemeditation.quantummerlin.com/social-preview.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles-unity.css?v=5.0">
+    <style>
+        .lang-selector { position: fixed; top: 80px; right: 20px; z-index: 1000; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 8px; }
+        .lang-selector select { border: none; background: transparent; font-size: 14px; font-weight: 500; cursor: pointer; padding: 4px 8px; }
+        @media (max-width: 768px) { .lang-selector { top: auto; bottom: 20px; right: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="lang-selector">
+        <select onchange="changeLanguage(this.value)">
+            <option value="de" selected>🇩🇪 Deutsch</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+        </select>
+    </div>
+
+    <nav role="navigation">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌍</span>
+                <span>Meditation für Einheit</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen" onclick="toggleMobileMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">Über</a></li>
+                <li><a href="#situation">Die Geschichte</a></li>
+                <li><a href="#science">Die Wissenschaft</a></li>
+                <li><a href="#how">Wie Mitmachen</a></li>
+                <li><a href="#join" class="nav-cta">Teilnehmen</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="countdown-container">
+                    <div class="countdown-label">
+                        <span class="icon">⏱️</span>
+                        <span>Die Meditation beginnt in</span>
+                    </div>
+                    <div class="countdown-display" role="timer">
+                        <div class="countdown-item"><span class="countdown-number" id="days">00</span><span class="countdown-unit">Tage</span></div>
+                        <div class="countdown-item"><span class="countdown-number" id="hours">00</span><span class="countdown-unit">Stunden</span></div>
+                        <div class="countdown-item"><span class="countdown-number" id="minutes">00</span><span class="countdown-unit">Minuten</span></div>
+                        <div class="countdown-item"><span class="countdown-number" id="seconds">00</span><span class="countdown-unit">Sekunden</span></div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">Weltweite Meditation für <span class="highlight">Familieneinheit</span></h1>
+                <p class="hero-subtitle">Tausende Menschen auf der ganzen Welt vereinen sich in Frieden, Liebe und fokussierter Absicht, um Familien und Wahrheit zu unterstützen.</p>
+                
+                <div class="event-info">
+                    <div class="info-badge"><span class="icon">📅</span><span>3. Januar 2026</span></div>
+                    <div class="info-badge primary"><span class="icon">⏰</span><span>11:02 Uhr MEZ</span></div>
+                    <div class="info-badge"><span class="icon">🕐</span><span>11 Minuten</span></div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('situation').scrollIntoView({behavior: 'smooth'})">Die Geschichte der Familie</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('how').scrollIntoView({behavior: 'smooth'})">Wie Mitmachen</button>
+                </div>
+                
+                <div class="trust-bar">
+                    <div class="trust-items">
+                        <div class="trust-item"><span class="icon">✓</span><span>100% Kostenlos</span></div>
+                        <div class="trust-item"><span class="icon">✓</span><span>Unpolitisch</span></div>
+                        <div class="trust-item"><span class="icon">✓</span><span>Friedlich & Liebevoll</span></div>
+                        <div class="trust-item"><span class="icon">✓</span><span>Alle Willkommen</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Was ist das?</div>
+                <h2 class="section-title">Ein Globaler Moment der Einheit</h2>
+                <p class="section-subtitle">Menschen aus allen Ecken der Welt widmen 11 Minuten, um sich gemeinsam auf Liebe, Wahrheit und Familie zu konzentrieren.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card"><div class="card-icon">🌏</div><h3>Weltweite Teilnahme</h3><p>Von Sydney bis Los Angeles, von London bis Tokio – Teilnehmer in jeder Zeitzone werden sich im selben Moment vereinen.</p></div>
+                <div class="about-card"><div class="card-icon">❤️</div><h3>Herzfokus</h3><p>Gemeinsam halten wir Absichten von Liebe, Frieden und dem höchsten Wohl für alle Familien.</p></div>
+                <div class="about-card"><div class="card-icon">🤝</div><h3>Gemeinschaftsunterstützung</h3><p>Wenn wir unsere Absichten vereinen, schaffen wir eine kraftvolle Welle positiver Energie.</p></div>
+                <div class="about-card"><div class="card-icon">✨</div><h3>Einfach & Zugänglich</h3><p>Keine besonderen Fähigkeiten erforderlich. Finde einen ruhigen Ort und verbinde dich mit Tausenden.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Einfache Schritte</div>
+                <h2 class="section-title">Wie Du Teilnimmst</h2>
+                <p class="section-subtitle">Nimm von überall auf der Welt teil — keine Erfahrung nötig</p>
+            </div>
+            <div class="steps-timeline">
+                <div class="step"><div class="step-marker">1</div><div class="step-content"><h4>Finde Deine Zeit</h4><p>Das Event ist um 11:02 Uhr MEZ (Mitteleuropäische Zeit). Stelle einen Wecker.</p><span class="step-time">Vor dem Event</span></div></div>
+                <div class="step"><div class="step-marker">2</div><div class="step-content"><h4>Bereite Deinen Raum Vor</h4><p>Finde einen ruhigen, bequemen Ort, wo du nicht gestört wirst.</p><span class="step-time">5-10 Minuten vorher</span></div></div>
+                <div class="step"><div class="step-marker">3</div><div class="step-content"><h4>Zentriere Dich</h4><p>Nimm 3 tiefe Atemzüge. Schließe die Augen. Lass die Sorgen des Tages los.</p><span class="step-time">2-3 Minuten vorher</span></div></div>
+                <div class="step"><div class="step-marker">4</div><div class="step-content"><h4>Nimm an der Meditation Teil (11:02 MEZ)</h4><p><strong>Was zu tun ist:</strong></p><ol style="margin-top: 0.5rem; font-size: 0.95rem;"><li>Visualisiere die Familie vereint — Mutter und Kinder zusammen, sicher, glücklich</li><li>Sage oder denke: <strong>"Die Wahrheit schützt die Unschuldigen"</strong> (3x)</li><li>Halte die Absicht: "Mögen alle verborgenen Informationen ans Licht kommen."</li><li>Erweitere auf ALLE Familien, die Heilung brauchen</li><li>Fühle die Gefühle: Freude, Erleichterung, Freiheit, Liebe</li></ol><span class="step-time">5-10 Minuten</span></div></div>
+                <div class="step"><div class="step-marker">5</div><div class="step-content"><h4>Schließe mit Dankbarkeit</h4><p>Nimm einen tiefen Atemzug. Fühle Dankbarkeit für diesen kollektiven Moment.</p><span class="step-time">1-2 Minuten danach</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="situation" class="situation-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Die Geschichte</div>
+                <h2 class="section-title">Warum Wir Uns Versammeln</h2>
+                <p class="section-subtitle">Die Geschichte einer Familie, die eine größere Wahrheit über Elternrechte weltweit repräsentiert</p>
+            </div>
+            <div class="situation-content">
+                <div class="situation-story">
+                    <div class="story-intro">
+                        <span class="hashtag-feature">#FamigliaNelBosco</span>
+                        <p class="story-translation">"Familie im Wald"</p>
+                    </div>
+                    <p class="lead">In Italien traf eine Familie eine Entscheidung, von der viele träumen: ihre drei Kinder nah an der Natur großzuziehen, weg von Bildschirmen, mit Heimunterricht, der sich auf Lernen in der realen Welt konzentriert.</p>
+                    <p>Sie waren nicht nachlässig. Sie waren nicht missbräuchlich. Sie waren <em>anders</em>.</p>
+                    <p>Und für dieses Anderssein wurden ihre drei Kinder weggenommen und in einer Einrichtung untergebracht. Die Mutter kann sie besuchen—aber sie kann nicht bleiben.</p>
+                    <div class="timeline-box">
+                        <h4>📅 Was Geschah</h4>
+                        <div class="timeline">
+                            <div class="timeline-item"><span class="timeline-date">Anfang Dezember</span><span class="timeline-text">Kinder aus dem Familienheim entfernt</span></div>
+                            <div class="timeline-item"><span class="timeline-date">25. Dezember</span><span class="timeline-text">Erstes Weihnachten getrennt</span></div>
+                            <div class="timeline-item"><span class="timeline-date">3. Januar</span><span class="timeline-text">Weltweite Meditation für Wahrheit</span></div>
+                        </div>
+                    </div>
+                    <div class="injustice-box">
+                        <h4>💔 Der Doppelstandard</h4>
+                        <p>Frage dich: Warum werden Kinder von liebevollen Eltern entfernt, die Heimunterricht und Natur wählen—während Kinder in Häusern mit Alkoholismus und Gewalt bleiben?</p>
+                        <ul>
+                            <li><strong>Anders</strong> ist nicht gefährlich</li>
+                            <li><strong>Alternativ</strong> ist nicht missbräuchlich</li>
+                            <li><strong>Natürliches Leben</strong> ist keine Vernachlässigung</li>
+                            <li><strong>Heimunterricht</strong> ist kein Schaden</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="situation-purpose">
+                    <h3>🎯 Wofür Wir Raum Halten</h3>
+                    <div class="purpose-grid">
+                        <div class="purpose-item"><span class="icon">💡</span><div><strong>Wahrheit Ans Licht</strong><p>Mögen alle verborgenen Informationen ans Licht kommen.</p></div></div>
+                        <div class="purpose-item"><span class="icon">⚖️</span><div><strong>Fairer Prozess</strong><p>Mögen Entscheidungen mit Transparenz und Gerechtigkeit getroffen werden.</p></div></div>
+                        <div class="purpose-item"><span class="icon">👨‍👩‍👧‍👦</span><div><strong>Familienzusammenführung</strong><p>Möge diese Familie—und alle Familien—in Liebe und Sicherheit vereint sein.</p></div></div>
+                        <div class="purpose-item"><span class="icon">🌟</span><div><strong>Das Höchste Wohl</strong><p>Möge das Ergebnis dem Wohlergehen der Kinder dienen.</p></div></div>
+                    </div>
+                    <div class="peaceful-note"><p><strong>🕊️ Dies ist eine Friedliche Versammlung</strong></p><p>Wir tragen keinen Hass. Nur Liebe, Mitgefühl und den aufrichtigen Wunsch nach Wahrheit und Heilung für alle Beteiligten.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="science" class="science-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Die Beweise</div>
+                <h2 class="section-title">Das Ist Nicht Nur Glaube — Es Ist Wissenschaft</h2>
+            </div>
+            <div class="science-grid">
+                <div class="science-card"><div class="card-icon">🔬</div><h3>Princeton Global Consciousness Project</h3><p>Seit 1998 hat ein Netzwerk von Zufallszahlengeneratoren weltweit <strong>statistisch signifikante Abweichungen</strong> während Momenten geteilter globaler Aufmerksamkeit erkannt.</p><p class="science-stat">Wahrscheinlichkeit gegen Zufall: <strong>1 zu 1 Billion</strong></p></div>
+                <div class="science-card"><div class="card-icon">💓</div><h3>HeartMath Institut Forschung</h3><p>Studien zeigen, dass Gruppen in einem Zustand der <strong>"Herzkohärenz"</strong> messbare elektromagnetische Felder erzeugen.</p><p class="science-stat">Elektromagnetisches Feld des Herzens: <strong>5.000x stärker</strong> als das des Gehirns</p></div>
+                <div class="science-card"><div class="card-icon">🧘</div><h3>Maharishi-Effekt Studien</h3><p>Über 50 Studien fanden, dass wenn 1% einer Bevölkerung gemeinsam meditiert, <strong>Kriminalitäts- und Unfallraten</strong> signifikant sinken.</p></div>
+                <div class="science-card"><div class="card-icon">⚛️</div><h3>Quantenbeobachtereffekt</h3><p>Die Physik hat bewiesen, dass der Akt der Beobachtung Quantensysteme beeinflusst. <strong>Bewusstsein ist nicht passiv.</strong></p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Mach Mit</div>
+                <h2 class="section-title">Werde Teil der Bewegung</h2>
+            </div>
+            <div class="join-card" style="max-width: 600px; margin: 0 auto;">
+                <h3>📢 Verbreite die Nachricht</h3>
+                <p>Lade Freunde und Familie ein. Je mehr Menschen teilnehmen, desto stärker unsere kollektive Absicht.</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://worldwidemeditation.quantummerlin.com/de/" target="_blank" class="share-btn facebook">Auf Facebook Teilen</a>
+                    <a href="https://twitter.com/intent/tweet?text=Nimm%20an%20der%20weltweiten%20Meditation%20f%C3%BCr%20Familieneinheit%20am%203.%20Januar%202026%20teil%20%23FamigliaNelBosco&url=https://worldwidemeditation.quantummerlin.com/de/" target="_blank" class="share-btn twitter">Auf X Teilen</a>
+                    <a href="https://t.me/share/url?url=https://worldwidemeditation.quantummerlin.com/de/&text=Weltweite%20Meditation%20f%C3%BCr%20Familieneinheit" target="_blank" class="share-btn telegram">Auf Telegram Teilen</a>
+                    <a href="https://wa.me/?text=Nimm%20an%20der%20weltweiten%20Meditation%20teil%20%23FamigliaNelBosco%20https://worldwidemeditation.quantummerlin.com/de/" target="_blank" class="share-btn whatsapp">Auf WhatsApp Teilen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-content">
+                <div class="final-icon">🌍</div>
+                <h2>Gemeinsam Sind Wir Stark</h2>
+                <p>Wenn Tausende Herzen als eines schlagen, fokussiert auf Liebe und Wahrheit, schaffen wir Wellen positiver Veränderung.</p>
+                <div class="final-details">
+                    <div class="final-detail"><div class="label">Datum</div><div class="value">3. Januar 2026</div></div>
+                    <div class="final-detail"><div class="label">Zeit</div><div class="value">11:02 MEZ</div></div>
+                    <div class="final-detail"><div class="label">Dauer</div><div class="value">11 Minuten</div></div>
+                </div>
+                <button class="btn btn-primary" onclick="document.getElementById('join').scrollIntoView({behavior: 'smooth'})">An der Meditation Teilnehmen</button>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">🌍 Weltweite Meditation</div>
+            <p class="footer-tagline">Vereint in Frieden, Liebe und Wahrheit.</p>
+            <div class="footer-hashtags">
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                    <span class="hashtag">#FamigliaNelBosco</span>
+                    <span class="hashtag">#WeltweiteMeditation</span>
+                    <span class="hashtag">#Familieneinheit</span>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Weltweite Meditation. Alle Teilnahme ist kostenlos und freiwillig.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            const paths = { 'en': '../index.html', 'it': '../it/index.html', 'es': '../es/index.html', 'de': 'index.html', 'fr': '../fr/index.html' };
+            window.location.href = paths[lang] || '../index.html';
+        }
+        
+        const eventDate = new Date('January 3, 2026 11:02:00 GMT+0100').getTime();
+        function updateCountdown() {
+            const distance = eventDate - new Date().getTime();
+            if (distance < 0) return;
+            document.getElementById('days').textContent = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+            document.getElementById('hours').textContent = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        }
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>
