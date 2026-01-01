@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>The Science of Collective Intention | Worldwide Meditation</title>
+    <meta name="description" content="Peer-reviewed research on collective consciousness, intention experiments, and the science behind synchronized meditation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-unity.css?v=3.0">
+    <style>
+        /* Science Page Specific Styles */
+        .science-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+        }
+        
+        .science-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .science-hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .research-section {
+            padding: 80px 20px;
+        }
+        
+        .research-section:nth-child(even) {
+            background: #f9fafb;
+        }
+        
+        .research-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .research-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .research-header .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .research-header h2 {
+            font-size: 2.25rem;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        
+        .research-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+        }
+        
+        .study-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            border-left: 4px solid #2563eb;
+        }
+        
+        .study-card h3 {
+            font-size: 1.25rem;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+        
+        .study-meta {
+            font-size: 0.9rem;
+            color: #2563eb;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        
+        .study-card p {
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        
+        .study-result {
+            background: #f0fdf4;
+            border-left: 3px solid #059669;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 16px;
+        }
+        
+        .study-result strong {
+            color: #059669;
+        }
+        
+        .key-stat {
+            display: inline-block;
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin: 8px 4px;
+        }
+        
+        .quote-block {
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .quote-block blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .quote-block cite {
+            opacity: 0.8;
+        }
+        
+        .mechanism-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+        }
+        
+        .mechanism-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .mechanism-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .mechanism-card .icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+        
+        .mechanism-card h4 {
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+        
+        .mechanism-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+        
+        .references-section {
+            background: #1f2937;
+            color: white;
+            padding: 80px 20px;
+        }
+        
+        .references-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .reference-list {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .reference-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 30px;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+        
+        .back-link:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #059669, #10b981);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .final-cta .btn {
+            background: white;
+            color: #059669;
+        }
+        
+        .final-cta .btn:hover {
+            background: #f0fdf4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">🌍 Worldwide Meditation</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#situation">The Story</a></li>
+                <li><a href="index.html#cosmic">Why Now</a></li>
+                <li><a href="science.html" class="active">The Science</a></li>
+                <li><a href="index.html#how">How to Join</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="science-hero">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Meditation</a>
+            <h1>The Science of Collective Intention</h1>
+            <p>Decades of peer-reviewed research proving that when humans focus together, reality responds.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Princeton GCP -->
+        <section class="research-section">
+            <div class="research-content">
+                <div class="research-header">
+                    <div class="icon">🔬</div>
+                    <h2>The Global Consciousness Project</h2>
+                    <p>Princeton University's groundbreaking 25+ year experiment</p>
+                </div>
+                
+                <div class="study-card">
+                    <h3>What It Is</h3>
+                    <p>Since 1998, a network of over 70 random number generators (RNGs) placed around the world have been continuously running. These devices produce completely random sequences of 1s and 0s—pure noise with no pattern.</p>
+                    <p>Except during moments of shared global attention.</p>
+                </div>
+                
+                <div class="study-card">
+                    <h3>The Discovery</h3>
+                    <p>During events that capture global attention—New Year's Eve, major disasters, moments of collective prayer—the random number generators become <strong>measurably less random</strong>.</p>
+                    <p>The data shows statistically significant deviations from chance that correlate precisely with when millions of people are focused on the same thing.</p>
+                    <div class="study-result">
+                        <strong>Result:</strong> The odds of this happening by chance are approximately <span class="key-stat">1 in 1 trillion</span>
+                    </div>
+                </div>
+                
+                <div class="study-card">
+                    <h3>Key Events Detected</h3>
+                    <div class="study-meta">Significant deviations recorded during:</div>
+                    <ul style="color: #4b5563; line-height: 2;">
+                        <li>September 11, 2001 attacks (deviations began <em>before</em> first plane hit)</li>
+                        <li>Princess Diana's funeral (1 billion+ viewers)</li>
+                        <li>New Year celebrations (cumulative effect across time zones)</li>
+                        <li>Major earthquake disasters with global attention</li>
+                        <li>World meditation events</li>
+                    </ul>
+                </div>
+                
+                <div class="quote-block">
+                    <blockquote>
+                        "We have compelling evidence that the GCP network responds to events which engage the attention of large numbers of people around the world."
+                    </blockquote>
+                    <cite>— Dr. Roger Nelson, Director, Global Consciousness Project, Princeton University</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- HeartMath -->
+        <section class="research-section">
+            <div class="research-content">
+                <div class="research-header">
+                    <div class="icon">💓</div>
+                    <h2>HeartMath Institute Research</h2>
+                    <p>The science of heart coherence and collective fields</p>
+                </div>
+                
+                <div class="study-card">
+                    <h3>The Heart's Electromagnetic Field</h3>
+                    <p>The heart generates the body's most powerful electromagnetic field—about <strong>5,000 times stronger</strong> than the brain's. This field extends several feet beyond the body and can be measured by sensitive instruments.</p>
+                    <div class="study-result">
+                        <strong>Discovery:</strong> When people enter a state of "heart coherence" (feelings of love, appreciation, gratitude), the heart's field becomes <span class="key-stat">more organized and coherent</span>
+                    </div>
+                </div>
+                
+                <div class="study-card">
+                    <h3>Group Coherence Effects</h3>
+                    <p>When groups practice heart coherence together:</p>
+                    <ul style="color: #4b5563; line-height: 2;">
+                        <li>Their heart rhythms begin to synchronize</li>
+                        <li>They create a collective electromagnetic field</li>
+                        <li>This field can be detected and measured</li>
+                        <li>It affects the physiology of people nearby—even if unaware</li>
+                    </ul>
+                </div>
+                
+                <div class="study-card">
+                    <h3>Global Coherence Initiative</h3>
+                    <div class="study-meta">Active since 2008 with thousands of participants</div>
+                    <p>HeartMath operates a global network of magnetometers that detect changes in Earth's magnetic field during synchronized meditation events. The data shows correlations between human emotional states and geomagnetic activity.</p>
+                    <div class="study-result">
+                        <strong>Implication:</strong> Human consciousness may interact with planetary fields at a fundamental level.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maharishi Effect -->
+        <section class="research-section">
+            <div class="research-content">
+                <div class="research-header">
+                    <div class="icon">🧘</div>
+                    <h2>The Maharishi Effect</h2>
+                    <p>50+ studies on meditation's social impact</p>
+                </div>
+                
+                <div class="study-card">
+                    <h3>The 1% Hypothesis</h3>
+                    <p>In 1960, Maharishi Mahesh Yogi predicted that if 1% of a population practiced transcendental meditation, measurable improvements in quality of life would occur for the entire population.</p>
+                    <p>For advanced group practice, the threshold drops to the <strong>square root of 1%</strong>.</p>
+                    <div class="study-result">
+                        <strong>For the world:</strong> Only <span class="key-stat">~8,000 people</span> practicing synchronized intention could theoretically affect global consciousness
+                    </div>
+                </div>
+                
+                <div class="study-card">
+                    <h3>Washington D.C. Study (1993)</h3>
+                    <div class="study-meta">Published in Social Indicators Research, peer-reviewed</div>
+                    <p>4,000 meditators gathered in Washington D.C. for 8 weeks. An independent review board of scientists predicted crime would decrease.</p>
+                    <p>Result: Violent crime dropped by <strong>23.3%</strong>—the maximum reduction occurred when the group was largest.</p>
+                    <div class="study-result">
+                        <strong>Statistical significance:</strong> p < 0.000000002 (chance of coincidence: <span class="key-stat">less than 1 in 500 million</span>)
+                    </div>
+                </div>
+                
+                <div class="study-card">
+                    <h3>Lebanon War Study (1983)</h3>
+                    <div class="study-meta">Journal of Conflict Resolution, Yale University Press</div>
+                    <p>During the height of the Lebanon civil war, groups practiced synchronized meditation. On days with high meditation participation:</p>
+                    <ul style="color: #4b5563; line-height: 2;">
+                        <li>War deaths decreased by 76%</li>
+                        <li>War injuries decreased</li>
+                        <li>Conflict intensity decreased</li>
+                        <li>Cooperation among factions increased</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quantum Physics -->
+        <section class="research-section">
+            <div class="research-content">
+                <div class="research-header">
+                    <div class="icon">⚛️</div>
+                    <h2>Quantum Physics & Consciousness</h2>
+                    <p>The observer effect and the nature of reality</p>
+                </div>
+                
+                <div class="study-card">
+                    <h3>The Observer Effect</h3>
+                    <p>One of the most replicated findings in physics: at the quantum level, particles exist in a state of probability until observed. The act of measurement—of consciousness interacting with the system—<strong>collapses the wave function</strong> into a definite state.</p>
+                    <p>This isn't philosophy. It's Nobel Prize-winning physics, confirmed in laboratories worldwide.</p>
+                </div>
+                
+                <div class="study-card">
+                    <h3>Delayed Choice Experiments</h3>
+                    <div class="study-meta">John Wheeler, Princeton University</div>
+                    <p>Even more remarkably, experiments show that an observation made NOW can influence the behavior of a particle in the PAST. This suggests consciousness operates outside the normal flow of time.</p>
+                </div>
+                
+                <div class="study-card">
+                    <h3>Quantum Entanglement</h3>
+                    <p>Two particles that become "entangled" remain connected regardless of distance. When you measure one, the other instantly responds—faster than light should allow.</p>
+                    <p>Einstein called it "spooky action at a distance." It's now proven fact.</p>
+                    <div class="study-result">
+                        <strong>Implication:</strong> Connection transcends space. When we focus intention together, we may be creating a form of <span class="key-stat">consciousness entanglement</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="research-section">
+            <div class="research-content">
+                <div class="research-header">
+                    <div class="icon">⚙️</div>
+                    <h2>How Collective Intention Works</h2>
+                    <p>The mechanisms behind the phenomenon</p>
+                </div>
+                
+                <div class="mechanism-grid">
+                    <div class="mechanism-card">
+                        <div class="icon">🌊</div>
+                        <h4>Coherence Amplification</h4>
+                        <p>Like lasers (coherent light), coherent consciousness amplifies effects exponentially. 1,000 people in coherence ≠ 1,000x effect—it's far greater.</p>
+                    </div>
+                    
+                    <div class="mechanism-card">
+                        <div class="icon">📡</div>
+                        <h4>Field Effects</h4>
+                        <p>Electromagnetic and potentially quantum fields generated by coherent groups extend beyond individual bodies and interact with the environment.</p>
+                    </div>
+                    
+                    <div class="mechanism-card">
+                        <div class="icon">🔗</div>
+                        <h4>Morphic Resonance</h4>
+                        <p>Biologist Rupert Sheldrake's theory: patterns of behavior and thought create "fields" that influence others—especially during synchronized activity.</p>
+                    </div>
+                    
+                    <div class="mechanism-card">
+                        <div class="icon">🧠</div>
+                        <h4>Neuroplasticity</h4>
+                        <p>Focused intention physically rewires neural pathways. Group practice accelerates this, creating lasting changes in individual and collective consciousness.</p>
+                    </div>
+                </div>
+                
+                <div class="quote-block">
+                    <blockquote>
+                        "The universe is not made of things, but of networks of vibratory patterns. Consciousness is the fundamental basis of reality."
+                    </blockquote>
+                    <cite>— Dr. Amit Goswami, Quantum Physicist, University of Oregon</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section class="references-section">
+            <div class="research-content">
+                <h2>📚 Key References & Further Reading</h2>
+                
+                <ul class="reference-list">
+                    <li><strong>Nelson, R.D., et al. (2002)</strong> - "Correlations of continuous random data with major world events." Foundations of Physics Letters, 15(6), 537-550.</li>
+                    
+                    <li><strong>Radin, D., et al. (1996)</strong> - "Possible effects of group consciousness on the global environment." Noetic Sciences Review, Winter, 16-21.</li>
+                    
+                    <li><strong>Hagelin, J.S., et al. (1999)</strong> - "Effects of group practice of the Transcendental Meditation program on preventing violent crime in Washington, D.C." Social Indicators Research, 47(2), 153-201.</li>
+                    
+                    <li><strong>McCraty, R., et al. (2017)</strong> - "Synchronization of Human Autonomic Nervous System Rhythms with Geomagnetic Activity in Human Subjects." HeartMath Institute Research.</li>
+                    
+                    <li><strong>Orme-Johnson, D.W., et al. (1988)</strong> - "International peace project in the Middle East: The effects of the Maharishi Technology of the Unified Field." Journal of Conflict Resolution, 32(4), 776-812.</li>
+                    
+                    <li><strong>Sheldrake, R. (2009)</strong> - "Morphic Resonance: The Nature of Formative Causation." Park Street Press.</li>
+                    
+                    <li><strong>Radin, D. (2006)</strong> - "Entangled Minds: Extrasensory Experiences in a Quantum Reality." Paraview Pocket Books.</li>
+                    
+                    <li><strong>McTaggart, L. (2007)</strong> - "The Intention Experiment: Using Your Thoughts to Change Your Life and the World." Free Press.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Join the Experiment</h2>
+                <p>On January 3, 2026, thousands of people around the world will focus their intention together. Will you add your consciousness to the collective?</p>
+                <a href="index.html#join" class="btn">Join the Meditation →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">🌍 Worldwide Meditation</div>
+            <p class="footer-tagline">Where science meets intention.</p>
+            
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="awareness-guide.html">Awareness Guide</a>
+                <a href="action-plan.html">Action Plan</a>
+            </div>
+            
+            <p class="copyright">© 2026 Worldwide Meditation. All participation is free and voluntary.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const isOpen = navMenu.classList.contains('active');
+            
+            navMenu.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', !isOpen);
+            document.body.classList.toggle('menu-open');
+        }
+        
+        // Close menu when clicking links
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+                document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>
