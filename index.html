@@ -915,9 +915,10 @@
                 let localMinute = baseMinute;
                 let dayOffset = 0;
                 
-                // Handle half-hour timezones
+                // Handle half-hour timezones (e.g., India +5:30, Iran +3:30)
                 if (found.halfHour) {
-                    localMinute = 32; // Add 30 minutes
+                    localHour = Math.floor(localHour); // Get the whole hour
+                    localMinute = 32; // Add 30 minutes to base 2 minutes
                 }
                 
                 // Handle day rollover
