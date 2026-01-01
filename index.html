@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles-unity.css?v=3.0">
+    <link rel="stylesheet" href="styles-unity.css?v=4.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -103,11 +103,11 @@
                 
                 <!-- Buttons -->
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="document.getElementById('join').scrollIntoView({behavior: 'smooth'})">
-                        Join the Meditation
+                    <button class="btn btn-primary" onclick="document.getElementById('situation').scrollIntoView({behavior: 'smooth'})">
+                        Read the Family's Story
                     </button>
                     <button class="btn btn-secondary" onclick="document.getElementById('how').scrollIntoView({behavior: 'smooth'})">
-                        Learn How It Works
+                        How to Join
                     </button>
                 </div>
                 
@@ -196,9 +196,9 @@
                     
                     <div class="time-display">
                         <div class="label">Your meditation time:</div>
-                        <div class="time" id="digitalTime">10:02 AM</div>
+                        <div class="time" id="digitalTime">11:02 AM</div>
                         <div class="date" id="digitalDate">January 3, 2026</div>
-                        <div class="zone" id="timezoneName">Central European Time</div>
+                        <div class="zone" id="timezoneName">Central European Time (CET)</div>
                     </div>
                 </div>
                 
@@ -464,15 +464,6 @@
                 </div>
                 
                 <div class="cosmic-card">
-                    <div class="card-icon">🧬</div>
-                    <h3>The Reality Code: 528</h3>
-                    <p class="code-phrase">"Truth protects the innocent"</p>
-                    <p>When calculated using English Ordinal Gematria, this phrase equals <strong>528</strong>.</p>
-                    <p><strong>528 Hz</strong> is known as the "Miracle Frequency" or "Love Frequency"—associated with DNA repair, transformation, and healing.</p>
-                    <p class="cosmic-meaning">When thousands of voices speak these words simultaneously, we generate a coherent field of truth and protection that transcends the physical.</p>
-                </div>
-                
-                <div class="cosmic-card">
                     <div class="card-icon">📊</div>
                     <h3>Scientific Foundation</h3>
                     <p><strong>Princeton's Global Consciousness Project</strong> has documented measurable effects of synchronized human consciousness during worldwide events.</p>
@@ -677,83 +668,221 @@
         setInterval(updateCountdown, 1000);
         
         // Timezone Database
+        // Complete timezone database with UTC offsets
+        // CET = UTC+1, so we store the difference from CET
         const timezoneData = {
-            // Europe
+            // Europe - CET (UTC+1)
             'italy': { offset: 1, name: 'Central European Time (CET)' },
             'rome': { offset: 1, name: 'Central European Time (CET)' },
+            'milan': { offset: 1, name: 'Central European Time (CET)' },
             'germany': { offset: 1, name: 'Central European Time (CET)' },
             'berlin': { offset: 1, name: 'Central European Time (CET)' },
+            'munich': { offset: 1, name: 'Central European Time (CET)' },
             'france': { offset: 1, name: 'Central European Time (CET)' },
             'paris': { offset: 1, name: 'Central European Time (CET)' },
             'spain': { offset: 1, name: 'Central European Time (CET)' },
             'madrid': { offset: 1, name: 'Central European Time (CET)' },
+            'barcelona': { offset: 1, name: 'Central European Time (CET)' },
             'netherlands': { offset: 1, name: 'Central European Time (CET)' },
             'amsterdam': { offset: 1, name: 'Central European Time (CET)' },
+            'belgium': { offset: 1, name: 'Central European Time (CET)' },
+            'brussels': { offset: 1, name: 'Central European Time (CET)' },
+            'austria': { offset: 1, name: 'Central European Time (CET)' },
+            'vienna': { offset: 1, name: 'Central European Time (CET)' },
+            'switzerland': { offset: 1, name: 'Central European Time (CET)' },
+            'zurich': { offset: 1, name: 'Central European Time (CET)' },
+            'poland': { offset: 1, name: 'Central European Time (CET)' },
+            'warsaw': { offset: 1, name: 'Central European Time (CET)' },
+            'sweden': { offset: 1, name: 'Central European Time (CET)' },
+            'stockholm': { offset: 1, name: 'Central European Time (CET)' },
+            'norway': { offset: 1, name: 'Central European Time (CET)' },
+            'oslo': { offset: 1, name: 'Central European Time (CET)' },
+            'denmark': { offset: 1, name: 'Central European Time (CET)' },
+            'copenhagen': { offset: 1, name: 'Central European Time (CET)' },
+            'czech': { offset: 1, name: 'Central European Time (CET)' },
+            'prague': { offset: 1, name: 'Central European Time (CET)' },
+            'hungary': { offset: 1, name: 'Central European Time (CET)' },
+            'budapest': { offset: 1, name: 'Central European Time (CET)' },
+            'croatia': { offset: 1, name: 'Central European Time (CET)' },
+            'serbia': { offset: 1, name: 'Central European Time (CET)' },
+            
+            // Europe - GMT/WET (UTC+0)
             'uk': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
             'london': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
             'england': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
+            'scotland': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
+            'ireland': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
+            'dublin': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
             'portugal': { offset: 0, name: 'Western European Time (WET)' },
             'lisbon': { offset: 0, name: 'Western European Time (WET)' },
+            'iceland': { offset: 0, name: 'Greenwich Mean Time (GMT)' },
+            
+            // Europe - EET (UTC+2)
             'greece': { offset: 2, name: 'Eastern European Time (EET)' },
             'athens': { offset: 2, name: 'Eastern European Time (EET)' },
             'finland': { offset: 2, name: 'Eastern European Time (EET)' },
             'helsinki': { offset: 2, name: 'Eastern European Time (EET)' },
+            'romania': { offset: 2, name: 'Eastern European Time (EET)' },
+            'bucharest': { offset: 2, name: 'Eastern European Time (EET)' },
+            'bulgaria': { offset: 2, name: 'Eastern European Time (EET)' },
+            'sofia': { offset: 2, name: 'Eastern European Time (EET)' },
+            'ukraine': { offset: 2, name: 'Eastern European Time (EET)' },
+            'kyiv': { offset: 2, name: 'Eastern European Time (EET)' },
+            'turkey': { offset: 3, name: 'Turkey Time (TRT)' },
+            'istanbul': { offset: 3, name: 'Turkey Time (TRT)' },
             
-            // Americas
+            // Russia
+            'russia': { offset: 3, name: 'Moscow Time (MSK)' },
+            'moscow': { offset: 3, name: 'Moscow Time (MSK)' },
+            
+            // Americas - Eastern (UTC-5)
             'new york': { offset: -5, name: 'Eastern Time (ET)' },
+            'nyc': { offset: -5, name: 'Eastern Time (ET)' },
             'miami': { offset: -5, name: 'Eastern Time (ET)' },
             'boston': { offset: -5, name: 'Eastern Time (ET)' },
-            'chicago': { offset: -6, name: 'Central Time (CT)' },
-            'denver': { offset: -7, name: 'Mountain Time (MT)' },
-            'los angeles': { offset: -8, name: 'Pacific Time (PT)' },
-            'san francisco': { offset: -8, name: 'Pacific Time (PT)' },
-            'seattle': { offset: -8, name: 'Pacific Time (PT)' },
+            'philadelphia': { offset: -5, name: 'Eastern Time (ET)' },
+            'washington': { offset: -5, name: 'Eastern Time (ET)' },
+            'atlanta': { offset: -5, name: 'Eastern Time (ET)' },
+            'detroit': { offset: -5, name: 'Eastern Time (ET)' },
+            'usa east': { offset: -5, name: 'Eastern Time (ET)' },
             'canada': { offset: -5, name: 'Eastern Time (ET)' },
             'toronto': { offset: -5, name: 'Eastern Time (ET)' },
+            'montreal': { offset: -5, name: 'Eastern Time (ET)' },
+            'ottawa': { offset: -5, name: 'Eastern Time (ET)' },
+            
+            // Americas - Central (UTC-6)
+            'chicago': { offset: -6, name: 'Central Time (CT)' },
+            'houston': { offset: -6, name: 'Central Time (CT)' },
+            'dallas': { offset: -6, name: 'Central Time (CT)' },
+            'austin': { offset: -6, name: 'Central Time (CT)' },
+            'mexico': { offset: -6, name: 'Central Time (CT)' },
+            'mexico city': { offset: -6, name: 'Central Time (CT)' },
+            'usa central': { offset: -6, name: 'Central Time (CT)' },
+            'winnipeg': { offset: -6, name: 'Central Time (CT)' },
+            
+            // Americas - Mountain (UTC-7)
+            'denver': { offset: -7, name: 'Mountain Time (MT)' },
+            'phoenix': { offset: -7, name: 'Mountain Time (MT)' },
+            'calgary': { offset: -7, name: 'Mountain Time (MT)' },
+            'edmonton': { offset: -7, name: 'Mountain Time (MT)' },
+            'usa mountain': { offset: -7, name: 'Mountain Time (MT)' },
+            
+            // Americas - Pacific (UTC-8)
+            'los angeles': { offset: -8, name: 'Pacific Time (PT)' },
+            'la': { offset: -8, name: 'Pacific Time (PT)' },
+            'san francisco': { offset: -8, name: 'Pacific Time (PT)' },
+            'seattle': { offset: -8, name: 'Pacific Time (PT)' },
+            'portland': { offset: -8, name: 'Pacific Time (PT)' },
+            'san diego': { offset: -8, name: 'Pacific Time (PT)' },
+            'las vegas': { offset: -8, name: 'Pacific Time (PT)' },
             'vancouver': { offset: -8, name: 'Pacific Time (PT)' },
+            'usa west': { offset: -8, name: 'Pacific Time (PT)' },
+            'usa pacific': { offset: -8, name: 'Pacific Time (PT)' },
+            
+            // Americas - Other
+            'alaska': { offset: -9, name: 'Alaska Time (AKT)' },
+            'hawaii': { offset: -10, name: 'Hawaii Time (HST)' },
             'brazil': { offset: -3, name: 'Brasilia Time (BRT)' },
             'sao paulo': { offset: -3, name: 'Brasilia Time (BRT)' },
+            'rio': { offset: -3, name: 'Brasilia Time (BRT)' },
+            'rio de janeiro': { offset: -3, name: 'Brasilia Time (BRT)' },
             'argentina': { offset: -3, name: 'Argentina Time (ART)' },
-            'mexico': { offset: -6, name: 'Central Time (CT)' },
+            'buenos aires': { offset: -3, name: 'Argentina Time (ART)' },
+            'chile': { offset: -3, name: 'Chile Time (CLT)' },
+            'santiago': { offset: -3, name: 'Chile Time (CLT)' },
+            'colombia': { offset: -5, name: 'Colombia Time (COT)' },
+            'bogota': { offset: -5, name: 'Colombia Time (COT)' },
+            'peru': { offset: -5, name: 'Peru Time (PET)' },
+            'lima': { offset: -5, name: 'Peru Time (PET)' },
             
-            // Asia & Pacific
-            'japan': { offset: 9, name: 'Japan Standard Time (JST)' },
-            'tokyo': { offset: 9, name: 'Japan Standard Time (JST)' },
+            // Asia - India (UTC+5:30)
+            'india': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            'mumbai': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            'delhi': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            'new delhi': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            'bangalore': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            'chennai': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            'kolkata': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            'hyderabad': { offset: 5.5, name: 'India Standard Time (IST)', halfHour: true },
+            
+            // Asia - China/HK/Singapore (UTC+8)
             'china': { offset: 8, name: 'China Standard Time (CST)' },
             'beijing': { offset: 8, name: 'China Standard Time (CST)' },
             'shanghai': { offset: 8, name: 'China Standard Time (CST)' },
+            'guangzhou': { offset: 8, name: 'China Standard Time (CST)' },
+            'shenzhen': { offset: 8, name: 'China Standard Time (CST)' },
             'hong kong': { offset: 8, name: 'Hong Kong Time (HKT)' },
             'singapore': { offset: 8, name: 'Singapore Time (SGT)' },
+            'taiwan': { offset: 8, name: 'Taiwan Time (TST)' },
+            'taipei': { offset: 8, name: 'Taiwan Time (TST)' },
+            'malaysia': { offset: 8, name: 'Malaysia Time (MYT)' },
+            'kuala lumpur': { offset: 8, name: 'Malaysia Time (MYT)' },
+            
+            // Asia - Japan/Korea (UTC+9)
+            'japan': { offset: 9, name: 'Japan Standard Time (JST)' },
+            'tokyo': { offset: 9, name: 'Japan Standard Time (JST)' },
+            'osaka': { offset: 9, name: 'Japan Standard Time (JST)' },
             'korea': { offset: 9, name: 'Korea Standard Time (KST)' },
             'seoul': { offset: 9, name: 'Korea Standard Time (KST)' },
-            'india': { offset: 5.5, name: 'India Standard Time (IST)' },
-            'mumbai': { offset: 5.5, name: 'India Standard Time (IST)' },
-            'delhi': { offset: 5.5, name: 'India Standard Time (IST)' },
+            'south korea': { offset: 9, name: 'Korea Standard Time (KST)' },
+            
+            // Asia - Southeast (UTC+7)
             'thailand': { offset: 7, name: 'Indochina Time (ICT)' },
             'bangkok': { offset: 7, name: 'Indochina Time (ICT)' },
+            'vietnam': { offset: 7, name: 'Indochina Time (ICT)' },
+            'hanoi': { offset: 7, name: 'Indochina Time (ICT)' },
+            'ho chi minh': { offset: 7, name: 'Indochina Time (ICT)' },
             'indonesia': { offset: 7, name: 'Western Indonesia Time (WIB)' },
             'jakarta': { offset: 7, name: 'Western Indonesia Time (WIB)' },
+            'bali': { offset: 8, name: 'Central Indonesia Time (WITA)' },
             'philippines': { offset: 8, name: 'Philippine Time (PHT)' },
             'manila': { offset: 8, name: 'Philippine Time (PHT)' },
+            
+            // Middle East (UTC+3 to UTC+4)
             'dubai': { offset: 4, name: 'Gulf Standard Time (GST)' },
             'uae': { offset: 4, name: 'Gulf Standard Time (GST)' },
+            'abu dhabi': { offset: 4, name: 'Gulf Standard Time (GST)' },
+            'qatar': { offset: 3, name: 'Arabia Standard Time (AST)' },
+            'doha': { offset: 3, name: 'Arabia Standard Time (AST)' },
+            'saudi': { offset: 3, name: 'Arabia Standard Time (AST)' },
+            'riyadh': { offset: 3, name: 'Arabia Standard Time (AST)' },
+            'kuwait': { offset: 3, name: 'Arabia Standard Time (AST)' },
+            'iran': { offset: 3.5, name: 'Iran Time (IRST)', halfHour: true },
+            'tehran': { offset: 3.5, name: 'Iran Time (IRST)', halfHour: true },
+            'pakistan': { offset: 5, name: 'Pakistan Time (PKT)' },
+            'karachi': { offset: 5, name: 'Pakistan Time (PKT)' },
+            'bangladesh': { offset: 6, name: 'Bangladesh Time (BST)' },
+            'dhaka': { offset: 6, name: 'Bangladesh Time (BST)' },
             
             // Oceania
             'australia': { offset: 11, name: 'Australian Eastern (AEDT)' },
             'sydney': { offset: 11, name: 'Australian Eastern (AEDT)' },
             'melbourne': { offset: 11, name: 'Australian Eastern (AEDT)' },
+            'canberra': { offset: 11, name: 'Australian Eastern (AEDT)' },
             'brisbane': { offset: 10, name: 'Australian Eastern (AEST)' },
             'perth': { offset: 8, name: 'Australian Western (AWST)' },
+            'adelaide': { offset: 10.5, name: 'Australian Central (ACDT)', halfHour: true },
             'new zealand': { offset: 13, name: 'New Zealand (NZDT)' },
             'auckland': { offset: 13, name: 'New Zealand (NZDT)' },
+            'wellington': { offset: 13, name: 'New Zealand (NZDT)' },
             
-            // Africa & Middle East
+            // Africa
             'south africa': { offset: 2, name: 'South African Time (SAST)' },
             'johannesburg': { offset: 2, name: 'South African Time (SAST)' },
+            'cape town': { offset: 2, name: 'South African Time (SAST)' },
+            'nigeria': { offset: 1, name: 'West Africa Time (WAT)' },
+            'lagos': { offset: 1, name: 'West Africa Time (WAT)' },
+            'kenya': { offset: 3, name: 'East Africa Time (EAT)' },
+            'nairobi': { offset: 3, name: 'East Africa Time (EAT)' },
+            'egypt': { offset: 2, name: 'Eastern European Time (EET)' },
+            'cairo': { offset: 2, name: 'Eastern European Time (EET)' },
+            'morocco': { offset: 1, name: 'Morocco Time (WET+1)' },
+            'casablanca': { offset: 1, name: 'Morocco Time (WET+1)' },
+            
+            // Israel
             'israel': { offset: 2, name: 'Israel Standard Time (IST)' },
             'tel aviv': { offset: 2, name: 'Israel Standard Time (IST)' },
-            'egypt': { offset: 2, name: 'Eastern European Time (EET)' },
-            'cairo': { offset: 2, name: 'Eastern European Time (EET)' }
+            'jerusalem': { offset: 2, name: 'Israel Standard Time (IST)' }
         };
         
         function updateUserTime() {
@@ -776,11 +905,22 @@
             }
             
             if (found) {
-                const cetHour = 11;
-                const cetMinute = 2;
-                let localHour = cetHour + (found.offset - 1);
+                // CET is UTC+1. Event is at 11:02 AM CET = 10:02 UTC
+                // To convert: local time = UTC time + local offset
+                // So: local time = 10:02 + found.offset
+                const utcHour = 10; // 11:02 CET = 10:02 UTC
+                const baseMinute = 2;
+                
+                let localHour = utcHour + found.offset;
+                let localMinute = baseMinute;
                 let dayOffset = 0;
                 
+                // Handle half-hour timezones
+                if (found.halfHour) {
+                    localMinute = 32; // Add 30 minutes
+                }
+                
+                // Handle day rollover
                 if (localHour >= 24) {
                     localHour -= 24;
                     dayOffset = 1;
@@ -796,7 +936,8 @@
                 if (dayOffset === 1) dateStr = 'January 4, 2026';
                 if (dayOffset === -1) dateStr = 'January 2, 2026';
                 
-                document.getElementById('digitalTime').textContent = `${displayHour}:02 ${period}`;
+                const minuteStr = localMinute.toString().padStart(2, '0');
+                document.getElementById('digitalTime').textContent = `${displayHour}:${minuteStr} ${period}`;
                 document.getElementById('digitalDate').textContent = dateStr;
                 document.getElementById('timezoneName').textContent = found.name;
             }
