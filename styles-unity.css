@@ -1669,6 +1669,135 @@ footer {
     border-radius: var(--radius);
 }
 
+.cosmic-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.cosmic-quote {
+    max-width: 700px;
+    margin: 50px auto 0;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cosmic-quote blockquote {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.cosmic-quote cite {
+    display: block;
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ENHANCED STORY SECTION ELEMENTS
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.story-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.hashtag-feature {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: var(--radius-full);
+    margin-bottom: 8px;
+}
+
+.story-translation {
+    color: var(--gray-500);
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.timeline-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border-left: 4px solid var(--primary);
+    padding: 24px;
+    border-radius: var(--radius);
+    margin: 30px 0;
+}
+
+.timeline-box h4 {
+    color: var(--gray-900);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.timeline-date {
+    background: var(--primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: 100px;
+    text-align: center;
+}
+
+.timeline-text {
+    color: var(--gray-700);
+    line-height: 1.6;
+    padding-top: 2px;
+}
+
+.bigger-picture {
+    background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
+    border-left: 4px solid var(--accent);
+    padding: 24px;
+    border-radius: var(--radius);
+    margin: 30px 0 0;
+}
+
+.bigger-picture h4 {
+    color: var(--gray-900);
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+.bigger-picture p {
+    margin-bottom: 12px;
+}
+
+.bigger-picture p:last-child {
+    margin-bottom: 0;
+}
+
 /* ═══════════════════════════════════════════════════════════════════════
    RESPONSIVE - SITUATION & COSMIC SECTIONS
    ═══════════════════════════════════════════════════════════════════════ */
@@ -1684,6 +1813,20 @@ footer {
     
     .purpose-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .hashtag-feature {
+        font-size: 1.4rem;
+        padding: 10px 24px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    .timeline-date {
+        min-width: auto;
     }
 }
 
