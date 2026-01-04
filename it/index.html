@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="Unisciti a migliaia di persone in tutto il mondo per una meditazione sincronizzata di 11 minuti il 3 gennaio 2026 a sostegno della riunificazione familiare.">
+    <meta name="description" content="Unisciti a migliaia di persone in tutto il mondo per una meditazione sincronizzata di 11 minuti il 18 gennaio 2026 a sostegno della riunificazione familiare.">
     <meta name="theme-color" content="#2563eb">
-    <title>Meditazione Mondiale per l'Unità Familiare | 3 Gennaio 2026</title>
+    <title>Meditazione Mondiale per l'Unità Familiare | 18 Gennaio 2026</title>
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://worldwidemeditation.quantummerlin.com/it/">
+    <meta property="og:url" content="https://worldwidemeditation.quantummerlin.com/it">
     <meta property="og:title" content="Meditazione Mondiale per l'Unità Familiare">
-    <meta property="og:description" content="Unisciti a migliaia di persone per una meditazione sincronizzata il 3 gennaio 2026 alle 11:02 CET. Insieme per l'unità familiare e la verità.">
+    <meta property="og:description" content="Unisciti a migliaia di persone per una meditazione sincronizzata il 18 gennaio 2026 alle 20:51 CET. Insieme per l'unità familiare e la verità.">
     <meta property="og:image" content="https://worldwidemeditation.quantummerlin.com/social-preview.svg">
     
     <!-- Fonts -->
@@ -23,9 +23,9 @@
     <style>
         .lang-selector {
             position: fixed;
-            top: 80px;
+            top: 10px;
             right: 20px;
-            z-index: 1000;
+            z-index: 10000;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -41,10 +41,32 @@
         }
         @media (max-width: 768px) {
             .lang-selector {
-                top: auto;
-                bottom: 20px;
-                right: 20px;
+                top: 10px;
+                right: 10px;
             }
+        }
+        
+        /* Collapsible sections */
+        .collapsible-header {
+            cursor: pointer;
+        }
+        .collapsible-header:hover {
+            opacity: 0.9;
+        }
+        .collapsible-header .toggle-icon {
+            transition: transform 0.3s ease;
+            display: inline;
+            margin-left: 8px;
+        }
+        .collapsible-header.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+        .collapsible-content {
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .collapsible-content.collapsed {
+            max-height: 0 !important;
         }
     </style>
 </head>
@@ -84,8 +106,96 @@
         </div>
     </nav>
 
+    <!-- Grazie per il 3 Gennaio -->
+    <section style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 20px; text-align: center; border-bottom: 3px solid #059669; margin-top: 70px;">
+        <div class="container" style="max-width: 900px;">
+            <h2 style="color: #065f46; margin: 0 0 10px 0; font-size: 1.5rem;">🙏 Grazie per il 3 Gennaio!</h2>
+            <p style="color: #047857; margin: 0 0 15px 0; font-size: 1rem;">
+                La vostra energia e intenzione hanno fatto la differenza. La famiglia ha sentito l'amore da tutto il mondo.
+            </p>
+            <p style="color: #065f46; font-weight: 600; margin: 0 0 5px 0; font-size: 1.1rem;">Prossima meditazione tra:</p>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+                <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px;">
+                    <div id="days-banner" style="font-size: 1.8rem; font-weight: 700; color: #047857;">00</div>
+                    <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Giorni</div>
+                </div>
+                <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px;">
+                    <div id="hours-banner" style="font-size: 1.8rem; font-weight: 700; color: #047857;">00</div>
+                    <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Ore</div>
+                </div>
+                <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px;">
+                    <div id="minutes-banner" style="font-size: 1.8rem; font-weight: 700; color: #047857;">00</div>
+                    <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Minuti</div>
+                </div>
+                <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px;">
+                    <div id="seconds-banner" style="font-size: 1.8rem; font-weight: 700; color: #047857;">00</div>
+                    <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Secondi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <main id="main-content">
     
+    <!-- Approccio Doppio -->
+    <section class="dual-approach-section" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 40px 20px;">
+        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <div style="margin-bottom: 30px;">
+                <h2 style="font-size: 2rem; color: #1e293b; margin-bottom: 10px;">Cosa Puoi Fare Adesso</h2>
+                <p style="color: #64748b; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Mentre aspettiamo la prossima meditazione coordinata, ecco come puoi inviare intenzione quotidiana per aiutare a riportare questa famiglia a casa.</p>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 20px; max-width: 700px; margin: 0 auto;">
+                <!-- La Goccia - Adesso -->
+                <div style="background: white; padding: 25px 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 3px solid #06b6d4; text-align: center;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">💧</div>
+                    <h3 style="color: #1e293b; margin-bottom: 10px;">La Goccia (Adesso)</h3>
+                    <p style="color: #64748b; margin-bottom: 15px;">Non devi aspettare. Questo momento è sacro. Fai un respiro e riversa la tua intenzione positiva in questa famiglia proprio adesso:</p>
+                    <p style="color: #0891b2; font-weight: 700; font-size: 1.3rem; margin: 15px 0;">"La verità protegge gli innocenti"</p>
+                    <p style="color: #64748b; font-size: 0.95rem;">Visualizza la famiglia insieme, al sicuro, a casa. Invia amore. Guarda come quella singola goccia crea onde.</p>
+                </div>
+                
+                <!-- L'Onda Quotidiana -->
+                <div style="background: white; padding: 25px 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">〰️</div>
+                    <h3 style="color: #1e293b; margin-bottom: 10px;">L'Onda Quotidiana</h3>
+                    <p style="color: #64748b; margin-bottom: 15px;">Ogni volta che vedi <strong style="color: #4f46e5; font-size: 1.2rem;">11:02</strong> su qualsiasi orologio, lascia cadere un'altra intenzione:</p>
+                    <p style="color: #4f46e5; font-weight: 700; font-size: 1.3rem; margin: 15px 0;">"La verità protegge gli innocenti"</p>
+                    <p style="color: #64748b; font-size: 0.95rem;">Ogni volta, un'altra onda si espande. Le tue gocce contano.</p>
+                </div>
+                
+                <!-- Onda Coordinata -->
+                <div style="background: white; padding: 25px 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 3px solid #fbbf24; text-align: center;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🌊</div>
+                    <h3 style="color: #1e293b; margin-bottom: 10px;">L'Onda Coordinata</h3>
+                    <p style="color: #64748b; margin-bottom: 10px;">Nei momenti lunari, migliaia si uniscono insieme per il massimo impatto:</p>
+                    <div style="background: #fef3c7; padding: 12px 20px; border-radius: 10px; display: inline-block; margin: 10px 0;">
+                        <p style="margin: 0; color: #78350f; font-weight: 600;">Prossimo: 18 Gennaio alle 20:51 CET</p>
+                        <p style="margin: 5px 0 0 0; color: #92400e; font-size: 0.9rem;">Luna Nuova in Acquario</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="color: #64748b; font-size: 0.9rem; margin-top: 25px; font-style: italic;">
+                Dopo ogni meditazione lunare, l'orario quotidiano cambia per corrispondere. Questo continua fino alla riunificazione della famiglia. 🏠
+            </p>
+            
+            <!-- Messaggio Instagram -->
+            <div style="background: linear-gradient(135deg, rgba(219, 39, 119, 0.08), rgba(236, 72, 153, 0.08)); padding: 20px 25px; border-radius: 12px; margin-top: 30px; border: 2px solid #ec4899;">
+                <p style="color: #1e293b; margin: 0 0 12px 0; font-size: 1rem;">
+                    💗 <strong>La famiglia sta vedendo il vostro amore</strong> — Sono stati profondamente toccati dal supporto e dall'energia positiva che sta arrivando loro.
+                </p>
+                <p style="color: #64748b; margin: 0 0 15px 0; font-size: 0.95rem;">
+                    Segui il loro viaggio e mostra il tuo supporto:
+                </p>
+                <a href="https://www.instagram.com/worldwide.meditation?igsh=cDdqNGx1b3ptaGZv" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">
+                    <span style="font-size: 1.3rem;">📸</span>
+                    <span>@worldwide.meditation</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -128,11 +238,11 @@
                 <div class="event-info">
                     <div class="info-badge">
                         <span class="icon">📅</span>
-                        <span>3 Gennaio 2026</span>
+                        <span>18 Gennaio 2026</span>
                     </div>
                     <div class="info-badge primary">
                         <span class="icon">⏰</span>
-                        <span>11:02 CET</span>
+                        <span>20:51 CET</span>
                     </div>
                     <div class="info-badge">
                         <span class="icon">🕐</span>
@@ -214,6 +324,82 @@
         </div>
     </section>
 
+    <!-- Sezione Orario -->
+    <section id="time" class="time-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Trova il Tuo Orario</div>
+                <h2 class="section-title">Quando Impostare la Sveglia</h2>
+                <p class="section-subtitle">
+                    Inserisci la tua località per vedere l'ora locale esatta per la meditazione.
+                </p>
+            </div>
+            
+            <div class="time-content">
+                <div class="time-finder">
+                    <h3>🔍 Trova il Tuo Orario Locale</h3>
+                    <div class="time-input-group">
+                        <label for="timezoneInput">Inserisci la tua città o paese:</label>
+                        <input type="text" id="timezoneInput" placeholder="es. Sydney, Londra, New York..." oninput="updateUserTime()">
+                    </div>
+                    
+                    <div class="time-display">
+                        <div class="label">Il tuo orario di meditazione:</div>
+                        <div class="time" id="digitalTime">20:51</div>
+                        <div class="date" id="digitalDate">18 Gennaio 2026</div>
+                        <div class="zone" id="timezoneName">Ora dell'Europa Centrale (CET)</div>
+                    </div>
+                </div>
+                
+                <div class="world-times">
+                    <h3 style="margin-bottom: 20px; font-weight: 700; color: var(--gray-900);">Orari di Riferimento Rapido</h3>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇮🇹</span>
+                            <span>Roma, Italia</span>
+                        </div>
+                        <div class="time">20:51</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇬🇧</span>
+                            <span>Londra, UK</span>
+                        </div>
+                        <div class="time">19:51</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇺🇸</span>
+                            <span>New York, USA</span>
+                        </div>
+                        <div class="time">14:51</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇺🇸</span>
+                            <span>Los Angeles, USA</span>
+                        </div>
+                        <div class="time">11:51</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇦🇺</span>
+                            <span>Sydney, Australia</span>
+                        </div>
+                        <div class="time">7:51 (19 Gen)</div>
+                    </div>
+                    <div class="world-time-item">
+                        <div class="location">
+                            <span class="flag">🇯🇵</span>
+                            <span>Tokyo, Giappone</span>
+                        </div>
+                        <div class="time">5:51 (19 Gen)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How It Works -->
     <section id="how" class="how-section">
         <div class="container">
@@ -230,7 +416,7 @@
                     <div class="step-marker">1</div>
                     <div class="step-content">
                         <h4>Trova il Tuo Orario</h4>
-                        <p>L'evento è alle 11:02 CET (ora italiana). Imposta un promemoria.</p>
+                        <p>L'evento è alle 20:51 CET (ora italiana). Imposta un promemoria.</p>
                         <span class="step-time">Prima dell'evento</span>
                     </div>
                 </div>
@@ -256,7 +442,7 @@
                 <div class="step">
                     <div class="step-marker">4</div>
                     <div class="step-content">
-                        <h4>Unisciti alla Meditazione (11:02 CET)</h4>
+                        <h4>Unisciti alla Meditazione (20:51 CET)</h4>
                         <p><strong>Cosa fare:</strong></p>
                         <ol style="margin-top: 0.5rem; font-size: 0.95rem;">
                             <li>Visualizza la famiglia riunita — madre e figli insieme, al sicuro, felici</li>
@@ -284,14 +470,15 @@
     <!-- The Situation Section -->
     <section id="situation" class="situation-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header collapsible-header" onclick="toggleSection('situation-content')" style="cursor: pointer;">
                 <div class="section-label">La Storia</div>
-                <h2 class="section-title">Perché Ci Riuniamo</h2>
+                <h2 class="section-title" style="display: inline-block;">Perché Ci Riuniamo <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    La storia di una famiglia che rappresenta una verità più grande sui diritti dei genitori in tutto il mondo
+                    La storia di una famiglia che rappresenta una verità più grande sui diritti dei genitori in tutto il mondo. <em style="color: #4f46e5;">Clicca per espandere</em>
                 </p>
             </div>
             
+            <div id="situation-content" class="collapsible-content collapsed" style="max-height: 0;">
             <div class="situation-content">
                 <div class="situation-story">
                     <div class="story-intro">
@@ -335,8 +522,12 @@
                                 <span class="timeline-text">Capodanno senza riunificazione</span>
                             </div>
                             <div class="timeline-item">
-                                <span class="timeline-date">3 Gennaio</span>
-                                <span class="timeline-text">Meditazione mondiale per verità e chiarezza</span>
+                                <span class="timeline-date">3 Gennaio ✅</span>
+                                <span class="timeline-text">Prima meditazione mondiale completata</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">18 Gennaio 🌙</span>
+                                <span class="timeline-text">Seconda meditazione mondiale — Luna Nuova in Acquario</span>
                             </div>
                         </div>
                     </div>
@@ -407,20 +598,74 @@
                     </div>
                 </div>
             </div>
+            </div> <!-- Close collapsible-content -->
+        </div>
+    </section>
+
+    <!-- Sezione Tempistica Cosmica -->
+    <section id="cosmic" class="cosmic-section">
+        <div class="container">
+            <div class="section-header collapsible-header" onclick="toggleSection('cosmic-content')" style="cursor: pointer;">
+                <div class="section-label">Perché Questo Momento</div>
+                <h2 class="section-title" style="display: inline-block;">Il Potere della Tempistica Perfetta <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
+                <p class="section-subtitle">
+                    Non abbiamo scelto questa data a caso. Il 18 gennaio 2026 alle 20:51 CET rappresenta una convergenza unica di significato cosmico, numerico e scientifico. <em style="color: #4f46e5;">Clicca per espandere</em>
+                </p>
+            </div>
+            
+            <div id="cosmic-content" class="collapsible-content collapsed" style="max-height: 0;">
+            <div class="cosmic-intro">
+                <p>Quando allineiamo la nostra intenzione collettiva con i cicli naturali e schemi significativi, la nostra energia focalizzata diventa esponenzialmente più potente. Ecco perché questo momento è importante:</p>
+            </div>
+            
+            <div class="cosmic-grid">
+                <div class="cosmic-card">
+                    <div class="card-icon">🌙</div>
+                    <h3>Luna Nuova in Acquario</h3>
+                    <p>La <strong>Luna Nuova</strong> rappresenta <strong>nuovi inizi, partenze fresche e piantare semi di intenzione</strong>—perfetto per il nuovo capitolo di questa famiglia.</p>
+                    <p>In <strong>Acquario</strong>, enfatizza <strong>libertà, cause umanitarie, rottura di sistemi ingiusti e azione collettiva per il bene comune</strong>.</p>
+                    <p class="cosmic-meaning">Questa fase lunare crea energia potente per liberazione, giustizia e cambiamento guidato dalla comunità—esattamente ciò che stiamo invocando.</p>
+                </div>
+                
+                <div class="cosmic-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Fondamento Scientifico</h3>
+                    <p>Il <strong>Progetto Coscienza Globale di Princeton</strong> ha documentato effetti misurabili della coscienza umana sincronizzata durante eventi mondiali.</p>
+                    <p>La ricerca dell'<strong>Istituto HeartMath</strong> mostra che i campi emotivi coerenti creati dai gruppi influenzano misurabilmente il benessere collettivo.</p>
+                    <p class="cosmic-meaning">Questa non è solo credenza—è scienza documentata. L'intenzione collettiva focalizzata crea effetti misurabili nel mondo.</p>
+                </div>
+                
+                <div class="cosmic-card">
+                    <div class="card-icon">✨</div>
+                    <h3>Il Protocollo di 11 Minuti</h3>
+                    <p><strong>11 minuti</strong> non è arbitrario. In molte tradizioni, 11 è considerato un "numero maestro" che rappresenta intuizione, insight spirituale e illuminazione.</p>
+                    <p><strong>20:51</strong> (8+5+1 = 14, 1+4 = 5) rappresenta <strong>cambiamento, libertà e liberarsi dalle limitazioni</strong>.</p>
+                    <p class="cosmic-meaning">Undici minuti di intenzione focalizzata da migliaia di cuori creano un'onda di coscienza che le autorità non possono ignorare.</p>
+                </div>
+            </div>
+            
+            <div class="cosmic-quote">
+                <blockquote>
+                    "Quando gli esseri umani focalizzano la loro attenzione insieme sulla stessa cosa nello stesso momento, con la stessa intenzione, creano un campo di energia coerente che può influenzare la realtà fisica."
+                </blockquote>
+                <cite>— Basato sulla ricerca dell'Istituto HeartMath</cite>
+            </div>
+            </div> <!-- Close collapsible-content -->
         </div>
     </section>
 
     <!-- Science Section -->
     <section id="science" class="science-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header collapsible-header" onclick="toggleSection('science-content')" style="cursor: pointer;">
                 <div class="section-label">Le Prove</div>
-                <h2 class="section-title">Non è Solo Credenza — È Scienza</h2>
+                <h2 class="section-title" style="display: inline-block;">Non è Solo Credenza — È Scienza <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    Decenni di ricerca peer-reviewed mostrano che la coscienza collettiva crea effetti misurabili
+                    Decenni di ricerca peer-reviewed mostrano che la coscienza collettiva crea effetti misurabili. <em style="color: #4f46e5;">Clicca per espandere</em>
                 </p>
             </div>
             
+            <div id="science-content" class="collapsible-content collapsed" style="max-height: 0;">
             <div class="science-grid">
                 <div class="science-card">
                     <div class="card-icon">🔬</div>
@@ -450,6 +695,7 @@
                     <p class="science-stat">Ricerca vincitrice del Premio Nobel da <strong>molteplici laboratori</strong></p>
                 </div>
             </div>
+            </div> <!-- Close collapsible-content -->
         </div>
     </section>
 
@@ -493,18 +739,57 @@
                 <p>Invita amici e familiari a unirsi. Più persone partecipano, più forte sarà la nostra intenzione collettiva.</p>
                 
                 <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://worldwidemeditation.quantummerlin.com/it/" target="_blank" class="share-btn facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://worldwidemeditation.quantummerlin.com/it" target="_blank" class="share-btn facebook">
                         Condividi su Facebook
                     </a>
-                    <a href="https://twitter.com/intent/tweet?text=Unisciti%20alla%20meditazione%20mondiale%20per%20l%27unit%C3%A0%20familiare%20il%203%20gennaio%202026%20%23FamigliaNelBosco&url=https://worldwidemeditation.quantummerlin.com/it/" target="_blank" class="share-btn twitter">
+                    <a href="https://twitter.com/intent/tweet?text=Unisciti%20alla%20meditazione%20mondiale%20per%20l%27unit%C3%A0%20familiare%20il%2018%20gennaio%202026%20%23FamigliaNelBosco&url=https://worldwidemeditation.quantummerlin.com/it" target="_blank" class="share-btn twitter">
                         Condividi su X
                     </a>
-                    <a href="https://t.me/share/url?url=https://worldwidemeditation.quantummerlin.com/it/&text=Unisciti%20alla%20meditazione%20mondiale%20per%20l%27unit%C3%A0%20familiare" target="_blank" class="share-btn telegram">
+                    <a href="https://t.me/share/url?url=https://worldwidemeditation.quantummerlin.com/it&text=Unisciti%20alla%20meditazione%20mondiale%20per%20l%27unit%C3%A0%20familiare" target="_blank" class="share-btn telegram">
                         Condividi su Telegram
                     </a>
-                    <a href="https://wa.me/?text=Unisciti%20alla%20meditazione%20mondiale%20per%20l%27unit%C3%A0%20familiare%20il%203%20gennaio%202026%20%23FamigliaNelBosco%20https://worldwidemeditation.quantummerlin.com/it/" target="_blank" class="share-btn whatsapp">
+                    <a href="https://wa.me/?text=Unisciti%20alla%20meditazione%20mondiale%20per%20l%27unit%C3%A0%20familiare%20il%2018%20gennaio%202026%20%23FamigliaNelBosco%20https://worldwidemeditation.quantummerlin.com/it" target="_blank" class="share-btn whatsapp">
                         Condividi su WhatsApp
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Aggiornamenti Famiglia -->
+    <section class="family-updates" style="padding: 80px 20px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <div style="color: #4f46e5; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Ultime Notizie</div>
+                <h2 style="font-size: 2.3rem; color: #1e293b; margin-bottom: 15px;">📰 Aggiornamenti Famiglia</h2>
+                <p style="color: #64748b; font-size: 1.1rem;">Ultime notizie e sviluppi nel caso #FamigliaNelBosco</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto 50px;">
+                <!-- Aggiornamento 1 -->
+                <div style="background: white; padding: 30px; border-radius: 15px; margin-bottom: 25px; border-left: 5px solid #4f46e5; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="color: #4f46e5; font-weight: 600; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">5 Gennaio 2026</div>
+                    <h3 style="color: #1e293b; margin-bottom: 10px; font-size: 1.3rem;">Grazie per la Meditazione del 3 Gennaio</h3>
+                    <p style="color: #64748b; line-height: 1.7; margin-bottom: 15px;">Migliaia hanno partecipato alla meditazione della Luna Piena. La famiglia ha sentito il supporto e invia la sua gratitudine. L'energia è stata potente e i bambini si sono sentiti circondati dall'amore di tutto il mondo.</p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/worldwide.meditation?igsh=cDdqNGx1b3ptaGZv" target="_blank" style="display: inline-block; padding: 8px 15px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; text-decoration: none; border-radius: 8px; font-size: 0.9rem; font-weight: 500;">📸 Vedi su Instagram</a>
+                    </div>
+                </div>
+                
+                <!-- Aggiornamento 2 -->
+                <div style="background: white; padding: 30px; border-radius: 15px; margin-bottom: 25px; border-left: 5px solid #4f46e5; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="color: #4f46e5; font-weight: 600; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">3 Gennaio 2026</div>
+                    <h3 style="color: #1e293b; margin-bottom: 10px; font-size: 1.3rem;">Meditazione Luna Piena Completata</h3>
+                    <p style="color: #64748b; line-height: 1.7;">La prima meditazione mondiale si è svolta alle 11:02 CET. Partecipanti da oltre 30 paesi si sono uniti nel mantenere lo spazio per la verità e l'unità familiare.</p>
+                </div>
+            </div>
+            
+            <!-- Segui per Aggiornamenti -->
+            <div style="background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); padding: 40px; border-radius: 15px; text-align: center; border: 2px solid #bae6fd; max-width: 700px; margin: 0 auto;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #1e293b;">Segui la Loro Storia</h3>
+                <p style="color: #64748b; margin-bottom: 20px;">Conosci meglio la famiglia e rimani aggiornato sul loro viaggio</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.instagram.com/worldwide.meditation?igsh=cDdqNGx1b3ptaGZv" target="_blank" style="padding: 12px 25px; border-radius: 10px; text-decoration: none; color: white; font-weight: 600; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">📸 Segui su Instagram</a>
                 </div>
             </div>
         </div>
@@ -523,11 +808,11 @@
                 <div class="final-details">
                     <div class="final-detail">
                         <div class="label">Data</div>
-                        <div class="value">3 Gennaio 2026</div>
+                        <div class="value">18 Gennaio 2026</div>
                     </div>
                     <div class="final-detail">
                         <div class="label">Ora</div>
-                        <div class="value">11:02 CET</div>
+                        <div class="value">20:51 CET</div>
                     </div>
                     <div class="final-detail">
                         <div class="label">Durata</div>
@@ -581,7 +866,7 @@
         }
         
         // Countdown Timer
-        const eventDate = new Date('January 3, 2026 11:02:00 GMT+0100').getTime();
+        const eventDate = new Date('January 18, 2026 20:51:00 GMT+0100').getTime();
         
         function updateCountdown() {
             const now = new Date().getTime();
@@ -592,6 +877,13 @@
                 document.getElementById('hours').textContent = '00';
                 document.getElementById('minutes').textContent = '00';
                 document.getElementById('seconds').textContent = '00';
+                // Banner countdown
+                if (document.getElementById('days-banner')) {
+                    document.getElementById('days-banner').textContent = '00';
+                    document.getElementById('hours-banner').textContent = '00';
+                    document.getElementById('minutes-banner').textContent = '00';
+                    document.getElementById('seconds-banner').textContent = '00';
+                }
                 return;
             }
             
@@ -604,10 +896,161 @@
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // Banner countdown
+            if (document.getElementById('days-banner')) {
+                document.getElementById('days-banner').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours-banner').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes-banner').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds-banner').textContent = seconds.toString().padStart(2, '0');
+            }
         }
         
         updateCountdown();
         setInterval(updateCountdown, 1000);
+        
+        // Scroll to top on page load
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+        
+        // Collapsible Sections Toggle
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId);
+            const header = content.previousElementSibling;
+            
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                content.style.maxHeight = '0';
+                header.classList.add('collapsed');
+            }
+        }
+        
+        // Timezone Database
+        const timezoneData = {
+            // Europe - CET (UTC+1)
+            'italy': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'italia': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'rome': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'roma': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'milan': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'milano': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'germany': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'germania': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'berlin': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'berlino': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'france': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'francia': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'paris': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'parigi': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'spain': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'spagna': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'madrid': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'netherlands': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'amsterdam': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'switzerland': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            'svizzera': { offset: 1, name: 'Ora dell\'Europa Centrale (CET)' },
+            
+            // Europe - GMT/WET (UTC+0)
+            'uk': { offset: 0, name: 'Ora di Greenwich (GMT)' },
+            'london': { offset: 0, name: 'Ora di Greenwich (GMT)' },
+            'londra': { offset: 0, name: 'Ora di Greenwich (GMT)' },
+            'england': { offset: 0, name: 'Ora di Greenwich (GMT)' },
+            'inghilterra': { offset: 0, name: 'Ora di Greenwich (GMT)' },
+            'portugal': { offset: 0, name: 'Ora dell\'Europa Occidentale (WET)' },
+            'portogallo': { offset: 0, name: 'Ora dell\'Europa Occidentale (WET)' },
+            
+            // Europe - EET (UTC+2)
+            'greece': { offset: 2, name: 'Ora dell\'Europa Orientale (EET)' },
+            'grecia': { offset: 2, name: 'Ora dell\'Europa Orientale (EET)' },
+            'athens': { offset: 2, name: 'Ora dell\'Europa Orientale (EET)' },
+            'atene': { offset: 2, name: 'Ora dell\'Europa Orientale (EET)' },
+            'turkey': { offset: 3, name: 'Ora della Turchia (TRT)' },
+            'turchia': { offset: 3, name: 'Ora della Turchia (TRT)' },
+            'russia': { offset: 3, name: 'Ora di Mosca (MSK)' },
+            'moscow': { offset: 3, name: 'Ora di Mosca (MSK)' },
+            'mosca': { offset: 3, name: 'Ora di Mosca (MSK)' },
+            
+            // Americas
+            'new york': { offset: -5, name: 'Ora Orientale (ET)' },
+            'nyc': { offset: -5, name: 'Ora Orientale (ET)' },
+            'miami': { offset: -5, name: 'Ora Orientale (ET)' },
+            'usa east': { offset: -5, name: 'Ora Orientale (ET)' },
+            'chicago': { offset: -6, name: 'Ora Centrale (CT)' },
+            'los angeles': { offset: -8, name: 'Ora del Pacifico (PT)' },
+            'usa west': { offset: -8, name: 'Ora del Pacifico (PT)' },
+            'brazil': { offset: -3, name: 'Ora di Brasilia (BRT)' },
+            'brasile': { offset: -3, name: 'Ora di Brasilia (BRT)' },
+            'argentina': { offset: -3, name: 'Ora dell\'Argentina (ART)' },
+            
+            // Asia
+            'india': { offset: 5.5, name: 'Ora Standard Indiana (IST)', halfHour: true },
+            'japan': { offset: 9, name: 'Ora del Giappone (JST)' },
+            'giappone': { offset: 9, name: 'Ora del Giappone (JST)' },
+            'tokyo': { offset: 9, name: 'Ora del Giappone (JST)' },
+            'china': { offset: 8, name: 'Ora della Cina (CST)' },
+            'cina': { offset: 8, name: 'Ora della Cina (CST)' },
+            'dubai': { offset: 4, name: 'Ora del Golfo (GST)' },
+            
+            // Oceania
+            'australia': { offset: 11, name: 'Ora Orientale Australiana (AEDT)' },
+            'sydney': { offset: 11, name: 'Ora Orientale Australiana (AEDT)' },
+            'new zealand': { offset: 13, name: 'Ora della Nuova Zelanda (NZDT)' }
+        };
+        
+        function updateUserTime() {
+            const input = document.getElementById('timezoneInput').value.toLowerCase().trim();
+            
+            if (!input) {
+                document.getElementById('digitalTime').textContent = '20:51';
+                document.getElementById('digitalDate').textContent = '18 Gennaio 2026';
+                document.getElementById('timezoneName').textContent = 'Ora dell\'Europa Centrale (CET)';
+                return;
+            }
+            
+            let found = null;
+            for (const [key, data] of Object.entries(timezoneData)) {
+                if (key.includes(input) || input.includes(key)) {
+                    found = data;
+                    break;
+                }
+            }
+            
+            if (found) {
+                const utcHour = 19; // 20:51 CET = 19:51 UTC
+                const baseMinute = 51;
+                
+                let localHour = utcHour + found.offset;
+                let localMinute = baseMinute;
+                let dayOffset = 0;
+                
+                if (found.halfHour) {
+                    localHour = Math.floor(localHour) + 1;
+                    localMinute = 21;
+                }
+                
+                if (localHour >= 24) {
+                    localHour -= 24;
+                    dayOffset = 1;
+                } else if (localHour < 0) {
+                    localHour += 24;
+                    dayOffset = -1;
+                }
+                
+                let dateStr = '18 Gennaio 2026';
+                if (dayOffset === 1) dateStr = '19 Gennaio 2026';
+                if (dayOffset === -1) dateStr = '17 Gennaio 2026';
+                
+                const minuteStr = localMinute.toString().padStart(2, '0');
+                document.getElementById('digitalTime').textContent = `${localHour}:${minuteStr}`;
+                document.getElementById('digitalDate').textContent = dateStr;
+                document.getElementById('timezoneName').textContent = found.name;
+            }
+        }
         
         // Mobile Menu
         function toggleMobileMenu() {

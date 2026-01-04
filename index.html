@@ -36,9 +36,9 @@
     <style>
         .lang-selector {
             position: fixed;
-            top: 80px;
+            top: 10px;
             right: 20px;
-            z-index: 1000;
+            z-index: 10000;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -54,10 +54,32 @@
         }
         @media (max-width: 768px) {
             .lang-selector {
-                top: auto;
-                bottom: 20px;
-                right: 20px;
+                top: 10px;
+                right: 10px;
             }
+        }
+        
+        /* Collapsible sections */
+        .collapsible-header {
+            cursor: pointer;
+        }
+        .collapsible-header:hover {
+            opacity: 0.9;
+        }
+        .collapsible-header .toggle-icon {
+            transition: transform 0.3s ease;
+            display: inline;
+            margin-left: 8px;
+        }
+        .collapsible-header.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+        .collapsible-content {
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .collapsible-content.collapsed {
+            max-height: 0 !important;
         }
     </style>
 </head>
@@ -465,14 +487,15 @@
     <!-- The Situation Section -->
     <section id="situation" class="situation-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header collapsible-header" onclick="toggleSection('situation-content')" style="cursor: pointer;">
                 <div class="section-label">The Story</div>
-                <h2 class="section-title">Why We're Gathering</h2>
+                <h2 class="section-title" style="display: inline-block;">Why We're Gathering <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    A family's story that represents a bigger truth about parental rights worldwide
+                    A family's story that represents a bigger truth about parental rights worldwide. <em style="color: #4f46e5;">Click to expand</em>
                 </p>
             </div>
             
+            <div id="situation-content" class="collapsible-content collapsed" style="max-height: 0;">
             <div class="situation-content">
                 <div class="situation-story">
                     <div class="story-intro">
@@ -592,20 +615,22 @@
                     </div>
                 </div>
             </div>
+            </div> <!-- Close collapsible-content -->
         </div>
     </section>
 
     <!-- Cosmic Timing Section -->
     <section id="cosmic" class="cosmic-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header collapsible-header" onclick="toggleSection('cosmic-content')" style="cursor: pointer;">
                 <div class="section-label">Why This Moment</div>
-                <h2 class="section-title">The Power of Perfect Timing</h2>
+                <h2 class="section-title" style="display: inline-block;">The Power of Perfect Timing <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    We didn't choose this date randomly. January 18, 2026 at 8:51 PM CET represents a unique convergence of cosmic, numerical, and scientific significance.
+                    We didn't choose this date randomly. January 18, 2026 at 8:51 PM CET represents a unique convergence of cosmic, numerical, and scientific significance. <em style="color: #4f46e5;">Click to expand</em>
                 </p>
             </div>
             
+            <div id="cosmic-content" class="collapsible-content collapsed" style="max-height: 0;">
             <div class="cosmic-intro">
                 <p>When we align our collective intention with natural cycles and meaningful patterns, our focused energy becomes exponentially more powerful. Here's why this moment matters:</p>
             </div>
@@ -642,20 +667,22 @@
                 </blockquote>
                 <cite>— Based on research from the Institute of HeartMath</cite>
             </div>
+            </div> <!-- Close collapsible-content -->
         </div>
     </section>
 
     <!-- Science Section -->
     <section id="science" class="science-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header collapsible-header" onclick="toggleSection('science-content')" style="cursor: pointer;">
                 <div class="section-label">The Evidence</div>
-                <h2 class="section-title">This Isn't Just Belief — It's Science</h2>
+                <h2 class="section-title" style="display: inline-block;">This Isn't Just Belief — It's Science <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    Decades of peer-reviewed research show that collective consciousness creates measurable effects
+                    Decades of peer-reviewed research show that collective consciousness creates measurable effects. <em style="color: #4f46e5;">Click to expand</em>
                 </p>
             </div>
             
+            <div id="science-content" class="collapsible-content collapsed" style="max-height: 0;">
             <div class="science-grid">
                 <div class="science-card">
                     <div class="card-icon">🔬</div>
@@ -690,6 +717,7 @@
                 <p>Want to explore the full scientific foundation?</p>
                 <a href="science.html" class="btn btn-secondary">Read the Complete Research →</a>
             </div>
+            </div> <!-- Close collapsible-content -->
         </div>
     </section>
 
@@ -898,6 +926,22 @@
         
         updateCountdown();
         setInterval(updateCountdown, 1000);
+        
+        // Collapsible Sections Toggle
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId);
+            const header = content.previousElementSibling;
+            
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                content.style.maxHeight = '0';
+                header.classList.add('collapsed');
+            }
+        }
         
         // Timezone Database
         // Complete timezone database with UTC offsets
