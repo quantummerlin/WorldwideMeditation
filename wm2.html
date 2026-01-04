@@ -180,17 +180,14 @@
     /* Collapsible sections */
     .collapsible-header {
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
     }
     .collapsible-header:hover {
-        opacity: 0.8;
+        opacity: 0.9;
     }
     .collapsible-header .toggle-icon {
         transition: transform 0.3s ease;
-        font-size: 0.8rem;
+        display: inline;
+        margin-left: 8px;
     }
     .collapsible-header.collapsed .toggle-icon {
         transform: rotate(-90deg);
@@ -478,11 +475,11 @@
     <!-- The Situation Section -->
     <section id="situation" class="situation-section">
         <div class="container">
-            <div class="section-header collapsible-header" onclick="toggleSection('situation-content')">
+            <div class="section-header collapsible-header" onclick="toggleSection('situation-content')" style="cursor: pointer;">
                 <div class="section-label">The Story</div>
-                <h2 class="section-title">Why We're Gathering <span class="toggle-icon">▼</span></h2>
+                <h2 class="section-title" style="display: inline-block;">Why We're Gathering <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    A family's story that represents a bigger truth about parental rights worldwide. <em style="color: #4f46e5;">Click to read more</em>
+                    A family's story that represents a bigger truth about parental rights worldwide. <em style="color: #4f46e5;">Click to expand</em>
                 </p>
             </div>
             
@@ -613,11 +610,11 @@
     <!-- Cosmic Timing Section -->
     <section id="cosmic" class="cosmic-section">
         <div class="container">
-            <div class="section-header collapsible-header" onclick="toggleSection('cosmic-content')">
+            <div class="section-header collapsible-header" onclick="toggleSection('cosmic-content')" style="cursor: pointer;">
                 <div class="section-label">Why This Moment</div>
-                <h2 class="section-title">The Power of Perfect Timing <span class="toggle-icon">▼</span></h2>
+                <h2 class="section-title" style="display: inline-block;">The Power of Perfect Timing <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    We didn't choose this date randomly. January 18, 2026 at 8:51 PM CET represents a unique convergence of cosmic, numerical, and scientific significance. <em style="color: #4f46e5;">Click to read more</em>
+                    We didn't choose this date randomly. January 18, 2026 at 8:51 PM CET represents a unique convergence of cosmic, numerical, and scientific significance. <em style="color: #4f46e5;">Click to expand</em>
                 </p>
             </div>
             
@@ -665,11 +662,11 @@
     <!-- Science Section -->
     <section id="science" class="science-section">
         <div class="container">
-            <div class="section-header collapsible-header" onclick="toggleSection('science-content')">
+            <div class="section-header collapsible-header" onclick="toggleSection('science-content')" style="cursor: pointer;">
                 <div class="section-label">The Evidence</div>
-                <h2 class="section-title">This Isn't Just Belief — It's Science <span class="toggle-icon">▼</span></h2>
+                <h2 class="section-title" style="display: inline-block;">This Isn't Just Belief — It's Science <span class="toggle-icon" style="display: inline; margin-left: 8px;">▼</span></h2>
                 <p class="section-subtitle">
-                    Decades of peer-reviewed research show that collective consciousness creates measurable effects. <em style="color: #4f46e5;">Click to read more</em>
+                    Decades of peer-reviewed research show that collective consciousness creates measurable effects. <em style="color: #4f46e5;">Click to expand</em>
                 </p>
             </div>
             
