@@ -102,12 +102,35 @@
 
     <main id="main-content">
     
-    <!-- Thank You Banner -->
-    <section class="thank-you-banner" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 20px; text-align: center; border-bottom: 3px solid #10b981;">
+    <!-- Thank You Banner with Countdown -->
+    <section class="thank-you-banner" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 30px 20px; text-align: center; border-bottom: 3px solid #10b981; margin-top: 70px;">
         <div class="container">
             <h2 style="color: #065f46; margin: 0 0 10px 0; font-size: 1.5rem;">🙏 Thank You for January 3rd!</h2>
             <p style="color: #047857; margin: 0; font-size: 1rem;">The Full Moon in Cancer meditation was powerful. Thousands worldwide held space for truth and family unity.</p>
             <p style="color: #047857; margin: 8px 0 0 0; font-weight: 600;">The work continues. Next: New Moon in Aquarius, January 18 at 8:51 PM CET</p>
+            
+            <!-- Countdown Timer -->
+            <div style="margin-top: 25px; padding-top: 25px; border-top: 2px solid rgba(16, 185, 129, 0.3);">
+                <p style="color: #065f46; font-weight: 600; margin-bottom: 15px; font-size: 1.1rem;">⏱️ Next Meditation Begins In:</p>
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <div style="background: white; padding: 15px 20px; border-radius: 12px; min-width: 80px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div id="days-banner" style="font-size: 2rem; font-weight: 700; color: #065f46;">00</div>
+                        <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Days</div>
+                    </div>
+                    <div style="background: white; padding: 15px 20px; border-radius: 12px; min-width: 80px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div id="hours-banner" style="font-size: 2rem; font-weight: 700; color: #065f46;">00</div>
+                        <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Hours</div>
+                    </div>
+                    <div style="background: white; padding: 15px 20px; border-radius: 12px; min-width: 80px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div id="minutes-banner" style="font-size: 2rem; font-weight: 700; color: #065f46;">00</div>
+                        <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Minutes</div>
+                    </div>
+                    <div style="background: white; padding: 15px 20px; border-radius: 12px; min-width: 80px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div id="seconds-banner" style="font-size: 2rem; font-weight: 700; color: #065f46;">00</div>
+                        <div style="font-size: 0.8rem; color: #047857; text-transform: uppercase;">Seconds</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -846,6 +869,10 @@
                 document.getElementById('hours').textContent = '00';
                 document.getElementById('minutes').textContent = '00';
                 document.getElementById('seconds').textContent = '00';
+                document.getElementById('days-banner').textContent = '00';
+                document.getElementById('hours-banner').textContent = '00';
+                document.getElementById('minutes-banner').textContent = '00';
+                document.getElementById('seconds-banner').textContent = '00';
                 return;
             }
             
@@ -854,10 +881,17 @@
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
+            // Update hero countdown
             document.getElementById('days').textContent = days.toString().padStart(2, '0');
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // Update banner countdown
+            document.getElementById('days-banner').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours-banner').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes-banner').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds-banner').textContent = seconds.toString().padStart(2, '0');
         }
         
         updateCountdown();
