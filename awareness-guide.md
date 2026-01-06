@@ -57,7 +57,7 @@ Hey [Name],
 
 I need your help with something that's really important to me.
 
-A family in Italy had their 3 children taken away - not for abuse or neglect, but for choosing to live close to nature, homeschool, and limit screen time. They've been in a facility for almost a month, including Christmas and New Year. The mother can visit but can't stay with them.
+A family in Italy had their 3 children taken away - not for abuse or neglect, but for choosing to live close to nature, use the Steiner method of schooling, and limit screen time. They've been in a facility for almost a month, including Christmas and New Year. The mother can visit but can't stay with them.
 
 Meanwhile, alcoholics and abusive parents keep their children.
 
@@ -78,7 +78,7 @@ Hey [Name],
 
 As a parent, this hit me hard.
 
-A family in Italy had their kids removed for homeschooling and living in nature. Not abuse. Just DIFFERENT.
+A family in Italy had their kids removed for using the Steiner method of schooling and living in nature. Not abuse. Just DIFFERENT.
 
 The mother can visit but can't stay with them. Imagine if it was your kids.
 
@@ -216,7 +216,7 @@ Event-specific: Create unique hashtag for your situation
 
 #### Family-Focused Groups
 - Parenting groups
-- Homeschooling communities
+- Steiner/Waldorf education communities
 - Natural living families
 - Attachment parenting groups
 - Alternative education advocates
