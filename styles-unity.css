@@ -1937,6 +1937,177 @@ footer {
     }
 }
 
+/* ═══ TESTIMONIALS WALL OF SUPPORT - AUTO-SCROLLING ═══ */
+.testimonials-section {
+    background: linear-gradient(135deg, #fdf4ff 0%, #f5f3ff 50%, #eff6ff 100%);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ec4899, #8b5cf6, #3b82f6, #10b981);
+}
+
+/* Auto-scrolling container */
+.testimonial-scroll-container {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.testimonial-scroll-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollTestimonials 120s linear infinite;
+    width: max-content;
+}
+
+.testimonial-scroll-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollTestimonials {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause state */
+.testimonial-scroll-track.paused {
+    animation-play-state: paused;
+}
+
+.testimonial-card {
+    flex-shrink: 0;
+    width: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: white;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInCard 0.6s ease forwards;
+}
+
+.testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+.testimonial-card:nth-child(2) { animation-delay: 0.15s; }
+.testimonial-card:nth-child(3) { animation-delay: 0.2s; }
+.testimonial-card:nth-child(4) { animation-delay: 0.25s; }
+.testimonial-card:nth-child(5) { animation-delay: 0.3s; }
+.testimonial-card:nth-child(6) { animation-delay: 0.35s; }
+.testimonial-card:nth-child(7) { animation-delay: 0.4s; }
+.testimonial-card:nth-child(n+8) { animation-delay: 0.5s; }
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 3px;
+    background: linear-gradient(135deg, #ec4899, #8b5cf6, #3b82f6);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.35);
+    z-index: 10;
+}
+
+.testimonial-card:hover::before {
+    opacity: 1;
+}
+
+.testimonial-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.testimonial-card:hover img {
+    transform: scale(1.02);
+}
+
+/* Floating hearts decoration */
+.testimonials-section::after {
+    content: '💗';
+    position: absolute;
+    font-size: 3rem;
+    opacity: 0.08;
+    animation: floatHeart 25s infinite ease-in-out;
+    top: 15%;
+    left: 3%;
+    pointer-events: none;
+}
+
+@keyframes floatHeart {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.08; }
+    25% { transform: translateY(-40px) rotate(10deg); opacity: 0.15; }
+    50% { transform: translateY(-15px) rotate(-5deg); opacity: 0.1; }
+    75% { transform: translateY(-50px) rotate(15deg); opacity: 0.15; }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 50px 15px;
+    }
+    
+    .testimonial-card {
+        width: 280px;
+    }
+    
+    .testimonial-scroll-track {
+        gap: 15px;
+        animation-duration: 80s;
+    }
+    
+    .testimonial-card:hover {
+        transform: translateY(-6px) scale(1.02);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .testimonial-card {
+        width: 320px;
+    }
+}
+
+/* Legacy grid fallback - hidden but keeps old CSS working */
+.testimonial-wall {
+    display: none;
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     *,
@@ -1962,3 +2133,4 @@ footer {
         color: black;
     }
 }
+
