@@ -675,39 +675,24 @@
                 </div>
 
                 <div class="headphone-warning">
-                    <span class="warning-icon">🎧</span>
-                    <strong>HEADPHONES RECOMMENDED</strong> — For the full binaural effect. Speakers work too!
+                    <span class="warning-icon">🔊</span>
+                    <strong>PURE 7.83 Hz SINE WAVE</strong> — Earth's exact frequency. Use speakers or headphones.
                 </div>
 
                 <div class="frequency-instructions">
                     <h4>How to Use</h4>
                     <ol>
-                        <li><strong>Press play</strong> — Works with headphones or speakers</li>
+                        <li><strong>Press play</strong> — A pure 7.83 Hz tone will generate</li>
                         <li><strong>Start 5-10 minutes before</strong> the meditation (8:41 PM CET)</li>
-                        <li><strong>Adjust volume</strong> to a comfortable, gentle level</li>
+                        <li><strong>Adjust volume</strong> to a comfortable level</li>
                         <li><strong>Let it play</strong> throughout your meditation</li>
-                        <li><strong>Relax</strong> — The frequency fills your space with Earth's resonance</li>
+                        <li><strong>Relax</strong> — You're immersed in Earth's resonance</li>
                     </ol>
                 </div>
 
-                <div class="binaural-explanation">
-                    <h4>How It Works</h4>
-                    <p>Since 7.83 Hz is below human hearing range (we hear 20-20,000 Hz), we use <strong>binaural beat technology</strong>. With headphones, your brain perceives the difference. With speakers, the frequencies blend in the room — either way, you're immersed in Earth's frequency.</p>
-                    <div class="binaural-diagram">
-                        <div class="ear-frequency">
-                            <span class="ear-label">Left Ear</span>
-                            <span class="ear-hz">200 Hz</span>
-                        </div>
-                        <div class="brain-frequency">
-                            <span class="brain-label">Brain Perceives</span>
-                            <span class="brain-hz">7.83 Hz</span>
-                        </div>
-                        <div class="ear-frequency">
-                            <span class="ear-label">Right Ear</span>
-                            <span class="ear-hz">207.83 Hz</span>
-                        </div>
-                    </div>
-                    <p class="binaural-note">Your brain naturally perceives the <em>difference</em> between the two frequencies, entraining to Earth's resonance.</p>
+                <div class="frequency-explanation">
+                    <h4>About This Frequency</h4>
+                    <p>This generator produces a <strong>pure 7.83 Hz sine wave</strong> — the exact Schumann Resonance frequency. At 7.83 Hz, this is below the normal range of human hearing (20-20,000 Hz), so you may not "hear" it in the traditional sense, but your body and brain can still resonate with it. With good speakers or subwoofers, you may feel a gentle pulsing sensation. The frequency fills your space with Earth's natural electromagnetic rhythm.</p>
                 </div>
             </div>
 
@@ -907,14 +892,14 @@
             margin-right: 8px;
         }
 
-        .frequency-instructions, .binaural-explanation {
+        .frequency-instructions, .frequency-explanation {
             background: rgba(255, 255, 255, 0.03);
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 20px;
         }
 
-        .frequency-instructions h4, .binaural-explanation h4 {
+        .frequency-instructions h4, .frequency-explanation h4 {
             margin-bottom: 15px;
             font-size: 1.1rem;
             color: #60a5fa;
@@ -929,59 +914,9 @@
             line-height: 1.6;
         }
 
-        .binaural-diagram {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 25px 0;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .ear-frequency, .brain-frequency {
-            text-align: center;
-            padding: 20px;
-            border-radius: 12px;
-            flex: 1;
-            min-width: 120px;
-        }
-
-        .ear-frequency {
-            background: rgba(96, 165, 250, 0.15);
-            border: 1px solid rgba(96, 165, 250, 0.3);
-        }
-
-        .brain-frequency {
-            background: rgba(167, 139, 250, 0.2);
-            border: 2px solid rgba(167, 139, 250, 0.5);
-        }
-
-        .ear-label, .brain-label {
-            display: block;
-            font-size: 0.8rem;
-            opacity: 0.7;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .ear-hz {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #60a5fa;
-        }
-
-        .brain-hz {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: #a78bfa;
-        }
-
-        .binaural-note {
-            text-align: center;
-            font-style: italic;
-            opacity: 0.8;
-            font-size: 0.95rem;
+        .frequency-explanation p {
+            line-height: 1.7;
+            opacity: 0.9;
         }
 
         .frequency-science {
@@ -1040,22 +975,17 @@
                 padding: 15px 30px;
                 font-size: 1.1rem;
             }
-            .binaural-diagram {
-                flex-direction: column;
-            }
         }
     </style>
 
     <script>
-        // Schumann Resonance Binaural Beat Generator
+        // Schumann Resonance Pure Sine Wave Generator (7.83 Hz Mono)
         let audioContext = null;
-        let oscillatorLeft = null;
-        let oscillatorRight = null;
+        let oscillator = null;
         let gainNode = null;
         let isPlaying = false;
 
-        const BASE_FREQUENCY = 200; // Base frequency in Hz
-        const SCHUMANN_FREQUENCY = 7.83; // Schumann resonance
+        const SCHUMANN_FREQUENCY = 7.83; // Pure Schumann resonance
 
         function initAudio() {
             if (!audioContext) {
@@ -1079,42 +1009,19 @@
                 // Create gain node for volume control
                 gainNode = audioContext.createGain();
                 const volume = document.getElementById('volumeSlider').value / 100;
-                gainNode.gain.value = volume * 0.5; // Max 50% to prevent too loud
+                gainNode.gain.value = volume; // Full range for sub-bass
                 
-                // Create merger for stereo output
-                const merger = audioContext.createChannelMerger(2);
+                // Create single oscillator for pure 7.83 Hz sine wave
+                oscillator = audioContext.createOscillator();
+                oscillator.type = 'sine';
+                oscillator.frequency.value = SCHUMANN_FREQUENCY;
                 
-                // Left oscillator (base frequency)
-                oscillatorLeft = audioContext.createOscillator();
-                oscillatorLeft.type = 'sine';
-                oscillatorLeft.frequency.value = BASE_FREQUENCY;
-                
-                // Right oscillator (base + Schumann)
-                oscillatorRight = audioContext.createOscillator();
-                oscillatorRight.type = 'sine';
-                oscillatorRight.frequency.value = BASE_FREQUENCY + SCHUMANN_FREQUENCY;
-                
-                // Create separate gain nodes for each channel
-                const gainLeft = audioContext.createGain();
-                const gainRight = audioContext.createGain();
-                gainLeft.gain.value = 1;
-                gainRight.gain.value = 1;
-                
-                // Connect left oscillator to left channel
-                oscillatorLeft.connect(gainLeft);
-                gainLeft.connect(merger, 0, 0);
-                
-                // Connect right oscillator to right channel
-                oscillatorRight.connect(gainRight);
-                gainRight.connect(merger, 0, 1);
-                
-                // Connect merger to main gain and output
-                merger.connect(gainNode);
+                // Connect oscillator to gain and output
+                oscillator.connect(gainNode);
                 gainNode.connect(audioContext.destination);
                 
-                // Start oscillators
-                oscillatorLeft.start();
-                oscillatorRight.start();
+                // Start oscillator
+                oscillator.start();
                 
                 isPlaying = true;
                 updateUI(true);
@@ -1126,15 +1033,10 @@
         }
 
         function stopFrequency() {
-            if (oscillatorLeft) {
-                oscillatorLeft.stop();
-                oscillatorLeft.disconnect();
-                oscillatorLeft = null;
-            }
-            if (oscillatorRight) {
-                oscillatorRight.stop();
-                oscillatorRight.disconnect();
-                oscillatorRight = null;
+            if (oscillator) {
+                oscillator.stop();
+                oscillator.disconnect();
+                oscillator = null;
             }
             if (gainNode) {
                 gainNode.disconnect();
@@ -1148,7 +1050,7 @@
         function setVolume(value) {
             document.getElementById('volumeValue').textContent = value + '%';
             if (gainNode) {
-                gainNode.gain.value = (value / 100) * 0.5;
+                gainNode.gain.value = value / 100;
             }
         }
 
