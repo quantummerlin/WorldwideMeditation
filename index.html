@@ -649,17 +649,44 @@
                     Worldwide Meditation for <span class="highlight">Family Unity</span>
                 </h1>
                 
+                <!-- MAIN INTENTION - Front & Center -->
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 3px solid #f59e0b; border-radius: 16px; padding: 30px; margin: 25px auto; max-width: 700px; box-shadow: 0 8px 30px rgba(245, 158, 11, 0.3);">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">🎯</div>
+                        <h2 style="color: #92400e; font-size: 1.4rem; margin: 0 0 15px 0; text-transform: uppercase; letter-spacing: 0.1em;">Our Collective Intention</h2>
+                        <p style="color: #78350f; font-size: 2rem; font-weight: 800; margin: 0 0 20px 0; line-height: 1.3;">
+                            Children Home Before<br>Nathan's Birthday
+                        </p>
+                        <div style="background: white; border-radius: 12px; padding: 15px 25px; display: inline-block; margin-bottom: 15px;">
+                            <p style="color: #92400e; font-size: 1.5rem; font-weight: 700; margin: 0;">📅 February 24th, 2026</p>
+                        </div>
+                        <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="days-intention" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">22</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Days</div>
+                            </div>
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="hours-intention" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">00</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Hours</div>
+                            </div>
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="mins-intention" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">00</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Minutes</div>
+                            </div>
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="secs-intention" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">00</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Seconds</div>
+                            </div>
+                        </div>
+                        <p style="color: #92400e; font-size: 0.95rem; margin-top: 15px; font-style: italic;">
+                            Focus your intention: Utopia, Galorian & Blue Bell reunited with their parents
+                        </p>
+                    </div>
+                </div>
+                
                 <p class="hero-subtitle">
                     Thousands of people across the globe uniting in peace, love, and focused intention to support families and truth.
                 </p>
-                
-                <!-- Intention Statement -->
-                <div style="background: linear-gradient(135deg, #fdf4ff, #fae8ff); border: 2px solid #d946ef; border-radius: 12px; padding: 20px; margin: 20px auto; max-width: 600px;">
-                    <p style="color: #86198f; font-size: 1.1rem; font-weight: 600; margin: 0; text-align: center;">
-                        🎯 <strong>Our Collective Intention:</strong><br>
-                        <span style="font-size: 1.3rem;">Children home before Nathan's birthday — February 24th</span>
-                    </p>
-                </div>
                 
                 <!-- Event Info -->
                 <div class="event-info">
@@ -1838,8 +1865,37 @@
     </footer>
 
     <script>
-        // Countdown Timer
+        // Countdown Timer for Meditation
         const eventDate = new Date('February 1, 2026 23:09:00 GMT+0100').getTime();
+        
+        // Countdown Timer for Nathan's Birthday Intention
+        const nathanBirthday = new Date('February 24, 2026 00:00:00 GMT+0100').getTime();
+        
+        function updateIntentionCountdown() {
+            const now = new Date().getTime();
+            const distance = nathanBirthday - now;
+            
+            if (distance < 0) {
+                document.getElementById('days-intention').textContent = '00';
+                document.getElementById('hours-intention').textContent = '00';
+                document.getElementById('mins-intention').textContent = '00';
+                document.getElementById('secs-intention').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const secs = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days-intention').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours-intention').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('mins-intention').textContent = mins.toString().padStart(2, '0');
+            document.getElementById('secs-intention').textContent = secs.toString().padStart(2, '0');
+        }
+        
+        updateIntentionCountdown();
+        setInterval(updateIntentionCountdown, 1000);
         
         function updateCountdown() {
             const now = new Date().getTime();

@@ -529,12 +529,42 @@
                 <h1 class="hero-title">Weltweite Meditation für <span class="highlight">Familieneinheit</span></h1>
                 <p class="hero-subtitle">Tausende Menschen auf der ganzen Welt vereinen sich in Frieden, Liebe und fokussierter Absicht, um Familien und Wahrheit zu unterstützen.</p>
                 
-                <!-- Intention Statement -->
-                <div style="background: linear-gradient(135deg, #fdf4ff, #fae8ff); border: 2px solid #d946ef; border-radius: 12px; padding: 20px; margin: 20px auto; max-width: 600px;">
-                    <p style="color: #86198f; font-size: 1.1rem; font-weight: 600; margin: 0; text-align: center;">
-                        🎯 <strong>Unsere kollektive Absicht:</strong><br>
-                        <span style="font-size: 1.3rem;">Kinder zu Hause vor Nathans Geburtstag — 24. Februar</span>
-                    </p>
+                <!-- Intention Statement - PROMINENT -->
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 3px solid #f59e0b; border-radius: 16px; padding: 30px; margin: 25px auto; max-width: 700px; box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">🎯</div>
+                        <h2 style="color: #92400e; font-size: 1.8rem; margin: 0 0 15px 0; font-weight: 700;">Unsere Kollektive Absicht</h2>
+                        <p style="color: #b45309; font-size: 1.5rem; font-weight: 700; margin: 0 0 10px 0;">
+                            Kinder zu Hause vor Nathans Geburtstag
+                        </p>
+                        <div style="background: white; display: inline-block; padding: 10px 25px; border-radius: 10px; margin: 10px 0;">
+                            <span style="color: #d97706; font-size: 1.3rem; font-weight: 600;">📅 24. Februar 2026</span>
+                        </div>
+                        
+                        <!-- Countdown to Nathan's Birthday -->
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 400px; margin: 20px auto 15px;">
+                            <div style="background: white; padding: 12px 8px; border-radius: 10px; text-align: center;">
+                                <div id="days-intention-de" style="font-size: 1.8rem; font-weight: 700; color: #d97706;">--</div>
+                                <div style="font-size: 0.7rem; color: #92400e; text-transform: uppercase;">Tage</div>
+                            </div>
+                            <div style="background: white; padding: 12px 8px; border-radius: 10px; text-align: center;">
+                                <div id="hours-intention-de" style="font-size: 1.8rem; font-weight: 700; color: #d97706;">--</div>
+                                <div style="font-size: 0.7rem; color: #92400e; text-transform: uppercase;">Stunden</div>
+                            </div>
+                            <div style="background: white; padding: 12px 8px; border-radius: 10px; text-align: center;">
+                                <div id="mins-intention-de" style="font-size: 1.8rem; font-weight: 700; color: #d97706;">--</div>
+                                <div style="font-size: 0.7rem; color: #92400e; text-transform: uppercase;">Minuten</div>
+                            </div>
+                            <div style="background: white; padding: 12px 8px; border-radius: 10px; text-align: center;">
+                                <div id="secs-intention-de" style="font-size: 1.8rem; font-weight: 700; color: #d97706;">--</div>
+                                <div style="font-size: 0.7rem; color: #92400e; text-transform: uppercase;">Sekunden</div>
+                            </div>
+                        </div>
+                        
+                        <p style="color: #92400e; font-size: 0.95rem; margin: 0; font-style: italic;">
+                            Fokussiere deine Absicht: Utopia, Galorian & Blue Bell mit ihren Eltern vereint
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="event-info">
@@ -844,6 +874,33 @@
         }
         updateCountdown();
         setInterval(updateCountdown, 1000);
+        
+        // Nathan's Birthday Intention Countdown
+        const nathanBirthday = new Date('February 24, 2026 00:00:00 GMT+0100').getTime();
+        function updateIntentionCountdown() {
+            const now = new Date().getTime();
+            const distance = nathanBirthday - now;
+            
+            if (distance < 0) {
+                document.getElementById('days-intention-de').textContent = '00';
+                document.getElementById('hours-intention-de').textContent = '00';
+                document.getElementById('mins-intention-de').textContent = '00';
+                document.getElementById('secs-intention-de').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const secs = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days-intention-de').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours-intention-de').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('mins-intention-de').textContent = mins.toString().padStart(2, '0');
+            document.getElementById('secs-intention-de').textContent = secs.toString().padStart(2, '0');
+        }
+        updateIntentionCountdown();
+        setInterval(updateIntentionCountdown, 1000);
         
         // Collapsible sections
         function toggleCollapsible(header) {

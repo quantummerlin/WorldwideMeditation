@@ -648,17 +648,44 @@
                     Meditazione Mondiale per <span class="highlight">l'Unità Familiare</span>
                 </h1>
                 
+                <!-- MAIN INTENTION - Front & Center -->
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 3px solid #f59e0b; border-radius: 16px; padding: 30px; margin: 25px auto; max-width: 700px; box-shadow: 0 8px 30px rgba(245, 158, 11, 0.3);">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">🎯</div>
+                        <h2 style="color: #92400e; font-size: 1.4rem; margin: 0 0 15px 0; text-transform: uppercase; letter-spacing: 0.1em;">La Nostra Intenzione Collettiva</h2>
+                        <p style="color: #78350f; font-size: 2rem; font-weight: 800; margin: 0 0 20px 0; line-height: 1.3;">
+                            Bambini a Casa Prima del<br>Compleanno di Nathan
+                        </p>
+                        <div style="background: white; border-radius: 12px; padding: 15px 25px; display: inline-block; margin-bottom: 15px;">
+                            <p style="color: #92400e; font-size: 1.5rem; font-weight: 700; margin: 0;">📅 24 Febbraio 2026</p>
+                        </div>
+                        <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="days-intention-it" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">--</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Giorni</div>
+                            </div>
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="hours-intention-it" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">--</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Ore</div>
+                            </div>
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="mins-intention-it" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">--</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Minuti</div>
+                            </div>
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; min-width: 70px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <div id="secs-intention-it" style="font-size: 1.8rem; font-weight: 700; color: #92400e;">--</div>
+                                <div style="font-size: 0.7rem; color: #78350f; text-transform: uppercase;">Secondi</div>
+                            </div>
+                        </div>
+                        <p style="color: #92400e; font-size: 0.95rem; margin-top: 15px; font-style: italic;">
+                            Focalizza la tua intenzione: Utopia, Galorian e Blue Bell riuniti con i loro genitori
+                        </p>
+                    </div>
+                </div>
+                
                 <p class="hero-subtitle">
                     Migliaia di persone in tutto il mondo si uniscono in pace, amore e intenzione focalizzata per sostenere le famiglie e la verità.
                 </p>
-                
-                <!-- Intention Statement -->
-                <div style="background: linear-gradient(135deg, #fdf4ff, #fae8ff); border: 2px solid #d946ef; border-radius: 12px; padding: 20px; margin: 20px auto; max-width: 600px;">
-                    <p style="color: #86198f; font-size: 1.1rem; font-weight: 600; margin: 0; text-align: center;">
-                        🎯 <strong>La Nostra Intenzione Collettiva:</strong><br>
-                        <span style="font-size: 1.3rem;">Bambini a casa prima del compleanno di Nathan — 24 febbraio</span>
-                    </p>
-                </div>
                 
                 <!-- Event Info -->
                 <div class="event-info">
@@ -1344,6 +1371,33 @@
         
         updateCountdown();
         setInterval(updateCountdown, 1000);
+        
+        // Nathan's Birthday Intention Countdown
+        const nathanBirthday = new Date('February 24, 2026 00:00:00 GMT+0100').getTime();
+        function updateIntentionCountdown() {
+            const now = new Date().getTime();
+            const distance = nathanBirthday - now;
+            
+            if (distance < 0) {
+                document.getElementById('days-intention-it').textContent = '00';
+                document.getElementById('hours-intention-it').textContent = '00';
+                document.getElementById('mins-intention-it').textContent = '00';
+                document.getElementById('secs-intention-it').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const secs = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days-intention-it').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours-intention-it').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('mins-intention-it').textContent = mins.toString().padStart(2, '0');
+            document.getElementById('secs-intention-it').textContent = secs.toString().padStart(2, '0');
+        }
+        updateIntentionCountdown();
+        setInterval(updateIntentionCountdown, 1000);
         
         // Scroll to top on page load
         window.onload = function() {
