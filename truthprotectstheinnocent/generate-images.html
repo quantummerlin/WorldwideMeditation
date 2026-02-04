@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OG Image Generator - Truth Protects The Innocent</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+        #canvas-container {
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #333;
+            margin: 20px auto;
+            display: block;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background: #1e3a5f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #2d5a8a;
+        }
+        .instructions {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>Social Media & Favicon Image Generator</h1>
+        <p>Click the buttons below to generate and download the images needed for the website.</p>
+        <ul>
+            <li><strong>OG Image:</strong> 1200x630px - Used for social media sharing (Facebook, Twitter, LinkedIn)</li>
+            <li><strong>Favicon:</strong> 512x512px - Used for browser tab icon</li>
+            <li><strong>Apple Touch Icon:</strong> 180x180px - Used for iOS home screen</li>
+        </ul>
+    </div>
+
+    <div id="canvas-container">
+        <h2>Social Media Share Image (1200x630)</h2>
+        <canvas id="og-canvas" width="1200" height="630"></canvas>
+        <button onclick="downloadOGImage()">Download og-image.jpg</button>
+
+        <h2>Favicon (512x512)</h2>
+        <canvas id="favicon-canvas" width="512" height="512"></canvas>
+        <button onclick="downloadFavicon()">Download favicon.png</button>
+
+        <h2>Apple Touch Icon (180x180)</h2>
+        <canvas id="apple-canvas" width="180" height="180"></canvas>
+        <button onclick="downloadAppleIcon()">Download apple-touch-icon.png</button>
+    </div>
+
+    <script>
+        // OG Image (Social Media Share)
+        function drawOGImage() {
+            const canvas = document.getElementById('og-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
+            gradient.addColorStop(0, '#1e3a5f');
+            gradient.addColorStop(1, '#0f2744');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 1200, 630);
+
+            // Balance icon/emoji
+            ctx.font = '120px Arial';
+            ctx.fillText('⚖️', 80, 180);
+
+            // Title
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 64px Arial';
+            ctx.fillText('Truth Protects The Innocent', 80, 280);
+
+            // Subtitle
+            ctx.fillStyle = '#e5e7eb';
+            ctx.font = '36px Arial';
+            ctx.fillText('Three children. Three false claims.', 80, 350);
+            ctx.fillText('One family fighting for truth.', 80, 400);
+
+            // Stats
+            ctx.fillStyle = '#f59e0b';
+            ctx.font = 'bold 48px Arial';
+            ctx.fillText('3 Children Separated', 80, 490);
+            
+            ctx.fillStyle = '#ef4444';
+            ctx.fillText('3 Reasons PROVEN FALSE', 80, 560);
+
+            // URL
+            ctx.fillStyle = '#9ca3af';
+            ctx.font = '24px Arial';
+            ctx.fillText('truthprotectstheinnocent.quantummerlin.com', 80, 610);
+        }
+
+        // Favicon
+        function drawFavicon() {
+            const canvas = document.getElementById('favicon-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Background
+            const gradient = ctx.createLinearGradient(0, 0, 512, 512);
+            gradient.addColorStop(0, '#1e3a5f');
+            gradient.addColorStop(1, '#2d5a8a');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 512, 512);
+
+            // Balance icon
+            ctx.font = '300px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('⚖️', 256, 280);
+        }
+
+        // Apple Touch Icon
+        function drawAppleIcon() {
+            const canvas = document.getElementById('apple-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Background with rounded corners effect
+            ctx.fillStyle = '#1e3a5f';
+            ctx.fillRect(0, 0, 180, 180);
+
+            // Balance icon
+            ctx.font = '120px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('⚖️', 90, 95);
+        }
+
+        function downloadOGImage() {
+            const canvas = document.getElementById('og-canvas');
+            canvas.toBlob((blob) => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'og-image.jpg';
+                a.click();
+            }, 'image/jpeg', 0.95);
+        }
+
+        function downloadFavicon() {
+            const canvas = document.getElementById('favicon-canvas');
+            canvas.toBlob((blob) => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'favicon.png';
+                a.click();
+            }, 'image/png');
+        }
+
+        function downloadAppleIcon() {
+            const canvas = document.getElementById('apple-canvas');
+            canvas.toBlob((blob) => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'apple-touch-icon.png';
+                a.click();
+            }, 'image/png');
+        }
+
+        // Draw all on load
+        window.onload = () => {
+            drawOGImage();
+            drawFavicon();
+            drawAppleIcon();
+        };
+    </script>
+</body>
+</html>

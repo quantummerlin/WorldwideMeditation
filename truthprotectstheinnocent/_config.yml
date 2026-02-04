@@ -1,0 +1,82 @@
+# Truth Protects the Innocent - Jekyll Configuration
+title: Truth Protects The Innocent | Birmingham-Trevallion Family
+description: "Three children separated from loving parents in Italy. Three official justifications. All three proven false. Catherine Birmingham, Nathan Trevallion, Utopia, Galorian & Blue Bell need your help. #TruthProtectsTheInnocent #LaFamigliaNelBosco"
+url: "https://truthprotectstheinnocent.quantummerlin.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  updates:
+    output: true
+    permalink: /updates/:title/
+  evidence:
+    output: true
+    permalink: /evidence/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "updates"
+    values:
+      layout: "update"
+
+# Pagination
+paginate: 10
+paginate_path: "/updates/page:num/"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Social/Meta
+author: "Truth Protects The Innocent"
+twitter_card: summary_large_image
+og_image: /assets/images/og-image.jpg
+
+# SEO Settings
+lang: en
+locale: en_US
+tagline: "Catherine Birmingham & Nathan Trevallion - Three children separated. Three false claims. Help reunite this family."
+logo: /assets/images/logo.png
+social:
+  name: Truth Protects The Innocent
+  links:
+    - https://truthprotectstheinnocent.quantummerlin.com
+    - https://worldwidemeditation.quantummerlin.com
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: The Family
+    url: /family/
+  - title: Evidence
+    url: /evidence/
+  - title: Updates
+    url: /updates/
+  - title: Media
+    url: /media/
+  - title: FAQ
+    url: /faq/
+  - title: About
+    url: /about/
