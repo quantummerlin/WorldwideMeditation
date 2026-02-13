@@ -57,6 +57,7 @@ updated: 2026-02-13-urgent
 })();
 </script>
 
+{::nomarkdown}
 <!-- MAJOR DEVELOPMENT: Italian National News Coverage -->
 <section class="section" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 4rem 0;">
     <div class="container">
@@ -111,11 +112,11 @@ updated: 2026-02-13-urgent
                 <div style="background: rgba(0,0,0,0.3); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 0;">
                     <p style="color: #fef08a; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Key Quotes (Translated):</p>
                     <ul style="color: var(--color-gray-300); list-style: none; padding: 0; margin: 0;">
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">🗣️ <em>"My son is not a monster, not a criminal"</em></li>
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">🗣️ <em>"My son is a good person"</em></li>
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">🗣️ She says the family wants to live simply, away from <em>"this rotten society"</em></li>
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">🗣️ She describes Catherine as being <strong style="color: #fca5a5;">"like a prisoner"</strong> — watched constantly, unable to speak freely</li>
-                        <li style="padding: 0.4rem 0;">🗣️ She implies Catherine is being controlled and can't even talk to her own mother without supervision</li>
+                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; <em>"My son is not a monster, not a criminal"</em></li>
+                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; <em>"My son is a good person"</em></li>
+                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; She says the family wants to live simply, away from <em>"this rotten society"</em></li>
+                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; She describes Catherine as being <strong style="color: #fca5a5;">"like a prisoner"</strong> &#8212; watched constantly, unable to speak freely</li>
+                        <li style="padding: 0.4rem 0;">&#9655; She implies Catherine is being controlled and can't even talk to her own mother without supervision</li>
                     </ul>
                 </div>
             </div>
@@ -161,7 +162,7 @@ updated: 2026-02-13-urgent
                 <h3 style="color: #fca5a5; font-size: 1.2rem; margin-bottom: 1.25rem;">⚠️ Why This Matters</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem;">
                     <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1.25rem;">
-                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">👨‍👩‍👧‍👦 Parental Rights vs. Child Welfare</p>
+                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">&#128106; Parental Rights vs. Child Welfare</p>
                         <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">How much can parents deviate from societal norms before it becomes grounds for state intervention?</p>
                     </div>
                     <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1.25rem;">
@@ -169,7 +170,7 @@ updated: 2026-02-13-urgent
                         <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">Is this a family with strong beliefs, or something more concerning? Family members themselves raise red flags.</p>
                     </div>
                     <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1.25rem;">
-                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">🗣️ Women's Autonomy</p>
+                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">&#128483; Women's Autonomy</p>
                         <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">Catherine's apparent inability to leave or speak freely raises serious questions about domestic coercion.</p>
                     </div>
                 </div>
@@ -201,6 +202,7 @@ updated: 2026-02-13-urgent
         </div>
     </div>
 </section>
+{:/nomarkdown}
 
 <!-- URGENT LEAKED INFORMATION ALERT -->
 <section style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 2rem 0; position: relative; overflow: hidden;">
