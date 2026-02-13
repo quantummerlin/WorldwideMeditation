@@ -4,6 +4,7 @@ title: Catherine Birmingham & Nathan Trevallion | Children Removed Italy
 description: "Three children separated from Catherine Birmingham and Nathan Trevallion in Italy. Three official reasons - all proven false. Help reunite Utopia, Galorian & Blue Bell with their parents. #TruthProtectsTheInnocent #LaFamigliaNelBosco"
 lang: en
 image: /assets/images/og-image.jpg
+updated: 2026-02-13-urgent
 ---
 
 <!-- Hero Section with Slideshow Background -->
