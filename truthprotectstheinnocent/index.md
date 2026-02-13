@@ -56,110 +56,12 @@ image: /assets/images/og-image.jpg
 })();
 </script>
 
-<!-- URGENT LEAKED INFORMATION ALERT -->
-<section style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 2rem 0; position: relative; overflow: hidden;">
-    <div class="container" style="position: relative; z-index: 1;">
-        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
-                <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Breaking: Leaked Information — February 2026</span>
-            </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Innocent Children Facing 6-Month Institutional Sentence</h2>
-            <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Leaked information reveals the court's intention to extend the children's detention <strong style="color: #fef08a;">beyond the initial 120 days</strong> — keeping them institutionalized <strong style="color: #fef08a;">until May or June 2026</strong>. The twins, who have endured this trauma since age 5, will turn 7 in March — still separated from their parents.
-            </p>
-            
-            <!-- Psychological Trauma Alert -->
-            <div style="background: rgba(0,0,0,0.3); border: 2px solid rgba(254,240,138,0.5); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
-                <p style="color: #fef08a; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem;">⚠️ PSYCHOLOGISTS CONFIRM: Children Suffering Daily Trauma</p>
-                <p style="color: rgba(255,255,255,0.95); font-size: 1.05rem; line-height: 1.7; margin: 0;">
-                    Psychologists have <strong style="color: white;">publicly released</strong> findings stating the children are <strong style="color: white;">undergoing trauma every day</strong> while being held in the institution. They are suffering from <strong style="color: white;">isolation and separation</strong> from their parents — causing <strong style="color: white;">irreparable harm daily</strong>. This is now common knowledge.
-                </p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; text-align: left;">
-                <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1rem;">
-                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Over 1 Year of Attacks</p>
-                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">The family has faced systematic persecution documented by the National Garante</p>
-                </div>
-                <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1rem;">
-                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Reported to Highest Court</p>
-                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">Lawyers filed with Italy's Court of Cassation — yet no action taken</p>
-                </div>
-                <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1rem;">
-                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Birthdays in Separation</p>
-                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">Nathan's birthday Feb 24, twins March 4 — will they be home?</p>
-                </div>
-            </div>
-            <div style="background: rgba(0,0,0,0.25); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
-                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin: 0;">
-                    <strong style="color: white;">The question everyone should be asking:</strong><br>
-                    If all three official justifications have been proven false, and the case has been reported to Italy's highest court, why are these children still being held?
-                </p>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-                <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">See The Evidence</a>
-                <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Take Action Now</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Meet The Family - Video Section -->
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2>Meet The Family</h2>
-            <p>These are the children at the center of this case — healthy, happy, and thriving before they were taken</p>
-        </div>
-        
-        <div class="video-gallery">
-            <div class="video-card">
-                <video controls playsinline preload="metadata">
-                    <source src="/assets/videos/family1.MP4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="video-card-overlay">
-                    <div class="video-card-title">Life Before Separation</div>
-                    <p class="video-card-desc">Happy children living close to nature</p>
-                </div>
-            </div>
-            
-            <div class="video-card">
-                <video controls playsinline preload="metadata">
-                    <source src="/assets/videos/family2.MOV" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="video-card-overlay">
-                    <div class="video-card-title">A Loving Family</div>
-                    <p class="video-card-desc">The bond that authorities are breaking</p>
-                </div>
-            </div>
-            
-            <div class="video-card">
-                <video controls playsinline preload="metadata">
-                    <source src="/assets/videos/family3.MP4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="video-card-overlay">
-                    <div class="video-card-title">Childhood Joy</div>
-                    <p class="video-card-desc">What these children have lost</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="quote-block" style="margin-top: 3rem;">
-            "These children were healthy, happy, and thriving. Now they're showing signs of trauma caused by the very intervention that was supposed to 'protect' them."
-            <cite>— From psychological assessment findings</cite>
-        </div>
-    </div>
-</section>
-
 <!-- MAJOR DEVELOPMENT: Italian National News Coverage -->
 <section class="section" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 4rem 0;">
     <div class="container">
         <div class="section-header" style="margin-bottom: 2.5rem;">
             <div style="display: inline-block; background: rgba(220, 38, 38, 0.2); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1.2rem; border-radius: 2rem; margin-bottom: 1rem;">
-                <span style="color: #fca5a5; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;">📺 Major Development — Italian National Television</span>
+                <span style="color: #fca5a5; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;">📺 Breaking News — Italian National Television</span>
             </div>
             <h2 style="color: white; font-size: 2.2rem;">"Catherine Is As If She Were In Prison"</h2>
             <p style="color: var(--color-gray-400); font-size: 1.15rem;">Italian national news program covers the Birmingham-Trevallion case — family members speak out about Catherine's situation</p>
@@ -169,7 +71,7 @@ image: /assets/images/og-image.jpg
         <div style="max-width: 900px; margin: 0 auto 3rem auto;">
             <div style="position: relative; border-radius: 1rem; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);">
                 <video controls playsinline preload="metadata" style="width: 100%; display: block; border-radius: 1rem;">
-                    <source src="/assets/videos/news.mp4" type="video/mp4">
+                    <source src="/assets/videos/news.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -295,6 +197,104 @@ image: /assets/images/og-image.jpg
                 </div>
             </div>
 
+        </div>
+    </div>
+</section>
+
+<!-- URGENT LEAKED INFORMATION ALERT -->
+<section style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 2rem 0; position: relative; overflow: hidden;">
+    <div class="container" style="position: relative; z-index: 1;">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
+                <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Breaking: Leaked Information — February 2026</span>
+            </div>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Innocent Children Facing 6-Month Institutional Sentence</h2>
+            <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Leaked information reveals the court's intention to extend the children's detention <strong style="color: #fef08a;">beyond the initial 120 days</strong> — keeping them institutionalized <strong style="color: #fef08a;">until May or June 2026</strong>. The twins, who have endured this trauma since age 5, will turn 7 in March — still separated from their parents.
+            </p>
+            
+            <!-- Psychological Trauma Alert -->
+            <div style="background: rgba(0,0,0,0.3); border: 2px solid rgba(254,240,138,0.5); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <p style="color: #fef08a; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem;">⚠️ PSYCHOLOGISTS CONFIRM: Children Suffering Daily Trauma</p>
+                <p style="color: rgba(255,255,255,0.95); font-size: 1.05rem; line-height: 1.7; margin: 0;">
+                    Psychologists have <strong style="color: white;">publicly released</strong> findings stating the children are <strong style="color: white;">undergoing trauma every day</strong> while being held in the institution. They are suffering from <strong style="color: white;">isolation and separation</strong> from their parents — causing <strong style="color: white;">irreparable harm daily</strong>. This is now common knowledge.
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; text-align: left;">
+                <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1rem;">
+                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Over 1 Year of Attacks</p>
+                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">The family has faced systematic persecution documented by the National Garante</p>
+                </div>
+                <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1rem;">
+                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Reported to Highest Court</p>
+                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">Lawyers filed with Italy's Court of Cassation — yet no action taken</p>
+                </div>
+                <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1rem;">
+                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Birthdays in Separation</p>
+                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">Nathan's birthday Feb 24, twins March 4 — will they be home?</p>
+                </div>
+            </div>
+            <div style="background: rgba(0,0,0,0.25); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin: 0;">
+                    <strong style="color: white;">The question everyone should be asking:</strong><br>
+                    If all three official justifications have been proven false, and the case has been reported to Italy's highest court, why are these children still being held?
+                </p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">See The Evidence</a>
+                <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Take Action Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet The Family - Video Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Meet The Family</h2>
+            <p>These are the children at the center of this case — healthy, happy, and thriving before they were taken</p>
+        </div>
+        
+        <div class="video-gallery">
+            <div class="video-card">
+                <video controls playsinline preload="metadata">
+                    <source src="/assets/videos/family1.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-card-overlay">
+                    <div class="video-card-title">Life Before Separation</div>
+                    <p class="video-card-desc">Happy children living close to nature</p>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <video controls playsinline preload="metadata">
+                    <source src="/assets/videos/family2.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-card-overlay">
+                    <div class="video-card-title">A Loving Family</div>
+                    <p class="video-card-desc">The bond that authorities are breaking</p>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <video controls playsinline preload="metadata">
+                    <source src="/assets/videos/family3.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-card-overlay">
+                    <div class="video-card-title">Childhood Joy</div>
+                    <p class="video-card-desc">What these children have lost</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quote-block" style="margin-top: 3rem;">
+            "These children were healthy, happy, and thriving. Now they're showing signs of trauma caused by the very intervention that was supposed to 'protect' them."
+            <cite>— From psychological assessment findings</cite>
         </div>
     </div>
 </section>
