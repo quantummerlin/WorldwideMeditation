@@ -1,10 +1,13 @@
 ---
-layout: page
-title: 📋 Petizione ONU — UN Petition
-subtitle: Modello di petizione formale per OHCHR e CIDU / Formal petition template for OHCHR and CIDU
-permalink: /petition/
+layout: default
+title: 📋 Petizione ONU — Modello Formale per OHCHR e CIDU
+description: "Modello di petizione formale per le Nazioni Unite (OHCHR) e il CIDU riguardante la violazione dei diritti dei minori Birmingham-Trevallion. Scarica, personalizza e invia."
+lang: it
+permalink: /it/petition/
 ---
 
+<section class="section">
+<div class="container">
 <div class="container-narrow" markdown="1">
 
 <div class="alert alert-danger" style="background: linear-gradient(135deg, rgba(220,38,38,0.15), rgba(220,38,38,0.05)); border: 2px solid rgba(220,38,38,0.4); border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
@@ -29,7 +32,7 @@ Questo è un **modello completo** per presentare una petizione formale alle Nazi
 
 ---
 
-<h2 id="destinatari">📬 Destinatari / Recipients</h2>
+<h2 id="destinatari">📬 Destinatari</h2>
 
 ### Nazioni Unite — OHCHR
 
@@ -74,7 +77,7 @@ ministero.affariesteri@cert.esteri.it
 
 ---
 
-<h2 id="petizione">📝 MODELLO DI PETIZIONE</h2>
+<h2 id="petizione">📝 MODELLO DI PETIZIONE (Italiano)</h2>
 
 <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.15); border-radius: 1rem; padding: 2rem; margin: 1rem 0 2rem 0;">
 
@@ -241,13 +244,7 @@ ALLEGATI:
 
 ---
 
-<h2 id="english">🌍 FULL ENGLISH TRANSLATION</h2>
-
-<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.15); border-radius: 1rem; padding: 2rem; margin: 1rem 0 2rem 0;">
-
-Below is the complete English translation of the petition. You may use this version when writing to international bodies or to understand the full content of the Italian petition above.
-
-</div>
+<h2 id="english">🌍 TRADUZIONE INGLESE COMPLETA</h2>
 
 ```
 PETITION TO THE UNITED NATIONS HUMAN RIGHTS COMMITTEE
@@ -413,46 +410,22 @@ ATTACHMENTS:
 
 ---
 
-### Key Legal Violations Cited
+## ✅ Checklist prima dell'invio
 
-| Convention | Article | Right Violated |
-|---|---|---|
-| **UN CRC** | Art. 9 | Right not to be separated from parents |
-| **UN CRC** | Art. 12 | Right to be heard |
-| **UN CRC** | Art. 18 | Parents' shared responsibility for education |
-| **ECHR** | Art. 8 | Right to respect for private and family life |
-| **UDHR** | Art. 16 | Family as natural unit protected by the state |
-| **Italian Constitution** | Art. 2, 30, 31 | Inviolable rights, parental rights, family protection |
-| **Italian Law 149/2001** | — | Right of child to grow up in their own family |
-
-### How You Can Help
-
-1. **Italian speakers**: Copy the Italian petition template above, personalize it, and send it to the listed addresses
-2. **Non-Italian speakers**: Use the English translation to understand the content, then share this page with Italian contacts who can submit the petition — or submit the English version to OHCHR directly (they accept English)
-3. **Everyone**: Share this page on social media to maximize pressure
-
-### The Urgency
-
-<div class="alert alert-danger" style="background: linear-gradient(135deg, rgba(220,38,38,0.15), rgba(220,38,38,0.05)); border: 2px solid rgba(220,38,38,0.4); border-radius: 1rem; padding: 1.5rem;">
-<strong>⏰ The children are planned to be held in the institution until June 2026.</strong> The twins turn 7 in March — still separated from their parents. Psychologists have publicly confirmed the children are suffering daily trauma from the separation. Every day of delay causes documented, irreparable harm. Maximum international pressure is needed NOW.
-</div>
-
----
-
-## ✅ Checklist Before Sending
-
-- [ ] Full name and personal details entered
-- [ ] Current date added
-- [ ] Sent to all three recipients (OHCHR, CIDU, Presidency)
-- [ ] CC to both government addresses
-- [ ] Available attachments included (if you have them)
-- [ ] Shared this page with at least 5 people
+- [ ] Inserito nome completo e dati personali
+- [ ] Aggiunta la data attuale
+- [ ] Inviato a tutti e tre i destinatari (OHCHR, CIDU, Presidenza)
+- [ ] CC ai due indirizzi governativi
+- [ ] Allegati disponibili inclusi (se ne avete)
+- [ ] Condivisa questa pagina con almeno 5 persone
 
 ---
 
 <div class="text-center" style="margin-top: 2rem;">
-<a href="/action/" class="btn btn-primary btn-lg">📧 More Actions</a>
-<a href="/evidence/" class="btn btn-outline btn-lg">📋 See Evidence</a>
+<a href="/it/" class="btn btn-primary btn-lg">🏠 Torna alla Home</a>
+<a href="/action/" class="btn btn-outline btn-lg">📧 Altre azioni</a>
 </div>
 
 </div>
+</div>
+</section>
