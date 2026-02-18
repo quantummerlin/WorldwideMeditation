@@ -97,6 +97,29 @@ Distinti saluti,
 
 ---
 
+<h2 id="petition">🇺🇳 UN Petition — Petizione ONU (OHCHR / CIDU)</h2>
+
+<div class="alert alert-danger" style="background: linear-gradient(135deg, rgba(220,38,38,0.15), rgba(220,38,38,0.05)); border: 2px solid rgba(220,38,38,0.4); border-radius: 1rem; padding: 2rem; margin-bottom: 1.5rem;">
+<h3 style="margin-top: 0; color: #dc2626;">⚠️ URGENTE: I bambini saranno trattenuti fino a giugno 2026</h3>
+<p style="margin-bottom: 0.5rem;">A formal petition template is now available to submit directly to the <strong>United Nations OHCHR</strong>, the Italian <strong>CIDU</strong> (Inter-Ministerial Committee for Human Rights), and the <strong>Presidenza del Consiglio dei Ministri</strong>.</p>
+<p style="margin-bottom: 0;">This petition cites violations of the <strong>UN Convention on the Rights of the Child</strong> (Art. 9, 12, 18), the <strong>European Convention on Human Rights</strong> (Art. 8), the <strong>Universal Declaration of Human Rights</strong> (Art. 16), and multiple articles of the <strong>Italian Constitution</strong>.</p>
+</div>
+
+The petition is in Italian (the official language required for Italian institutions) with an English summary for international supporters.
+
+**What it requests:**
+- ✅ OHCHR to open a formal investigation
+- ✅ CIDU to intervene with Italian authorities
+- ✅ Immediate reunification of children with parents
+- ✅ Independent investigation into conditions at the institution
+- ✅ Legal and consular assistance for the family
+
+<div class="text-center" style="margin: 1.5rem 0;">
+<a href="/petition/" class="btn btn-primary btn-lg" style="font-size: 1.1rem; padding: 1rem 2.5rem;">📋 Apri il Modello di Petizione ONU →</a>
+</div>
+
+---
+
 <h2 id="share">📢 Share The Facts</h2>
 
 Social media spreads awareness and shows officials that people are paying attention.

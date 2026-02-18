@@ -58,15 +58,15 @@ updated: 2026-02-13-urgent
 </script>
 
 {::nomarkdown}
-<!-- MAJOR DEVELOPMENT: Italian National News Coverage -->
+<!-- BREAKING: Italian National News Coverage -->
 <section class="section" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 4rem 0;">
     <div class="container">
         <div class="section-header" style="margin-bottom: 2.5rem;">
             <div style="display: inline-block; background: rgba(220, 38, 38, 0.2); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1.2rem; border-radius: 2rem; margin-bottom: 1rem;">
-                <span style="color: #fca5a5; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;">📺 Breaking News — Italian National Television</span>
+                <span style="color: #fca5a5; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;">&#128250; Breaking News &#8212; Italian National Television</span>
             </div>
             <h2 style="color: white; font-size: 2.2rem;">"Catherine Is As If She Were In Prison"</h2>
-            <p style="color: var(--color-gray-400); font-size: 1.15rem;">Italian national news program covers the Birmingham-Trevallion case — family members speak out about Catherine's situation</p>
+            <p style="color: var(--color-gray-400); font-size: 1.15rem;">Italian national news program covers the Birmingham-Trevallion case &#8212; witnesses, family members, and commentators speak out</p>
         </div>
 
         <!-- Video Player -->
@@ -77,124 +77,113 @@ updated: 2026-02-13-urgent
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <p style="color: var(--color-gray-500); font-size: 0.85rem; text-align: center; margin-top: 0.75rem; font-style: italic;">Italian national news segment — full English translation below</p>
+            <p style="color: var(--color-gray-500); font-size: 0.85rem; text-align: center; margin-top: 0.75rem; font-style: italic;">Italian national news segment &#8212; full English translation below</p>
         </div>
 
-        <!-- Translation & Breakdown -->
+        <!-- Translation -->
         <div style="max-width: 900px; margin: 0 auto;">
 
             <!-- Context Banner -->
             <div style="background: rgba(217, 130, 43, 0.15); border: 1px solid rgba(217, 130, 43, 0.3); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 2rem;">
-                <p style="color: #f0b37a; font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem;">📰 Original Headline (Italian):</p>
-                <p style="color: white; font-size: 1.3rem; font-weight: 700; font-style: italic; margin-bottom: 0.5rem;">"FAMIGLIA NEL BOSCO, 'CATHERINE È COME SE FOSSE IN PRIGIONE'"</p>
+                <p style="color: #f0b37a; font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem;">&#128240; Original Headline (Italian):</p>
+                <p style="color: white; font-size: 1.3rem; font-weight: 700; font-style: italic; margin-bottom: 0.5rem;">"FAMIGLIA NEL BOSCO, 'CATHERINE &#200; COME SE FOSSE IN PRIGIONE'"</p>
                 <p style="color: var(--color-gray-300); font-size: 1.05rem; margin: 0;">"Family in the Woods: 'Catherine is as if she were in prison'"</p>
             </div>
 
-            <!-- Segment-by-Segment Breakdown -->
-            <h3 style="color: #f59e0b; font-size: 1.3rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">📋 Full Translation & Breakdown</h3>
+            <!-- Full English Translation -->
+            <h3 style="color: #f59e0b; font-size: 1.3rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">&#128221; English Translation of News Segment</h3>
 
-            <!-- Segment 1 -->
-            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1rem; border-left: 4px solid #3b82f6;">
+            <!-- Witness Testimony: Former Employee -->
+            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1.25rem; border-left: 4px solid #dc2626;">
                 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                    <span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">00:00 – 00:40</span>
-                    <span style="color: white; font-weight: 700;">Studio Introduction</span>
+                    <span style="background: #dc2626; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">WITNESS TESTIMONY</span>
+                    <span style="color: white; font-weight: 700;">Former Employee Speaks Out</span>
                 </div>
-                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.7;">The host (Alberto Matano) introduces the story, noting that the family has been in the news for years. He announces that a <strong style="color: white;">new police raid (blitz)</strong> was conducted at their home that day. The family was taken to the prosecutor's office in Palmi for questioning.</p>
+                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.8;">A former employee has come forward with disturbing claims about what is happening inside the family home. <strong style="color: white;">Lydia, who worked there for many years before retiring, describes the environment as being "like a prison."</strong> She says Catherine is isolated &#8212; unable to speak freely with others and kept away from her children. According to Lydia, <strong style="color: #fca5a5;">Catherine cries constantly</strong>, and staff are too afraid of losing their jobs to challenge the situation.</p>
             </div>
 
-            <!-- Segment 2 -->
-            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1rem; border-left: 4px solid #f59e0b;">
+            <!-- The Locked Door -->
+            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1.25rem; border-left: 4px solid #f59e0b;">
                 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                    <span style="background: #f59e0b; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">00:41 – 02:08</span>
-                    <span style="color: white; font-weight: 700;">Interview with Caterina Bianchi (Gioacchino's Mother)</span>
+                    <span style="background: #f59e0b; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">INSIDE THE HOME</span>
+                    <span style="color: white; font-weight: 700;">Disturbing Details Emerge</span>
                 </div>
-                <p style="color: var(--color-gray-300); margin-bottom: 1rem; line-height: 1.7;">An elderly woman under a blue umbrella speaks emotionally. She is <strong style="color: white;">Caterina Bianchi</strong>, Nathan's mother, defending her son and his family.</p>
-                <div style="background: rgba(0,0,0,0.3); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 0;">
-                    <p style="color: #fef08a; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Key Quotes (Translated):</p>
-                    <ul style="color: var(--color-gray-300); list-style: none; padding: 0; margin: 0;">
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; <em>"My son is not a monster, not a criminal"</em></li>
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; <em>"My son is a good person"</em></li>
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; She says the family wants to live simply, away from <em>"this rotten society"</em></li>
-                        <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">&#9655; She describes Catherine as being <strong style="color: #fca5a5;">"like a prisoner"</strong> &#8212; watched constantly, unable to speak freely</li>
-                        <li style="padding: 0.4rem 0;">&#9655; She implies Catherine is being controlled and can't even talk to her own mother without supervision</li>
-                    </ul>
-                </div>
+                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.8;">She recalls strict and, in her words, <em>"absurd"</em> orders &#8212; including a night when <strong style="color: white;">a door separating Catherine from her children was locked. Catherine reportedly screamed for it to be opened.</strong> Family members say the children are deeply distressed. One of the youngest recently suffered nightmares, <strong style="color: #fca5a5;">cried for his mother for over an hour</strong>, and could not sleep.</p>
             </div>
 
-            <!-- Segment 3 -->
-            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1rem; border-left: 4px solid #dc2626;">
+            <!-- The Children's Trauma -->
+            <div style="background: rgba(220, 38, 38, 0.1); border: 1px solid rgba(220, 38, 38, 0.3); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1.25rem; border-left: 4px solid #dc2626;">
                 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                    <span style="background: #dc2626; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">02:09 – 02:57</span>
-                    <span style="color: white; font-weight: 700;">Interview with Another Family Member</span>
+                    <span style="background: #dc2626; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">CHILDREN'S TRAUMA</span>
+                    <span style="color: white; font-weight: 700;">Screaming, Nightmares, and Flashbacks</span>
                 </div>
-                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.7;">A woman in a car (another relative) speaks about Catherine's situation. She states Catherine is <strong style="color: #fca5a5;">"watched 24 hours a day"</strong>, can't speak freely, and is always accompanied by family members when she goes out. She suggests Catherine is <strong style="color: white;">essentially being held against her will</strong>.</p>
+                <p style="color: var(--color-gray-300); margin-bottom: 1rem; line-height: 1.8;">Witnesses describe hearing <strong style="color: #fca5a5;">the children screaming violently during moments of separation</strong> from their aunt and grandmother &#8212; highlighting what some believe is severe emotional trauma.</p>
+                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.8;">When a police escort arrived at the home with a UN peace ambassador, <strong style="color: white;">the children reacted by throwing objects at the police car</strong> &#8212; reportedly triggered by memories of the day authorities came on the 20th of November to remove them from their home. Today, that memory was reaffirmed by seeing that car &#8212; and this, perhaps more than anything else, reveals <strong style="color: #fca5a5;">the depth of the trauma they are experiencing</strong>.</p>
             </div>
 
-            <!-- Segment 4 -->
-            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1rem; border-left: 4px solid #3b82f6;">
+            <!-- Studio Commentary -->
+            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1.25rem; border-left: 4px solid #8b5cf6;">
                 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                    <span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">02:58 – 03:40</span>
-                    <span style="color: white; font-weight: 700;">Back in Studio</span>
+                    <span style="background: #8b5cf6; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">STUDIO REACTION</span>
+                    <span style="color: white; font-weight: 700;">"A Prison of Emotions"</span>
                 </div>
-                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.7;">The host summarizes the core accusation: Catherine is <strong style="color: white;">"like a prisoner"</strong> in the family compound. He introduces a live reporter from the scene.</p>
+                <div style="background: rgba(0,0,0,0.3); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1rem;">
+                    <p style="color: #fef08a; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Commentator (Paola Ferrari):</p>
+                    <p style="color: var(--color-gray-200); font-style: italic; margin: 0; line-height: 1.8;"><em>"This is the reality that we were all afraid of. When we talk about 41bis [Italy's harshest prison regime], it has nothing to do with the procedure for the mafiosi, but we can talk about a <strong style="color: white;">41bis of feelings</strong> &#8212; because when you go to deprive, in this way, it is lacerating. The screams of these children, who every day suffer this detachment... it is as if a wound that is narrowing a little <strong style="color: #fca5a5;">is being reopened</strong>. And this really hurts the heart of all your viewers, of all the Italians who listen and want a definitive intervention to end this madness."</em></p>
+                </div>
+                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.8;">The host notes that <strong style="color: white;">the mother is prevented from doing anything &#8212; her movements are all controlled</strong>. There are fears about how this situation could ultimately end.</p>
             </div>
 
-            <!-- Segment 5 -->
-            <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 1rem; border-left: 4px solid #8b5cf6;">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                    <span style="background: #8b5cf6; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">03:41 – 04:41</span>
-                    <span style="color: white; font-weight: 700;">Live Report from Palmi</span>
-                </div>
-                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.7;">Reporter Claudio Giambene explains the day's events: Police conducted a raid that morning. The family was taken to the prosecutor's office. <strong style="color: white;">Children were questioned by a specialized child psychologist.</strong> The investigation focuses on possible mistreatment and isolation of the children, and whether Catherine is being held against her will. This is part of an ongoing investigation that has seen the children temporarily removed before.</p>
-            </div>
-
-            <!-- Segment 6 -->
+            <!-- Final Commentary -->
             <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem 2rem; margin-bottom: 2rem; border-left: 4px solid #10b981;">
                 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                    <span style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">04:42 – 06:22</span>
-                    <span style="color: white; font-weight: 700;">Panel Discussion</span>
+                    <span style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700;">CLOSING STATEMENT</span>
+                    <span style="color: white; font-weight: 700;">A System Causing Harm?</span>
                 </div>
-                <p style="color: var(--color-gray-300); margin: 0; line-height: 1.7;">Studio guests discuss the complexity of the case. They note the family presents themselves as living an "alternative lifestyle," but there are serious concerns about the children's welfare and Catherine's freedom. They observe that while Catherine has appeared in videos defending the family, <strong style="color: white;">her demeanor suggests she may be under pressure</strong>. They discuss the difficulty of distinguishing between "unconventional lifestyle choices" and actual coercion.</p>
+                <div style="background: rgba(0,0,0,0.3); border-radius: 0.75rem; padding: 1.25rem;">
+                    <p style="color: var(--color-gray-200); font-style: italic; margin: 0; line-height: 1.8;"><em>"If the goal was to make these children feel good, I changed my mind. In the end, it seems to me that there is an obtuseness. When you come to <strong style="color: #fca5a5;">traumatize the children</strong>..."</em></p>
+                </div>
+                <p style="color: var(--color-gray-300); margin-top: 1rem; margin-bottom: 0; line-height: 1.8;"><strong style="color: white;">Some observers now question whether the system meant to protect these children may instead be causing further psychological harm.</strong></p>
             </div>
 
             <!-- Why This Matters -->
             <div style="background: linear-gradient(135deg, rgba(220, 38, 38, 0.15), rgba(220, 38, 38, 0.05)); border: 1px solid rgba(220, 38, 38, 0.3); border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
-                <h3 style="color: #fca5a5; font-size: 1.2rem; margin-bottom: 1.25rem;">⚠️ Why This Matters</h3>
+                <h3 style="color: #fca5a5; font-size: 1.2rem; margin-bottom: 1.25rem;">&#9888;&#65039; Why This Matters</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem;">
                     <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1.25rem;">
-                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">&#128106; Parental Rights vs. Child Welfare</p>
-                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">How much can parents deviate from societal norms before it becomes grounds for state intervention?</p>
+                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">&#9888; Children Traumatized Daily</p>
+                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">Children are screaming, having nightmares, and showing flashback responses to police vehicles. The separation is reopening wounds daily.</p>
                     </div>
                     <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1.25rem;">
-                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">🔒 Coercive Control Concerns</p>
-                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">Is this a family with strong beliefs, or something more concerning? Family members themselves raise red flags.</p>
+                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">&#128274; Catherine Held Like a Prisoner</p>
+                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">Multiple witnesses describe Catherine as isolated, controlled, crying constantly, and unable to be with her own children &#8212; even locked away from them at night.</p>
                     </div>
                     <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1.25rem;">
-                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">&#128483; Women's Autonomy</p>
-                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">Catherine's apparent inability to leave or speak freely raises serious questions about domestic coercion.</p>
+                        <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem;">&#128483; Italian Public Outraged</p>
+                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0; line-height: 1.6;">National television commentators are comparing the conditions to Italy's harshest prison regime and calling for immediate intervention to end this.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Key Facts Summary -->
             <div style="background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
-                <h3 style="color: white; font-size: 1.1rem; margin-bottom: 1.25rem;">📌 Key Facts from This Segment</h3>
+                <h3 style="color: white; font-size: 1.1rem; margin-bottom: 1.25rem;">&#128204; Key Facts from This Segment</h3>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem;">
                         <p style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">THE FAMILY</p>
-                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">Nathan (Australian), Catherine (French wife), several children</p>
+                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">Nathan, Catherine, and their children</p>
                     </div>
                     <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem;">
-                        <p style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">LIFESTYLE</p>
-                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">Rural living, nature-based education, values-driven principles</p>
+                        <p style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">WITNESSES</p>
+                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">Former employee Lydia, family members, and studio commentators</p>
                     </div>
                     <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem;">
-                        <p style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">MAIN CONCERNS RAISED</p>
-                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">Children's welfare, Catherine's freedom, psychological isolation</p>
+                        <p style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">CHILDREN'S CONDITION</p>
+                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">Screaming, nightmares, flashback responses, throwing objects at police</p>
                     </div>
                     <div style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem;">
-                        <p style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">LEGAL STATUS</p>
-                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">Under investigation; children temporarily removed in the past</p>
+                        <p style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">UN INVOLVEMENT</p>
+                        <p style="color: var(--color-gray-300); font-size: 0.9rem; margin: 0;">UN peace ambassador arrived with police escort to visit the family</p>
                     </div>
                 </div>
             </div>
@@ -211,9 +200,9 @@ updated: 2026-02-13-urgent
             <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
                 <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Breaking: Leaked Information — February 2026</span>
             </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Innocent Children Facing 6-Month Institutional Sentence</h2>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Children Planned To Be Held Until June 2026</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Leaked information reveals the court's intention to extend the children's detention <strong style="color: #fef08a;">beyond the initial 120 days</strong> — keeping them institutionalized <strong style="color: #fef08a;">until May or June 2026</strong>. The twins, who have endured this trauma since age 5, will turn 7 in March — still separated from their parents.
+                The court is planning to keep these children institutionalized <strong style="color: #fef08a;">until June 2026</strong> — <strong style="color: #fef08a;">7 months of constant trauma</strong>. The twins turn 7 in March — still separated from their parents. Every single day in that institution causes documented, irreparable psychological harm. <strong style="color: #fef08a;">Maximum international pressure is needed NOW.</strong>
             </p>
             
             <!-- Psychological Trauma Alert -->
