@@ -63,9 +63,9 @@ image: /assets/images/og-image.jpg
             <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
                 <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Dernière minute : Informations divulguées — Février 2026</span>
             </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Enfants innocents condamnés à 6 mois d'institution</h2>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Enfants Prévus D'être Retenus Jusqu'en Juin 2026</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Des informations divulguées révèlent l'intention du tribunal de prolonger la détention des enfants <strong style="color: #fef08a;">au-delà des 120 jours initiaux</strong> — les maintenant en institution <strong style="color: #fef08a;">jusqu'en mai ou juin 2026</strong>. Les jumeaux, qui endurent ce traumatisme depuis l'âge de 5 ans, auront 7 ans en mars — toujours séparés de leurs parents.
+                Le tribunal prévoit de maintenir ces enfants en institution <strong style="color: #fef08a;">jusqu'en juin 2026</strong> — <strong style="color: #fef08a;">7 mois de traumatisme constant</strong>. Les jumeaux auront 7 ans en mars — toujours séparés de leurs parents. Chaque jour dans l'institution cause des dommages psychologiques documentés et irréparables. <strong style="color: #fef08a;">La pression internationale maximale est nécessaire MAINTENANT.</strong>
             </p>            
             <!-- Alerte Traumatisme Psychologique -->
             <div style="background: rgba(0,0,0,0.3); border: 2px solid rgba(254,240,138,0.5); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
@@ -96,6 +96,7 @@ image: /assets/images/og-image.jpg
             </div>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
                 <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">Voir les preuves</a>
+                <a href="/fr/petition/" class="btn" style="background: #fef08a; color: #991b1b; font-weight: 700; padding: 0.875rem 2rem; animation: pulse 2s infinite;">🇺🇳 Pétition ONU</a>
                 <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Agir maintenant</a>
             </div>
         </div>

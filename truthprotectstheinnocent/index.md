@@ -235,6 +235,7 @@ updated: 2026-02-13-urgent
             </div>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
                 <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">See The Evidence</a>
+                <a href="/petition/" class="btn" style="background: #fef08a; color: #991b1b; font-weight: 700; padding: 0.875rem 2rem; animation: pulse 2s infinite;">🇺🇳 UN Petition</a>
                 <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Take Action Now</a>
             </div>
         </div>

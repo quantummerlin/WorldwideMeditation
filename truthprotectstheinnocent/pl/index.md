@@ -63,9 +63,9 @@ image: /assets/images/og-image.jpg
             <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
                 <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Pilne: Wyciek informacji — Luty 2026</span>
             </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Niewinne dzieci skazane na 6 miesięcy w instytucji</h2>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Dzieci Mają Być Przetrzymywane Do Czerwca 2026</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Wyciek informacji ujawnia zamiar sądu przedłużenia przetrzymywania dzieci <strong style="color: #fef08a;">ponad początkowe 120 dni</strong> — utrzymując je w instytucji <strong style="color: #fef08a;">do maja lub czerwca 2026</strong>. Bliźniacze, które znoszą tę traumę od 5 roku życia, skończą 7 lat w marcu — wciąż oddzielone od rodziców.
+                Sąd planuje przetrzymywać te dzieci w instytucji <strong style="color: #fef08a;">do czerwca 2026</strong> — <strong style="color: #fef08a;">7 miesięcy ciągłej traumy</strong>. Bliźniaczki skończą 7 lat w marcu — wciąż oddzielone od rodziców. Każdy dzień w instytucji powoduje udokumentowane, nieodwracalne szkody psychologiczne. <strong style="color: #fef08a;">Maksymalna presja międzynarodowa potrzebna TERAZ.</strong>
             </p>
             
             <!-- Ostrzeżenie o traumie psychologicznej -->
@@ -98,6 +98,7 @@ image: /assets/images/og-image.jpg
             </div>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
                 <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">Zobacz dowody</a>
+                <a href="/pl/petition/" class="btn" style="background: #fef08a; color: #991b1b; font-weight: 700; padding: 0.875rem 2rem; animation: pulse 2s infinite;">🇺🇳 Petycja ONZ</a>
                 <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Działaj teraz</a>
             </div>
         </div>

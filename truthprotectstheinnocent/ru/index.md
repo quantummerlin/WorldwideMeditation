@@ -63,9 +63,9 @@ image: /assets/images/og-image.jpg
             <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
                 <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Срочно: Утечка информации — Февраль 2026</span>
             </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Невинные дети приговорены к 6 месяцам в учреждении</h2>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Детей Планируют Удерживать До Июня 2026</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Утечка информации раскрывает намерение суда продлить содержание детей <strong style="color: #fef08a;">сверх первоначальных 120 дней</strong> — держа их в учреждении <strong style="color: #fef08a;">до мая или июня 2026</strong>. Близнецы, которые переносят эту травму с 5 лет, исполнится 7 в марте — всё ещё разлученные с родителями.
+                Суд планирует держать этих детей в учреждении <strong style="color: #fef08a;">до июня 2026</strong> — <strong style="color: #fef08a;">7 месяцев постоянной травмы</strong>. Близнецам исполнится 7 в марте — всё ещё разлученные с родителями. Каждый день в учреждении наносит документированный, непоправимый психологический вред. <strong style="color: #fef08a;">Максимальное международное давление необходимо СЕЙЧАС.</strong>
             </p>
             
             <!-- Предупреждение о психологической травме -->
@@ -98,6 +98,7 @@ image: /assets/images/og-image.jpg
             </div>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
                 <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">Смотреть доказательства</a>
+                <a href="/ru/petition/" class="btn" style="background: #fef08a; color: #991b1b; font-weight: 700; padding: 0.875rem 2rem; animation: pulse 2s infinite;">🇺🇳 Петиция ООН</a>
                 <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Действовать сейчас</a>
             </div>
         </div>

@@ -63,9 +63,9 @@ image: /assets/images/og-image.jpg
             <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
                 <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Ultime Notizie: Informazioni Trapelate — Febbraio 2026</span>
             </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Bambini Innocenti Condannati a 6 Mesi in Istituto</h2>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Bambini Trattenuti Fino a Giugno 2026</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Informazioni trapelate rivelano l'intenzione del tribunale di prolungare la detenzione dei bambini <strong style="color: #fef08a;">oltre i 120 giorni iniziali</strong> — mantenendoli istituzionalizzati <strong style="color: #fef08a;">fino a maggio o giugno 2026</strong>. I gemelli, che sopportano questo trauma dall'età di 5 anni, compiranno 7 anni a marzo — ancora separati dai genitori.
+                Il tribunale sta pianificando di tenere questi bambini istituzionalizzati <strong style="color: #fef08a;">fino a giugno 2026</strong> — <strong style="color: #fef08a;">7 mesi di trauma costante</strong>. I gemelli compiranno 7 anni a marzo — ancora separati dai genitori. Ogni singolo giorno nell'istituto causa danni psicologici documentati e irreparabili. <strong style="color: #fef08a;">Serve la massima pressione internazionale ORA.</strong>
             </p>
             
             <!-- Avviso Trauma Psicologico -->
@@ -98,6 +98,7 @@ image: /assets/images/og-image.jpg
             </div>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
                 <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">Vedi Le Prove</a>
+                <a href="/it/petition/" class="btn" style="background: #fef08a; color: #991b1b; font-weight: 700; padding: 0.875rem 2rem; animation: pulse 2s infinite;">🇺🇳 Petizione ONU</a>
                 <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Agisci Ora</a>
             </div>
         </div>

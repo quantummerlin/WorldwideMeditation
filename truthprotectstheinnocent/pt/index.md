@@ -63,9 +63,9 @@ image: /assets/images/og-image.jpg
             <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
                 <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Última hora: Informações vazadas — Fevereiro 2026</span>
             </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Crianças inocentes condenadas a 6 meses de institucionalização</h2>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Crianças Planejadas Para Serem Mantidas Até Junho 2026</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Informações vazadas revelam a intenção do tribunal de prolongar a detenção das crianças <strong style="color: #fef08a;">para além dos 120 dias iniciais</strong> — mantendo-as institucionalizadas <strong style="color: #fef08a;">até maio ou junho de 2026</strong>. Os gêmeos, que suportam este trauma desde os 5 anos, farão 7 em março — ainda separados dos pais.
+                O tribunal planeja manter estas crianças institucionalizadas <strong style="color: #fef08a;">até junho de 2026</strong> — <strong style="color: #fef08a;">7 meses de trauma constante</strong>. Os gêmeos farão 7 anos em março — ainda separados dos pais. Cada dia na instituição causa danos psicológicos documentados e irreparáveis. <strong style="color: #fef08a;">Pressão internacional máxima é necessária AGORA.</strong>
             </p>
             
             <!-- Alerta Trauma Psicológico -->
@@ -98,6 +98,7 @@ image: /assets/images/og-image.jpg
             </div>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
                 <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">Ver evidências</a>
+                <a href="/pt/petition/" class="btn" style="background: #fef08a; color: #991b1b; font-weight: 700; padding: 0.875rem 2rem; animation: pulse 2s infinite;">🇺🇳 Petição ONU</a>
                 <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Agir agora</a>
             </div>
         </div>

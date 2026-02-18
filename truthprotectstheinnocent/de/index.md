@@ -63,9 +63,9 @@ image: /assets/images/og-image.jpg
             <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
                 <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Eilmeldung: Durchgesickerte Informationen — Februar 2026</span>
             </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Unschuldige Kinder zu 6-monatiger Unterbringung verurteilt</h2>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Kinder Sollen Bis Juni 2026 Festgehalten Werden</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Durchgesickerte Informationen enthüllen, dass das Gericht beabsichtigt, die Inhaftierung der Kinder <strong style="color: #fef08a;">über die anfänglichen 120 Tage hinaus</strong> zu verlängern — sie bleiben <strong style="color: #fef08a;">bis Mai oder Juni 2026</strong> institutionalisiert. Die Zwillinge, die dieses Trauma seit ihrem 5. Lebensjahr erleiden, werden im März 7 — immer noch von ihren Eltern getrennt.
+                Das Gericht plant, diese Kinder <strong style="color: #fef08a;">bis Juni 2026</strong> in der Einrichtung zu halten — <strong style="color: #fef08a;">7 Monate ständiges Trauma</strong>. Die Zwillinge werden im März 7 — immer noch von ihren Eltern getrennt. Jeder einzelne Tag in der Einrichtung verursacht dokumentierten, irreparablen psychologischen Schaden. <strong style="color: #fef08a;">Maximaler internationaler Druck ist JETZT nötig.</strong>
             </p>            
             <!-- Psychologisches Trauma Warnung -->
             <div style="background: rgba(0,0,0,0.3); border: 2px solid rgba(254,240,138,0.5); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
@@ -96,6 +96,7 @@ image: /assets/images/og-image.jpg
             </div>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
                 <a href="/evidence/" class="btn" style="background: white; color: #dc2626; font-weight: 600; padding: 0.875rem 2rem;">Beweise ansehen</a>
+                <a href="/de/petition/" class="btn" style="background: #fef08a; color: #991b1b; font-weight: 700; padding: 0.875rem 2rem; animation: pulse 2s infinite;">🇺🇳 UN-Petition</a>
                 <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Jetzt handeln</a>
             </div>
         </div>
