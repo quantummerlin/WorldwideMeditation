@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Main English page -->
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://worldwidemeditation.quantummerlin.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://worldwidemeditation.quantummerlin.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://worldwidemeditation.quantummerlin.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://worldwidemeditation.quantummerlin.com/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://worldwidemeditation.quantummerlin.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://worldwidemeditation.quantummerlin.com/" />
+  </url>
+
+  <!-- French -->
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/fr/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://worldwidemeditation.quantummerlin.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://worldwidemeditation.quantummerlin.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://worldwidemeditation.quantummerlin.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://worldwidemeditation.quantummerlin.com/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://worldwidemeditation.quantummerlin.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://worldwidemeditation.quantummerlin.com/" />
+  </url>
+
+  <!-- German -->
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/de/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://worldwidemeditation.quantummerlin.com/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://worldwidemeditation.quantummerlin.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://worldwidemeditation.quantummerlin.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://worldwidemeditation.quantummerlin.com/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://worldwidemeditation.quantummerlin.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://worldwidemeditation.quantummerlin.com/" />
+  </url>
+
+  <!-- Spanish -->
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/es/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://worldwidemeditation.quantummerlin.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://worldwidemeditation.quantummerlin.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://worldwidemeditation.quantummerlin.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://worldwidemeditation.quantummerlin.com/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://worldwidemeditation.quantummerlin.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://worldwidemeditation.quantummerlin.com/" />
+  </url>
+
+  <!-- Italian -->
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/it/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://worldwidemeditation.quantummerlin.com/it/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://worldwidemeditation.quantummerlin.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://worldwidemeditation.quantummerlin.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://worldwidemeditation.quantummerlin.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://worldwidemeditation.quantummerlin.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://worldwidemeditation.quantummerlin.com/" />
+  </url>
+
+  <!-- Secondary English pages -->
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/science.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/share.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://worldwidemeditation.quantummerlin.com/awareness-guide.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
