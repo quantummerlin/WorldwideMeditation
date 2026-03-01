@@ -74,7 +74,8 @@ updated: 2026-02-13-urgent
         </div>
 
         <div class="hero-cta">
-            <a href="#share-now" class="btn btn-primary btn-lg btn-glow">Share Before It Airs</a>
+            <a href="https://www.youtube.com/watch?v=FZPMGep5CKU" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-glow">▶ Watch on YouTube</a>
+            <a href="https://www.facebook.com/share/1C7HNu7Knu/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">📘 Share on Facebook</a>
             <a href="/evidence/" class="btn btn-secondary btn-lg">See The Evidence</a>
         </div>
 
