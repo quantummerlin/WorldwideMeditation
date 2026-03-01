@@ -440,6 +440,7 @@ a:hover {
     z-index: 3;
     text-align: center;
     padding: var(--spacing-3xl) var(--spacing-lg);
+    padding-top: 90px;
     max-width: 900px;
 }
 
