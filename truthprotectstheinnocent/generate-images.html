@@ -3,145 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <title>OG Image Generator - Truth Protects The Innocent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 20px;
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
+            font-family: 'Inter', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
         }
         #canvas-container {
             text-align: center;
+            max-width: 1240px;
+            margin: 0 auto;
         }
         canvas {
             border: 2px solid #333;
             margin: 20px auto;
             display: block;
+            max-width: 100%;
+            height: auto;
         }
         button {
-            padding: 12px 24px;
+            padding: 14px 28px;
             font-size: 16px;
-            background: #1e3a5f;
+            font-weight: 600;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
             color: white;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             margin: 10px;
+            transition: transform 0.2s;
         }
         button:hover {
-            background: #2d5a8a;
+            transform: scale(1.05);
         }
         .instructions {
             max-width: 800px;
             margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
+            padding: 24px;
+            background: #111;
+            border-radius: 12px;
+            border: 1px solid #333;
         }
+        h1 { color: #fff; }
+        h2 { color: #ccc; margin-top: 3rem; }
     </style>
 </head>
 <body>
     <div class="instructions">
         <h1>Social Media & Favicon Image Generator</h1>
         <p>Click the buttons below to generate and download the images needed for the website.</p>
+        <p><strong>After downloading, place these files in <code>/assets/images/</code></strong></p>
         <ul>
-            <li><strong>OG Image:</strong> 1200x630px - Used for social media sharing (Facebook, Twitter, LinkedIn)</li>
-            <li><strong>Favicon:</strong> 512x512px - Used for browser tab icon</li>
-            <li><strong>Apple Touch Icon:</strong> 180x180px - Used for iOS home screen</li>
+            <li><strong>OG Image:</strong> 1200x630px — Social media sharing (Facebook, Twitter, WhatsApp, LinkedIn)</li>
+            <li><strong>Favicon:</strong> 512x512px — Browser tab icon</li>
+            <li><strong>Apple Touch Icon:</strong> 180x180px — iOS home screen</li>
         </ul>
     </div>
 
     <div id="canvas-container">
-        <h2>Social Media Share Image (1200x630)</h2>
+        <h2>Social Media Share Image (1200 × 630)</h2>
         <canvas id="og-canvas" width="1200" height="630"></canvas>
         <button onclick="downloadOGImage()">Download og-image.jpg</button>
 
-        <h2>Favicon (512x512)</h2>
+        <h2>Favicon (512 × 512)</h2>
         <canvas id="favicon-canvas" width="512" height="512"></canvas>
         <button onclick="downloadFavicon()">Download favicon.png</button>
 
-        <h2>Apple Touch Icon (180x180)</h2>
+        <h2>Apple Touch Icon (180 × 180)</h2>
         <canvas id="apple-canvas" width="180" height="180"></canvas>
         <button onclick="downloadAppleIcon()">Download apple-touch-icon.png</button>
     </div>
 
     <script>
-        // OG Image (Social Media Share)
+        // Helper: draw rounded rectangle
+        function roundRect(ctx, x, y, w, h, r) {
+            ctx.beginPath();
+            ctx.moveTo(x + r, y);
+            ctx.lineTo(x + w - r, y);
+            ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+            ctx.lineTo(x + w, y + h - r);
+            ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+            ctx.lineTo(x + r, y + h);
+            ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+            ctx.lineTo(x, y + r);
+            ctx.quadraticCurveTo(x, y, x + r, y);
+            ctx.closePath();
+        }
+
+        // ========================
+        // OG IMAGE — 1200 x 630
+        // ========================
         function drawOGImage() {
             const canvas = document.getElementById('og-canvas');
             const ctx = canvas.getContext('2d');
+            const W = 1200, H = 630;
 
-            // Background gradient
-            const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
-            gradient.addColorStop(0, '#1e3a5f');
-            gradient.addColorStop(1, '#0f2744');
-            ctx.fillStyle = gradient;
-            ctx.fillRect(0, 0, 1200, 630);
+            // ----- Deep dark background with subtle diagonal gradient -----
+            const bg = ctx.createLinearGradient(0, 0, W, H);
+            bg.addColorStop(0, '#060b18');
+            bg.addColorStop(0.5, '#0c1829');
+            bg.addColorStop(1, '#06101e');
+            ctx.fillStyle = bg;
+            ctx.fillRect(0, 0, W, H);
 
-            // Balance icon/emoji
-            ctx.font = '120px Arial';
-            ctx.fillText('⚖️', 80, 180);
+            // ----- Subtle geometric pattern (diagonal lines) -----
+            ctx.strokeStyle = 'rgba(255,255,255,0.02)';
+            ctx.lineWidth = 1;
+            for (let i = -H; i < W + H; i += 40) {
+                ctx.beginPath();
+                ctx.moveTo(i, 0);
+                ctx.lineTo(i + H, H);
+                ctx.stroke();
+            }
 
-            // Title
+            // ----- Left accent stripe -----
+            const stripe = ctx.createLinearGradient(0, 0, 0, H);
+            stripe.addColorStop(0, '#dc2626');
+            stripe.addColorStop(0.5, '#f59e0b');
+            stripe.addColorStop(1, '#dc2626');
+            ctx.fillStyle = stripe;
+            ctx.fillRect(0, 0, 6, H);
+
+            // ----- Top red urgency bar -----
+            ctx.fillStyle = 'rgba(220, 38, 38, 0.15)';
+            ctx.fillRect(0, 0, W, 56);
+            ctx.fillStyle = '#dc2626';
+            ctx.fillRect(0, 56, W, 2);
+
+            // Urgency badge text
+            ctx.fillStyle = '#fca5a5';
+            ctx.font = '700 15px Inter, Arial, sans-serif';
+            ctx.textAlign = 'left';
+            ctx.letterSpacing = '0.12em';
+            ctx.fillText('⚠  THREE CHILDREN SEPARATED FROM THEIR PARENTS  •  ALL THREE OFFICIAL REASONS PROVEN FALSE', 50, 36);
+
+            // ----- Main Title -----
             ctx.fillStyle = '#ffffff';
-            ctx.font = 'bold 64px Arial';
-            ctx.fillText('Truth Protects The Innocent', 80, 280);
+            ctx.font = '800 62px Inter, Arial, sans-serif';
+            ctx.textAlign = 'left';
+            ctx.fillText('Truth Protects', 50, 140);
+            ctx.fillText('The Innocent', 50, 210);
 
-            // Subtitle
-            ctx.fillStyle = '#e5e7eb';
-            ctx.font = '36px Arial';
-            ctx.fillText('Three children. Three false claims.', 80, 350);
-            ctx.fillText('One family fighting for truth.', 80, 400);
+            // ----- Accent line under title -----
+            const accentLine = ctx.createLinearGradient(50, 0, 400, 0);
+            accentLine.addColorStop(0, '#dc2626');
+            accentLine.addColorStop(1, '#f59e0b');
+            ctx.fillStyle = accentLine;
+            ctx.fillRect(50, 228, 280, 4);
 
-            // Stats
-            ctx.fillStyle = '#f59e0b';
-            ctx.font = 'bold 48px Arial';
-            ctx.fillText('3 Children Separated', 80, 490);
-            
-            ctx.fillStyle = '#ef4444';
-            ctx.fillText('3 Reasons PROVEN FALSE', 80, 560);
+            // ----- Subtitle -----
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '400 24px Inter, Arial, sans-serif';
+            ctx.fillText('Three children removed from loving parents in Italy.', 50, 275);
+            ctx.fillText('Three official justifications. All three proven false.', 50, 308);
 
-            // URL
-            ctx.fillStyle = '#9ca3af';
-            ctx.font = '24px Arial';
-            ctx.fillText('truthprotectstheinnocent.quantummerlin.com', 80, 610);
+            // ----- Three stat cards -----
+            const stats = [
+                { number: '3', label: 'Children\nSeparated', color: '#f59e0b' },
+                { number: '3', label: 'False Claims\nDisproven', color: '#ef4444' },
+                { number: '0', label: 'Valid\nReasons', color: '#22c55e' },
+            ];
+
+            const cardW = 180, cardH = 115, cardY = 348, cardGap = 20;
+            stats.forEach((stat, i) => {
+                const cx = 50 + i * (cardW + cardGap);
+
+                // Card background
+                roundRect(ctx, cx, cardY, cardW, cardH, 12);
+                ctx.fillStyle = 'rgba(255,255,255,0.04)';
+                ctx.fill();
+
+                // Card border
+                roundRect(ctx, cx, cardY, cardW, cardH, 12);
+                ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+
+                // Top colored accent on card
+                ctx.fillStyle = stat.color;
+                ctx.fillRect(cx + 16, cardY + 12, 32, 3);
+
+                // Number
+                ctx.fillStyle = stat.color;
+                ctx.font = '800 42px Inter, Arial, sans-serif';
+                ctx.textAlign = 'left';
+                ctx.fillText(stat.number, cx + 16, cardY + 60);
+
+                // Label (multiline)
+                ctx.fillStyle = '#cbd5e1';
+                ctx.font = '600 14px Inter, Arial, sans-serif';
+                const lines = stat.label.split('\n');
+                lines.forEach((line, j) => {
+                    ctx.fillText(line, cx + 16, cardY + 82 + j * 18);
+                });
+            });
+
+            // ----- Right side — Large scales of justice icon -----
+            // Draw a stylized scales icon using paths
+            const scaleX = 920, scaleY = 180;
+
+            // Outer glow circle
+            const glow = ctx.createRadialGradient(scaleX + 100, scaleY + 140, 10, scaleX + 100, scaleY + 140, 200);
+            glow.addColorStop(0, 'rgba(245, 158, 11, 0.08)');
+            glow.addColorStop(1, 'rgba(245, 158, 11, 0)');
+            ctx.fillStyle = glow;
+            ctx.beginPath();
+            ctx.arc(scaleX + 100, scaleY + 140, 200, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Scale pillar
+            ctx.strokeStyle = 'rgba(245, 158, 11, 0.4)';
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.moveTo(scaleX + 100, scaleY + 20);
+            ctx.lineTo(scaleX + 100, scaleY + 260);
+            ctx.stroke();
+
+            // Base
+            ctx.beginPath();
+            ctx.moveTo(scaleX + 40, scaleY + 260);
+            ctx.lineTo(scaleX + 160, scaleY + 260);
+            ctx.stroke();
+
+            // Crossbar
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(scaleX + 10, scaleY + 40);
+            ctx.lineTo(scaleX + 190, scaleY + 40);
+            ctx.stroke();
+
+            // Left pan (lower — weighted down / unjust)
+            ctx.strokeStyle = 'rgba(239, 68, 68, 0.5)';
+            ctx.lineWidth = 2;
+            // Chains
+            ctx.beginPath(); ctx.moveTo(scaleX + 30, scaleY + 40); ctx.lineTo(scaleX + 10, scaleY + 160); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(scaleX + 30, scaleY + 40); ctx.lineTo(scaleX + 70, scaleY + 160); ctx.stroke();
+            // Pan
+            ctx.beginPath();
+            ctx.ellipse(scaleX + 40, scaleY + 165, 40, 10, 0, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(239, 68, 68, 0.1)';
+            ctx.fill();
+            ctx.stroke();
+
+            // "FALSE" text on left pan
+            ctx.fillStyle = 'rgba(239, 68, 68, 0.6)';
+            ctx.font = '700 13px Inter, Arial, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('FALSE', scaleX + 40, scaleY + 170);
+
+            // Right pan (higher — truth rises)
+            ctx.strokeStyle = 'rgba(34, 197, 94, 0.5)';
+            // Chains
+            ctx.beginPath(); ctx.moveTo(scaleX + 170, scaleY + 40); ctx.lineTo(scaleX + 140, scaleY + 100); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(scaleX + 170, scaleY + 40); ctx.lineTo(scaleX + 200, scaleY + 100); ctx.stroke();
+            // Pan
+            ctx.beginPath();
+            ctx.ellipse(scaleX + 170, scaleY + 105, 40, 10, 0, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(34, 197, 94, 0.1)';
+            ctx.fill();
+            ctx.stroke();
+
+            // "TRUTH" text on right pan
+            ctx.fillStyle = 'rgba(34, 197, 94, 0.6)';
+            ctx.font = '700 13px Inter, Arial, sans-serif';
+            ctx.fillText('TRUTH', scaleX + 170, scaleY + 110);
+
+            // ----- Right side text — featured on 60 Minutes -----
+            ctx.textAlign = 'center';
+
+            // 60 Minutes badge
+            roundRect(ctx, scaleX + 20, scaleY + 295, 170, 36, 18);
+            ctx.fillStyle = 'rgba(220, 38, 38, 0.2)';
+            ctx.fill();
+            roundRect(ctx, scaleX + 20, scaleY + 295, 170, 36, 18);
+            ctx.strokeStyle = 'rgba(220, 38, 38, 0.4)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            ctx.fillStyle = '#fca5a5';
+            ctx.font = '700 12px Inter, Arial, sans-serif';
+            ctx.fillText('📺 AS SEEN ON 60 MINUTES', scaleX + 105, scaleY + 318);
+
+            // International flags
+            ctx.font = '32px Arial';
+            ctx.fillText('🇦🇺  🇮🇹  🌍', scaleX + 105, scaleY + 370);
+
+            ctx.fillStyle = '#64748b';
+            ctx.font = '400 13px Inter, Arial, sans-serif';
+            ctx.fillText('International attention growing', scaleX + 105, scaleY + 400);
+
+            // ----- Bottom bar -----
+            ctx.fillStyle = 'rgba(255,255,255,0.03)';
+            ctx.fillRect(0, H - 56, W, 56);
+            ctx.fillStyle = 'rgba(255,255,255,0.06)';
+            ctx.fillRect(0, H - 56, W, 1);
+
+            // URL (left)
+            ctx.textAlign = 'left';
+            ctx.fillStyle = '#64748b';
+            ctx.font = '500 16px Inter, Arial, sans-serif';
+            ctx.fillText('truthprotectstheinnocent.quantummerlin.com', 50, H - 22);
+
+            // Hashtag (right)
+            ctx.textAlign = 'right';
+            ctx.fillStyle = '#475569';
+            ctx.font = '600 15px Inter, Arial, sans-serif';
+            ctx.fillText('#TruthProtectsTheInnocent', W - 50, H - 22);
         }
 
-        // Favicon
+        // ========================
+        // FAVICON — 512 x 512
+        // ========================
         function drawFavicon() {
             const canvas = document.getElementById('favicon-canvas');
             const ctx = canvas.getContext('2d');
+            const S = 512;
 
             // Background
-            const gradient = ctx.createLinearGradient(0, 0, 512, 512);
-            gradient.addColorStop(0, '#1e3a5f');
-            gradient.addColorStop(1, '#2d5a8a');
-            ctx.fillStyle = gradient;
-            ctx.fillRect(0, 0, 512, 512);
+            const bg = ctx.createLinearGradient(0, 0, S, S);
+            bg.addColorStop(0, '#0c1829');
+            bg.addColorStop(1, '#1e3a5f');
+            ctx.fillStyle = bg;
+            roundRect(ctx, 0, 0, S, S, 80);
+            ctx.fill();
+
+            // Glow
+            const glow = ctx.createRadialGradient(256, 240, 20, 256, 240, 200);
+            glow.addColorStop(0, 'rgba(245, 158, 11, 0.15)');
+            glow.addColorStop(1, 'rgba(245, 158, 11, 0)');
+            ctx.fillStyle = glow;
+            ctx.beginPath();
+            ctx.arc(256, 240, 200, 0, Math.PI * 2);
+            ctx.fill();
 
             // Balance icon
-            ctx.font = '300px Arial';
+            ctx.font = '260px Arial';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText('⚖️', 256, 280);
+            ctx.fillText('⚖️', 256, 260);
         }
 
-        // Apple Touch Icon
+        // ========================
+        // APPLE TOUCH ICON — 180 x 180
+        // ========================
         function drawAppleIcon() {
             const canvas = document.getElementById('apple-canvas');
             const ctx = canvas.getContext('2d');
+            const S = 180;
 
-            // Background with rounded corners effect
-            ctx.fillStyle = '#1e3a5f';
-            ctx.fillRect(0, 0, 180, 180);
+            // Background
+            const bg = ctx.createLinearGradient(0, 0, S, S);
+            bg.addColorStop(0, '#0c1829');
+            bg.addColorStop(1, '#1e3a5f');
+            ctx.fillStyle = bg;
+            roundRect(ctx, 0, 0, S, S, 36);
+            ctx.fill();
+
+            // Glow
+            const glow = ctx.createRadialGradient(90, 85, 10, 90, 85, 80);
+            glow.addColorStop(0, 'rgba(245, 158, 11, 0.2)');
+            glow.addColorStop(1, 'rgba(245, 158, 11, 0)');
+            ctx.fillStyle = glow;
+            ctx.beginPath();
+            ctx.arc(90, 85, 80, 0, Math.PI * 2);
+            ctx.fill();
 
             // Balance icon
-            ctx.font = '120px Arial';
+            ctx.font = '100px Arial';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText('⚖️', 90, 95);
+            ctx.fillText('⚖️', 90, 92);
         }
 
+        // ========================
+        // DOWNLOAD FUNCTIONS
+        // ========================
         function downloadOGImage() {
             const canvas = document.getElementById('og-canvas');
             canvas.toBlob((blob) => {
@@ -150,6 +389,7 @@
                 a.href = url;
                 a.download = 'og-image.jpg';
                 a.click();
+                URL.revokeObjectURL(url);
             }, 'image/jpeg', 0.95);
         }
 
@@ -161,6 +401,7 @@
                 a.href = url;
                 a.download = 'favicon.png';
                 a.click();
+                URL.revokeObjectURL(url);
             }, 'image/png');
         }
 
@@ -172,14 +413,18 @@
                 a.href = url;
                 a.download = 'apple-touch-icon.png';
                 a.click();
+                URL.revokeObjectURL(url);
             }, 'image/png');
         }
 
-        // Draw all on load
+        // Draw all on load (with font delay)
         window.onload = () => {
-            drawOGImage();
-            drawFavicon();
-            drawAppleIcon();
+            // Wait for Inter font to load before rendering
+            document.fonts.ready.then(() => {
+                drawOGImage();
+                drawFavicon();
+                drawAppleIcon();
+            });
         };
     </script>
 </body>
