@@ -6,53 +6,140 @@ lang: de
 image: /assets/images/og-image.jpg
 ---
 
-<!-- Hero Section with Slideshow Background -->
-<section class="hero">
-    <div class="hero-slideshow">
-        <img src="/assets/images/testimonials/photo_2026-01-11_21-41-12.jpg" alt="" class="hero-slide active">
-        <img src="/assets/images/testimonials/photo_2026-01-11_21-41-19.jpg" alt="" class="hero-slide">
-        <img src="/assets/images/testimonials/photo_2026-01-11_21-41-26.jpg" alt="" class="hero-slide">
-        <img src="/assets/images/testimonials/photo_2026-01-11_21-41-33.jpg" alt="" class="hero-slide">
-        <img src="/assets/images/testimonials/photo_2026-01-11_21-41-40.jpg" alt="" class="hero-slide">
-        <img src="/assets/images/testimonials/photo_2026-01-11_21-41-48.jpg" alt="" class="hero-slide">
+<!-- Hero Section: 60 Minutes Australia Feature -->
+<section class="hero hero-60mins">
+    <div class="hero-video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="/assets/videos/60-minutes-trailer.mp4" type="video/mp4">
+        </video>
     </div>
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay hero-overlay-60mins"></div>
     <div class="hero-content">
-        <span class="hero-badge">⚠️ Dringend: Familie Getrennt</span>
-        <h1>Die Wahrheit Schützt Die Unschuldigen</h1>
-        <p class="lead">Drei Kinder wurden in Italien von ihren liebevollen Eltern getrennt. Drei offizielle Begründungen. Alle drei als falsch erwiesen.</p>
-        
-        <div class="hero-stats">
-            <div class="hero-stat">
-                <span class="hero-stat-number">3</span>
-                <span class="hero-stat-label">Kinder Getrennt</span>
+        <!-- Live/Countdown Badge -->
+        <div class="sixty-mins-badge-wrap">
+            <span class="sixty-mins-badge" id="sixtyMinsBadge">
+                📺 HEUTE ABEND AUF 60 MINUTES AUSTRALIA — 20:45 AEST
+            </span>
+        </div>
+
+        <h1 class="sixty-mins-headline">Die Welt Schaut Zu</h1>
+        <p class="lead">Australiens meistgesehene Sendung erzählt die Geschichte dreier Kinder, die ihren Eltern weggenommen wurden — und der drei offiziellen Gründe, die <strong>alle als falsch bewiesen</strong> wurden.</p>
+
+        <!-- Countdown Timer -->
+        <div class="sixty-mins-countdown" id="sixtyMinsCountdown">
+            <div class="countdown-item">
+                <span class="countdown-number" id="countHours">--</span>
+                <span class="countdown-label">STUNDEN</span>
             </div>
-            <div class="hero-stat">
-                <span class="hero-stat-number">3</span>
-                <span class="hero-stat-label">Falsche Behauptungen</span>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="countMinutes">--</span>
+                <span class="countdown-label">MINUTEN</span>
             </div>
-            <div class="hero-stat">
-                <span class="hero-stat-number">0</span>
-                <span class="hero-stat-label">Gültige Gründe</span>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="countSeconds">--</span>
+                <span class="countdown-label">SEKUNDEN</span>
             </div>
         </div>
-        
+
+        <!-- Trailer Preview -->
+        <div class="sixty-mins-trailer">
+            <div class="trailer-container" id="trailerContainer">
+                <video id="trailerVideo" playsinline preload="metadata" poster="">
+                    <source src="/assets/videos/60-minutes-trailer.mp4" type="video/mp4">
+                </video>
+                <button class="trailer-play-btn" id="trailerPlayBtn" aria-label="Trailer abspielen">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.2)"/><circle cx="30" cy="30" r="28" stroke="white" stroke-width="2" fill="none"/><polygon points="24,18 24,42 44,30" fill="white"/></svg>
+                </button>
+                <span class="trailer-label">▶ Vorschau ansehen</span>
+            </div>
+        </div>
+
+        <!-- Coverage Stats -->
+        <div class="hero-stats sixty-mins-stats">
+            <div class="hero-stat">
+                <span class="hero-stat-number">🇦🇺</span>
+                <span class="hero-stat-label">60 Minutes<br>Australia</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-number">🇮🇹</span>
+                <span class="hero-stat-label">Italienische<br>Presse</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-number">🌍</span>
+                <span class="hero-stat-label">Weltweite<br>Aufmerksamkeit</span>
+            </div>
+        </div>
+
         <div class="hero-cta">
-            <a href="#share-now" class="btn btn-primary btn-lg">Jetzt Teilen</a>
-            <a href="/evidence/" class="btn btn-secondary btn-lg">Beweise Ansehen</a>
+            <a href="https://www.youtube.com/watch?v=FZPMGep5CKU" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-glow">▶ Auf YouTube ansehen</a>
+            <a href="https://www.facebook.com/share/1C7HNu7Knu/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">📘 Auf Facebook teilen</a>
+            <a href="/evidence/" class="btn btn-secondary btn-lg">Beweise ansehen</a>
         </div>
+
+        <p class="sixty-mins-subtext">Drei Kinder. Drei falsche Behauptungen. Null gültige Gründe.<br>Heute Abend erfahren Millionen die Wahrheit.</p>
     </div>
 </section>
 
+<!-- 60 Minutes Countdown & Trailer Script -->
 <script>
 (function() {
-    const slides = document.querySelectorAll('.hero-slide');
-    let current = 0;
-    setInterval(() => {
-        slides[current].classList.remove('active');
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('active');
-    }, 5000);
+    const airTimeUTC = new Date(Date.UTC(2026, 2, 1, 9, 45, 0));
+    const showDurationMs = 90 * 60 * 1000;
+    const countdownEl = document.getElementById('sixtyMinsCountdown');
+    const badgeEl = document.getElementById('sixtyMinsBadge');
+    const hoursEl = document.getElementById('countHours');
+    const minutesEl = document.getElementById('countMinutes');
+    const secondsEl = document.getElementById('countSeconds');
+
+    function updateCountdown() {
+        const now = new Date();
+        const diff = airTimeUTC - now;
+        const afterShow = now - (airTimeUTC.getTime() + showDurationMs);
+
+        if (diff > 0) {
+            const h = Math.floor(diff / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+            hoursEl.textContent = String(h).padStart(2, '0');
+            minutesEl.textContent = String(m).padStart(2, '0');
+            secondsEl.textContent = String(s).padStart(2, '0');
+        } else if (afterShow < 0) {
+            countdownEl.innerHTML = '<div class="now-airing"><span class="now-airing-dot"></span> JETZT LIVE AUF 60 MINUTES</div>';
+            badgeEl.textContent = '🔴 JETZT LIVE — 60 Minutes Australia';
+            badgeEl.classList.add('sixty-mins-badge-live');
+        } else {
+            countdownEl.innerHTML = '<a href="https://www.9now.com.au/60-minutes" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-glow">Auf 9Now ansehen →</a>';
+            badgeEl.textContent = '📺 WIE GESEHEN AUF 60 MINUTES AUSTRALIA';
+            badgeEl.classList.remove('sixty-mins-badge-live');
+            badgeEl.classList.add('sixty-mins-badge-aired');
+            clearInterval(timer);
+        }
+    }
+
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+
+    const trailerVideo = document.getElementById('trailerVideo');
+    const playBtn = document.getElementById('trailerPlayBtn');
+    const trailerContainer = document.getElementById('trailerContainer');
+
+    if (playBtn && trailerVideo) {
+        playBtn.addEventListener('click', function() {
+            trailerVideo.controls = true;
+            trailerVideo.play();
+            playBtn.style.display = 'none';
+            trailerContainer.querySelector('.trailer-label').style.display = 'none';
+            trailerContainer.classList.add('trailer-playing');
+        });
+        trailerVideo.addEventListener('ended', function() {
+            playBtn.style.display = '';
+            trailerContainer.querySelector('.trailer-label').style.display = '';
+            trailerContainer.classList.remove('trailer-playing');
+            trailerVideo.controls = false;
+        });
+    }
 })();
 </script>
 
