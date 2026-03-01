@@ -515,6 +515,246 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/* ============================================
+   60 MINUTES HERO SECTION
+   ============================================ */
+.hero-60mins {
+    background: #050a14;
+}
+
+.hero-overlay-60mins {
+    background: linear-gradient(
+        180deg,
+        rgba(5, 10, 20, 0.55) 0%,
+        rgba(5, 10, 20, 0.70) 40%,
+        rgba(5, 10, 20, 0.90) 100%
+    ) !important;
+}
+
+/* 60 Minutes Badge */
+.sixty-mins-badge-wrap {
+    margin-bottom: var(--spacing-xl);
+}
+
+.sixty-mins-badge {
+    display: inline-block;
+    background: rgba(220, 38, 38, 0.25);
+    border: 1px solid rgba(220, 38, 38, 0.6);
+    color: #fca5a5;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+.sixty-mins-badge-live {
+    background: rgba(220, 38, 38, 0.4);
+    border-color: #dc2626;
+    color: #fff;
+    animation: badgePulseLive 1s ease-in-out infinite;
+}
+
+.sixty-mins-badge-aired {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: rgba(16, 185, 129, 0.5);
+    color: #6ee7b7;
+    animation: none;
+}
+
+@keyframes badgePulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 20px rgba(220, 38, 38, 0.2); }
+    50% { opacity: 0.85; box-shadow: 0 0 40px rgba(220, 38, 38, 0.4); }
+}
+
+@keyframes badgePulseLive {
+    0%, 100% { opacity: 1; box-shadow: 0 0 20px rgba(220, 38, 38, 0.3); }
+    50% { opacity: 0.9; box-shadow: 0 0 50px rgba(220, 38, 38, 0.6); }
+}
+
+/* 60 Minutes Headline */
+.sixty-mins-headline {
+    color: var(--color-white) !important;
+    font-size: clamp(2.8rem, 7vw, 5rem) !important;
+    font-weight: 800;
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    letter-spacing: -0.02em;
+}
+
+/* Countdown Timer */
+.sixty-mins-countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: var(--spacing-2xl) 0;
+}
+
+.countdown-item {
+    text-align: center;
+    min-width: 80px;
+}
+
+.countdown-number {
+    display: block;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--color-white);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.15);
+}
+
+.countdown-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-top: 0.4rem;
+}
+
+.countdown-separator {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1;
+    padding-bottom: 1.2rem;
+    animation: separatorBlink 1s step-end infinite;
+}
+
+@keyframes separatorBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* Now Airing Badge */
+.now-airing {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(220, 38, 38, 0.2);
+    border: 1px solid rgba(220, 38, 38, 0.5);
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-full);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.now-airing-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #dc2626;
+    animation: liveDot 1.2s ease-in-out infinite;
+}
+
+@keyframes liveDot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(220,38,38,0.7); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 8px rgba(220,38,38,0); }
+}
+
+/* Trailer Preview */
+.sixty-mins-trailer {
+    max-width: 700px;
+    margin: 0 auto var(--spacing-2xl) auto;
+}
+
+.trailer-container {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.trailer-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.trailer-container video {
+    width: 100%;
+    display: block;
+}
+
+.trailer-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform var(--transition-base), opacity var(--transition-base);
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.trailer-play-btn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+}
+
+.trailer-label {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    white-space: nowrap;
+}
+
+.trailer-playing .trailer-label,
+.trailer-playing .trailer-play-btn {
+    display: none !important;
+}
+
+/* 60 Mins Stats */
+.sixty-mins-stats .hero-stat-number {
+    font-size: 2.5rem;
+}
+
+.sixty-mins-stats .hero-stat-label {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Subtext */
+.sixty-mins-subtext {
+    color: var(--color-gray-500);
+    font-size: 0.95rem;
+    margin-top: var(--spacing-xl);
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Glowing CTA Button */
+.btn-glow {
+    animation: btnGlow 2s ease-in-out infinite;
+}
+
+@keyframes btnGlow {
+    0%, 100% { box-shadow: 0 0 15px rgba(217, 130, 43, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(217, 130, 43, 0.6), 0 0 60px rgba(217, 130, 43, 0.2); }
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
@@ -1336,6 +1576,45 @@ a:hover {
     
     .hero-stat-number {
         font-size: 2.5rem;
+    }
+
+    /* 60 Minutes mobile */
+    .sixty-mins-headline {
+        font-size: clamp(2rem, 8vw, 3rem) !important;
+    }
+
+    .sixty-mins-countdown {
+        gap: 0.25rem;
+    }
+
+    .countdown-number {
+        font-size: 2rem !important;
+    }
+
+    .countdown-item {
+        min-width: 60px;
+    }
+
+    .countdown-separator {
+        font-size: 1.8rem;
+    }
+
+    .sixty-mins-trailer {
+        max-width: 100%;
+    }
+
+    .sixty-mins-stats .hero-stat-number {
+        font-size: 2rem;
+    }
+
+    .trailer-play-btn svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .sixty-mins-badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
     }
     
     .hero-cta {
