@@ -96,226 +96,176 @@
 
         // ========================
         // OG IMAGE — 1200 x 630
+        // Chase Hughes Behavioral Influence Design
+        //
+        // Principles applied:
+        // 1. PATTERN INTERRUPT — 0.3s to stop the scroll (massive "3", stark isolation)
+        // 2. INCOMPLETE LOOP (Zeigarnik) — the brain CANNOT leave an open story
+        // 3. THREAT DETECTION — amygdala fires before logic (children + danger)
+        // 4. NEGATIVE SPACE AS WEAPON — emptiness = isolation = something is WRONG
+        // 5. SPECIFICITY = CREDIBILITY — exact numbers, not vague claims
+        // 6. EMOTIONAL SEQUENCING — Threat → Outrage → Curiosity (in that order)
         // ========================
         function drawOGImage() {
             const canvas = document.getElementById('og-canvas');
             const ctx = canvas.getContext('2d');
             const W = 1200, H = 630;
 
-            // ----- Deep dark background with subtle diagonal gradient -----
-            const bg = ctx.createLinearGradient(0, 0, W, H);
-            bg.addColorStop(0, '#060b18');
-            bg.addColorStop(0.5, '#0c1829');
-            bg.addColorStop(1, '#06101e');
-            ctx.fillStyle = bg;
+            // ===== BACKGROUND: TRUE BLACK — not dark grey, BLACK =====
+            // Black = threat environment. The brain goes on alert.
+            ctx.fillStyle = '#000000';
             ctx.fillRect(0, 0, W, H);
 
-            // ----- Subtle geometric pattern (diagonal lines) -----
-            ctx.strokeStyle = 'rgba(255,255,255,0.02)';
-            ctx.lineWidth = 1;
-            for (let i = -H; i < W + H; i += 40) {
+            // Extremely subtle noise/grain — makes it feel REAL, not designed
+            for (let i = 0; i < 8000; i++) {
+                const x = Math.random() * W;
+                const y = Math.random() * H;
+                const a = Math.random() * 0.03;
+                ctx.fillStyle = `rgba(255,255,255,${a})`;
+                ctx.fillRect(x, y, 1, 1);
+            }
+
+            // Single faint red glow — like something bleeding in the dark
+            const dangerGlow = ctx.createRadialGradient(100, H * 0.4, 0, 100, H * 0.4, 400);
+            dangerGlow.addColorStop(0, 'rgba(220, 38, 38, 0.06)');
+            dangerGlow.addColorStop(1, 'rgba(0,0,0,0)');
+            ctx.fillStyle = dangerGlow;
+            ctx.fillRect(0, 0, W, H);
+
+            // ===== THE WOUND — left edge red line =====
+            // Thin, surgical. Like a cut. The eye follows it down.
+            const woundGrad = ctx.createLinearGradient(0, 0, 0, H);
+            woundGrad.addColorStop(0, 'rgba(220, 38, 38, 0)');
+            woundGrad.addColorStop(0.15, '#dc2626');
+            woundGrad.addColorStop(0.85, '#dc2626');
+            woundGrad.addColorStop(1, 'rgba(220, 38, 38, 0)');
+            ctx.fillStyle = woundGrad;
+            ctx.fillRect(0, 0, 4, H);
+
+            // ===== THE MASSIVE "3" — pattern interrupt =====
+            // This is the scroll-stopper. A giant number alone in darkness.
+            // The brain asks: "3 what?" — and now you own their attention.
+            ctx.save();
+            ctx.font = '900 480px Inter, Arial, sans-serif';
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'top';
+            // Ghostly, barely there — like it's haunting the image
+            ctx.fillStyle = 'rgba(220, 38, 38, 0.045)';
+            ctx.fillText('3', W - 20, -40);
+            ctx.restore();
+
+            // ===== THREE FIGURES — the children =====
+            // Three small silhouette circles representing the children.
+            // Isolated in darkness = the brain screams DANGER.
+            // Hughes: "The protective instinct is the strongest human drive."
+            const figY = 90;
+            const figSpacing = 52;
+            const figStartX = W - 200;
+
+            for (let i = 0; i < 3; i++) {
+                const fx = figStartX + i * figSpacing;
+
+                // Head
                 ctx.beginPath();
-                ctx.moveTo(i, 0);
-                ctx.lineTo(i + H, H);
+                ctx.arc(fx, figY, 8, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+                ctx.fill();
+
+                // Body (simple line)
+                ctx.beginPath();
+                ctx.moveTo(fx, figY + 8);
+                ctx.lineTo(fx, figY + 26);
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Arms
+                ctx.beginPath();
+                ctx.moveTo(fx - 8, figY + 16);
+                ctx.lineTo(fx + 8, figY + 16);
+                ctx.stroke();
+
+                // Legs
+                ctx.beginPath();
+                ctx.moveTo(fx, figY + 26);
+                ctx.lineTo(fx - 6, figY + 38);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(fx, figY + 26);
+                ctx.lineTo(fx + 6, figY + 38);
                 ctx.stroke();
             }
 
-            // ----- Left accent stripe -----
-            const stripe = ctx.createLinearGradient(0, 0, 0, H);
-            stripe.addColorStop(0, '#dc2626');
-            stripe.addColorStop(0.5, '#f59e0b');
-            stripe.addColorStop(1, '#dc2626');
-            ctx.fillStyle = stripe;
-            ctx.fillRect(0, 0, 6, H);
-
-            // ----- Top red urgency bar -----
-            ctx.fillStyle = 'rgba(220, 38, 38, 0.15)';
-            ctx.fillRect(0, 0, W, 56);
-            ctx.fillStyle = '#dc2626';
-            ctx.fillRect(0, 56, W, 2);
-
-            // Urgency badge text
-            ctx.fillStyle = '#fca5a5';
-            ctx.font = '700 15px Inter, Arial, sans-serif';
-            ctx.textAlign = 'left';
-            ctx.letterSpacing = '0.12em';
-            ctx.fillText('⚠  THREE CHILDREN SEPARATED FROM THEIR PARENTS  •  ALL THREE OFFICIAL REASONS PROVEN FALSE', 50, 36);
-
-            // ----- Main Title -----
-            ctx.fillStyle = '#ffffff';
-            ctx.font = '800 62px Inter, Arial, sans-serif';
-            ctx.textAlign = 'left';
-            ctx.fillText('Truth Protects', 50, 140);
-            ctx.fillText('The Innocent', 50, 210);
-
-            // ----- Accent line under title -----
-            const accentLine = ctx.createLinearGradient(50, 0, 400, 0);
-            accentLine.addColorStop(0, '#dc2626');
-            accentLine.addColorStop(1, '#f59e0b');
-            ctx.fillStyle = accentLine;
-            ctx.fillRect(50, 228, 280, 4);
-
-            // ----- Subtitle -----
-            ctx.fillStyle = '#94a3b8';
-            ctx.font = '400 24px Inter, Arial, sans-serif';
-            ctx.fillText('Three children removed from loving parents in Italy.', 50, 275);
-            ctx.fillText('Three official justifications. All three proven false.', 50, 308);
-
-            // ----- Three stat cards -----
-            const stats = [
-                { number: '3', label: 'Children\nSeparated', color: '#f59e0b' },
-                { number: '3', label: 'False Claims\nDisproven', color: '#ef4444' },
-                { number: '0', label: 'Valid\nReasons', color: '#22c55e' },
-            ];
-
-            const cardW = 180, cardH = 115, cardY = 348, cardGap = 20;
-            stats.forEach((stat, i) => {
-                const cx = 50 + i * (cardW + cardGap);
-
-                // Card background
-                roundRect(ctx, cx, cardY, cardW, cardH, 12);
-                ctx.fillStyle = 'rgba(255,255,255,0.04)';
-                ctx.fill();
-
-                // Card border
-                roundRect(ctx, cx, cardY, cardW, cardH, 12);
-                ctx.strokeStyle = 'rgba(255,255,255,0.08)';
-                ctx.lineWidth = 1;
-                ctx.stroke();
-
-                // Top colored accent on card
-                ctx.fillStyle = stat.color;
-                ctx.fillRect(cx + 16, cardY + 12, 32, 3);
-
-                // Number
-                ctx.fillStyle = stat.color;
-                ctx.font = '800 42px Inter, Arial, sans-serif';
-                ctx.textAlign = 'left';
-                ctx.fillText(stat.number, cx + 16, cardY + 60);
-
-                // Label (multiline)
-                ctx.fillStyle = '#cbd5e1';
-                ctx.font = '600 14px Inter, Arial, sans-serif';
-                const lines = stat.label.split('\n');
-                lines.forEach((line, j) => {
-                    ctx.fillText(line, cx + 16, cardY + 82 + j * 18);
-                });
-            });
-
-            // ----- Right side — Large scales of justice icon -----
-            // Draw a stylized scales icon using paths
-            const scaleX = 920, scaleY = 180;
-
-            // Outer glow circle
-            const glow = ctx.createRadialGradient(scaleX + 100, scaleY + 140, 10, scaleX + 100, scaleY + 140, 200);
-            glow.addColorStop(0, 'rgba(245, 158, 11, 0.08)');
-            glow.addColorStop(1, 'rgba(245, 158, 11, 0)');
-            ctx.fillStyle = glow;
-            ctx.beginPath();
-            ctx.arc(scaleX + 100, scaleY + 140, 200, 0, Math.PI * 2);
-            ctx.fill();
-
-            // Scale pillar
-            ctx.strokeStyle = 'rgba(245, 158, 11, 0.4)';
-            ctx.lineWidth = 4;
-            ctx.beginPath();
-            ctx.moveTo(scaleX + 100, scaleY + 20);
-            ctx.lineTo(scaleX + 100, scaleY + 260);
-            ctx.stroke();
-
-            // Base
-            ctx.beginPath();
-            ctx.moveTo(scaleX + 40, scaleY + 260);
-            ctx.lineTo(scaleX + 160, scaleY + 260);
-            ctx.stroke();
-
-            // Crossbar
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            ctx.moveTo(scaleX + 10, scaleY + 40);
-            ctx.lineTo(scaleX + 190, scaleY + 40);
-            ctx.stroke();
-
-            // Left pan (lower — weighted down / unjust)
-            ctx.strokeStyle = 'rgba(239, 68, 68, 0.5)';
-            ctx.lineWidth = 2;
-            // Chains
-            ctx.beginPath(); ctx.moveTo(scaleX + 30, scaleY + 40); ctx.lineTo(scaleX + 10, scaleY + 160); ctx.stroke();
-            ctx.beginPath(); ctx.moveTo(scaleX + 30, scaleY + 40); ctx.lineTo(scaleX + 70, scaleY + 160); ctx.stroke();
-            // Pan
-            ctx.beginPath();
-            ctx.ellipse(scaleX + 40, scaleY + 165, 40, 10, 0, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(239, 68, 68, 0.1)';
-            ctx.fill();
-            ctx.stroke();
-
-            // "FALSE" text on left pan
-            ctx.fillStyle = 'rgba(239, 68, 68, 0.6)';
-            ctx.font = '700 13px Inter, Arial, sans-serif';
+            // Small label below figures
+            ctx.font = '500 11px Inter, Arial, sans-serif';
+            ctx.fillStyle = 'rgba(255,255,255,0.25)';
             ctx.textAlign = 'center';
-            ctx.fillText('FALSE', scaleX + 40, scaleY + 170);
+            ctx.fillText('STILL SEPARATED', figStartX + figSpacing, figY + 56);
 
-            // Right pan (higher — truth rises)
-            ctx.strokeStyle = 'rgba(34, 197, 94, 0.5)';
-            // Chains
-            ctx.beginPath(); ctx.moveTo(scaleX + 170, scaleY + 40); ctx.lineTo(scaleX + 140, scaleY + 100); ctx.stroke();
-            ctx.beginPath(); ctx.moveTo(scaleX + 170, scaleY + 40); ctx.lineTo(scaleX + 200, scaleY + 100); ctx.stroke();
-            // Pan
-            ctx.beginPath();
-            ctx.ellipse(scaleX + 170, scaleY + 105, 40, 10, 0, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(34, 197, 94, 0.1)';
-            ctx.fill();
-            ctx.stroke();
+            // ===== AUTHORITY SIGNAL — top left, understated =====
+            // Hughes: Authority must be STATED, not shouted.
+            // Small, factual, muted = more believable than a badge.
+            ctx.textAlign = 'left';
+            ctx.font = '600 13px Inter, Arial, sans-serif';
+            ctx.fillStyle = 'rgba(239, 68, 68, 0.7)';
+            ctx.fillText('60 MINUTES AUSTRALIA', 40, 38);
 
-            // "TRUTH" text on right pan
-            ctx.fillStyle = 'rgba(34, 197, 94, 0.6)';
-            ctx.font = '700 13px Inter, Arial, sans-serif';
-            ctx.fillText('TRUTH', scaleX + 170, scaleY + 110);
-
-            // ----- Right side text — featured on 60 Minutes -----
-            ctx.textAlign = 'center';
-
-            // 60 Minutes badge
-            roundRect(ctx, scaleX + 20, scaleY + 295, 170, 36, 18);
-            ctx.fillStyle = 'rgba(220, 38, 38, 0.2)';
-            ctx.fill();
-            roundRect(ctx, scaleX + 20, scaleY + 295, 170, 36, 18);
-            ctx.strokeStyle = 'rgba(220, 38, 38, 0.4)';
-            ctx.lineWidth = 1;
-            ctx.stroke();
-            ctx.fillStyle = '#fca5a5';
-            ctx.font = '700 12px Inter, Arial, sans-serif';
-            ctx.fillText('📺 AS SEEN ON 60 MINUTES', scaleX + 105, scaleY + 318);
-
-            // International flags
-            ctx.font = '32px Arial';
-            ctx.fillText('🇦🇺  🇮🇹  🌍', scaleX + 105, scaleY + 370);
-
-            ctx.fillStyle = '#64748b';
             ctx.font = '400 13px Inter, Arial, sans-serif';
-            ctx.fillText('International attention growing', scaleX + 105, scaleY + 400);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.fillText('INVESTIGATION', 40, 56);
 
-            // ----- Bottom bar -----
-            ctx.fillStyle = 'rgba(255,255,255,0.03)';
-            ctx.fillRect(0, H - 56, W, 56);
-            ctx.fillStyle = 'rgba(255,255,255,0.06)';
-            ctx.fillRect(0, H - 56, W, 1);
+            // ===== THE HEADLINE — Chase Hughes "Incomplete Loop" =====
+            // Rule: State the WHAT. Withhold the HOW and WHY.
+            // The brain will do ANYTHING to close this loop.
 
-            // URL (left)
+            // Line 1: The setup — big, white, clinical
+            ctx.font = '800 84px Inter, Arial, sans-serif';
+            ctx.fillStyle = '#ffffff';
             ctx.textAlign = 'left';
-            ctx.fillStyle = '#64748b';
-            ctx.font = '500 16px Inter, Arial, sans-serif';
-            ctx.fillText('truthprotectstheinnocent.quantummerlin.com', 50, H - 22);
+            ctx.fillText('3 children.', 40, 200);
 
-            // Hashtag (right)
+            // Line 2: The escalation
+            ctx.font = '800 84px Inter, Arial, sans-serif';
+            ctx.fillStyle = '#ffffff';
+            ctx.fillText('3 lies.', 40, 295);
+
+            // Line 3: The open loop — in red, this is the trigger
+            // "Now the world knows." implies a REVEAL that you haven't seen yet
+            ctx.font = '800 56px Inter, Arial, sans-serif';
+            ctx.fillStyle = '#dc2626';
+            ctx.fillText('Now the world knows.', 40, 380);
+
+            // ===== THE EVIDENCE LINE — specificity = credibility =====
+            // Hughes: "Specific claims are believed 72% more than vague ones"
+            // This line is SMALL. It rewards the person who stopped to look closer.
+            // That's a micro-commitment — now they're invested.
+            ctx.font = '400 19px Inter, Arial, sans-serif';
+            ctx.fillStyle = 'rgba(148, 163, 184, 0.7)';
+            ctx.fillText('All 3 official justifications for removal — exposed as false.', 40, 435);
+
+            // ===== BOTTOM ZONE =====
+            // Faint separator — barely visible. The card should feel like
+            // it fades into nothingness at the bottom. Isolation.
+            ctx.fillStyle = 'rgba(255,255,255,0.04)';
+            ctx.fillRect(40, H - 80, W - 80, 1);
+
+            // URL — ghostly, almost hidden. 
+            // Hughes: "If they have to look for it, they want it more."
+            ctx.font = '400 15px Inter, Arial, sans-serif';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.18)';
+            ctx.textAlign = 'left';
+            ctx.fillText('truthprotectstheinnocent.quantummerlin.com', 40, H - 30);
+
+            // Right side: the emotional residue — one last punch
+            ctx.font = '600 14px Inter, Arial, sans-serif';
+            ctx.fillStyle = 'rgba(220, 38, 38, 0.5)';
             ctx.textAlign = 'right';
-            ctx.fillStyle = '#475569';
-            ctx.font = '600 15px Inter, Arial, sans-serif';
-            ctx.fillText('#TruthProtectsTheInnocent', W - 50, H - 22);
+            ctx.fillText('READ WHAT THEY TRIED TO HIDE →', W - 40, H - 30);
         }
 
         // ========================
         // FAVICON — 512 x 512
+        // Bold shield + T design (readable at 16px)
         // ========================
         function drawFavicon() {
             const canvas = document.getElementById('favicon-canvas');
@@ -323,31 +273,70 @@
             const S = 512;
 
             // Background
-            const bg = ctx.createLinearGradient(0, 0, S, S);
-            bg.addColorStop(0, '#0c1829');
-            bg.addColorStop(1, '#1e3a5f');
+            const bg = ctx.createRadialGradient(256, 230, 50, 256, 256, 360);
+            bg.addColorStop(0, '#1a1a2e');
+            bg.addColorStop(1, '#0a0a14');
             ctx.fillStyle = bg;
-            roundRect(ctx, 0, 0, S, S, 80);
+            roundRect(ctx, 0, 0, S, S, 100);
             ctx.fill();
 
-            // Glow
-            const glow = ctx.createRadialGradient(256, 240, 20, 256, 240, 200);
-            glow.addColorStop(0, 'rgba(245, 158, 11, 0.15)');
-            glow.addColorStop(1, 'rgba(245, 158, 11, 0)');
-            ctx.fillStyle = glow;
+            // Shield shape
+            ctx.save();
             ctx.beginPath();
-            ctx.arc(256, 240, 200, 0, Math.PI * 2);
+            ctx.moveTo(256, 40);
+            ctx.quadraticCurveTo(420, 60, 440, 160);
+            ctx.lineTo(440, 280);
+            ctx.quadraticCurveTo(440, 440, 256, 480);
+            ctx.quadraticCurveTo(72, 440, 72, 280);
+            ctx.lineTo(72, 160);
+            ctx.quadraticCurveTo(92, 60, 256, 40);
+            ctx.closePath();
+
+            // Shield gradient fill
+            const shieldGrad = ctx.createLinearGradient(0, 40, 0, 480);
+            shieldGrad.addColorStop(0, '#dc2626');
+            shieldGrad.addColorStop(0.5, '#b91c1c');
+            shieldGrad.addColorStop(1, '#7f1d1d');
+            ctx.fillStyle = shieldGrad;
             ctx.fill();
 
-            // Balance icon
-            ctx.font = '260px Arial';
+            // Shield inner highlight
+            ctx.beginPath();
+            ctx.moveTo(256, 60);
+            ctx.quadraticCurveTo(400, 78, 420, 170);
+            ctx.lineTo(420, 280);
+            ctx.quadraticCurveTo(420, 425, 256, 460);
+            ctx.quadraticCurveTo(92, 425, 92, 280);
+            ctx.lineTo(92, 170);
+            ctx.quadraticCurveTo(112, 78, 256, 60);
+            ctx.closePath();
+            const innerGrad = ctx.createLinearGradient(0, 60, 0, 460);
+            innerGrad.addColorStop(0, 'rgba(255,255,255,0.12)');
+            innerGrad.addColorStop(0.3, 'rgba(255,255,255,0)');
+            ctx.fillStyle = innerGrad;
+            ctx.fill();
+            ctx.restore();
+
+            // Bold "T" letter
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '900 280px Inter, Arial, sans-serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText('⚖️', 256, 260);
+            ctx.fillText('T', 256, 275);
+
+            // Subtle shadow below shield
+            const shadow = ctx.createRadialGradient(256, 490, 10, 256, 490, 120);
+            shadow.addColorStop(0, 'rgba(220, 38, 38, 0.15)');
+            shadow.addColorStop(1, 'rgba(0,0,0,0)');
+            ctx.fillStyle = shadow;
+            ctx.beginPath();
+            ctx.arc(256, 490, 120, 0, Math.PI * 2);
+            ctx.fill();
         }
 
         // ========================
         // APPLE TOUCH ICON — 180 x 180
+        // Same shield + T, tighter spacing
         // ========================
         function drawAppleIcon() {
             const canvas = document.getElementById('apple-canvas');
@@ -355,27 +344,53 @@
             const S = 180;
 
             // Background
-            const bg = ctx.createLinearGradient(0, 0, S, S);
-            bg.addColorStop(0, '#0c1829');
-            bg.addColorStop(1, '#1e3a5f');
+            const bg = ctx.createRadialGradient(90, 80, 20, 90, 90, 130);
+            bg.addColorStop(0, '#1a1a2e');
+            bg.addColorStop(1, '#0a0a14');
             ctx.fillStyle = bg;
-            roundRect(ctx, 0, 0, S, S, 36);
+            roundRect(ctx, 0, 0, S, S, 38);
             ctx.fill();
 
-            // Glow
-            const glow = ctx.createRadialGradient(90, 85, 10, 90, 85, 80);
-            glow.addColorStop(0, 'rgba(245, 158, 11, 0.2)');
-            glow.addColorStop(1, 'rgba(245, 158, 11, 0)');
-            ctx.fillStyle = glow;
+            // Shield
             ctx.beginPath();
-            ctx.arc(90, 85, 80, 0, Math.PI * 2);
+            ctx.moveTo(90, 16);
+            ctx.quadraticCurveTo(152, 24, 158, 58);
+            ctx.lineTo(158, 100);
+            ctx.quadraticCurveTo(158, 158, 90, 170);
+            ctx.quadraticCurveTo(22, 158, 22, 100);
+            ctx.lineTo(22, 58);
+            ctx.quadraticCurveTo(28, 24, 90, 16);
+            ctx.closePath();
+
+            const shieldGrad = ctx.createLinearGradient(0, 16, 0, 170);
+            shieldGrad.addColorStop(0, '#dc2626');
+            shieldGrad.addColorStop(0.5, '#b91c1c');
+            shieldGrad.addColorStop(1, '#7f1d1d');
+            ctx.fillStyle = shieldGrad;
             ctx.fill();
 
-            // Balance icon
-            ctx.font = '100px Arial';
+            // Inner highlight
+            ctx.beginPath();
+            ctx.moveTo(90, 22);
+            ctx.quadraticCurveTo(146, 29, 152, 62);
+            ctx.lineTo(152, 100);
+            ctx.quadraticCurveTo(152, 152, 90, 164);
+            ctx.quadraticCurveTo(28, 152, 28, 100);
+            ctx.lineTo(28, 62);
+            ctx.quadraticCurveTo(34, 29, 90, 22);
+            ctx.closePath();
+            const innerGrad = ctx.createLinearGradient(0, 22, 0, 164);
+            innerGrad.addColorStop(0, 'rgba(255,255,255,0.12)');
+            innerGrad.addColorStop(0.3, 'rgba(255,255,255,0)');
+            ctx.fillStyle = innerGrad;
+            ctx.fill();
+
+            // Bold "T"
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '900 100px Inter, Arial, sans-serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText('⚖️', 90, 92);
+            ctx.fillText('T', 90, 98);
         }
 
         // ========================
@@ -419,7 +434,6 @@
 
         // Draw all on load (with font delay)
         window.onload = () => {
-            // Wait for Inter font to load before rendering
             document.fonts.ready.then(() => {
                 drawOGImage();
                 drawFavicon();
