@@ -55,6 +55,8 @@ Italian authorities gave three reasons for removing the children from their pare
 **Source:** Ministry of Education confirmation
 
 **Legal context:** Parental instruction is protected under Article 30 of the Italian Constitution and regulated by ministerial guidelines. It is not illegal. It is not unusual. Over 15,000 Italian children are educated this way.
+
+**Further context:** Italy's national Home Education Association (LAIF — L'Associazione Istruzione in Famiglia) conducted a <a href="https://www.laifitalia.it/2024/05/23/foto-unschooling-in-italia/#osservazioni-e-precisazioni-pervenute-relativamente-allo-studio-sullunschooling-in-italia-nel-2024" target="_blank" rel="noopener">formal nationwide study on unschooling in Italy in 2024</a>, documenting how families across the country practice self-directed learning — covering learning approaches, socialization, community involvement, and pedagogical frameworks. This study confirms that unschooling is a well-established, actively researched educational approach within Italy's legal parental instruction system.
 </div>
 
 ---
