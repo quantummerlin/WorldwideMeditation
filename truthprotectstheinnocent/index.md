@@ -7,7 +7,7 @@ image: /assets/images/og-image.jpg
 updated: 2026-02-13-urgent
 ---
 
-<!-- Hero Section: 60 Minutes Australia Feature -->
+<!-- Hero Section: Breaking Update + 60 Minutes -->
 <section class="hero hero-60mins">
     <div class="hero-video-bg">
         <video autoplay muted loop playsinline>
@@ -16,45 +16,37 @@ updated: 2026-02-13-urgent
     </div>
     <div class="hero-overlay hero-overlay-60mins"></div>
     <div class="hero-content">
-        <!-- Live/Countdown Badge -->
+        <!-- Breaking Badge -->
         <div class="sixty-mins-badge-wrap">
-            <span class="sixty-mins-badge" id="sixtyMinsBadge">
-                📺 TONIGHT ON 60 MINUTES AUSTRALIA — 8:45 PM AEST
+            <span class="sixty-mins-badge sixty-mins-badge-aired" id="sixtyMinsBadge">
+                🚨 BREAKING — MARCH 8, 2026
             </span>
         </div>
 
-        <h1 class="sixty-mins-headline">The World Is Watching</h1>
-        <p class="lead">Australia's most-watched current affairs program tells the story of three children taken from their parents — and the three official reasons that were <strong>all proven false</strong>.</p>
+        <h1 class="sixty-mins-headline">Children Moved. Catherine Banned.</h1>
+        <p class="lead">After the 60 Minutes broadcast, Italian authorities have ruled to transfer the children to a new facility — <strong>where Catherine is not permitted to stay</strong>. The goodbye was captured on video.</p>
 
-        <!-- Countdown Timer -->
-        <div class="sixty-mins-countdown" id="sixtyMinsCountdown">
-            <div class="countdown-item">
-                <span class="countdown-number" id="countHours">--</span>
-                <span class="countdown-label">HOURS</span>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="countMinutes">--</span>
-                <span class="countdown-label">MINUTES</span>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="countSeconds">--</span>
-                <span class="countdown-label">SECONDS</span>
+        <!-- Breaking Alert Box -->
+        <div style="background: rgba(0,0,0,0.45); border: 2px solid rgba(254,240,138,0.6); border-radius: 1rem; padding: 1.25rem 1.5rem; margin: 1.5rem auto; max-width: 680px; text-align: left;">
+            <p style="color: #fef08a; font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem;">📹 Watch: The Goodbye Moment</p>
+            <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Catherine was forced to say goodbye to her children before they were transferred. Warning — distressing content.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+                <a href="https://www.facebook.com/share/v/1HpVpWjzMC/" target="_blank" rel="noopener noreferrer"
+                   style="background: #1877f2; color: white; padding: 0.6rem 1.25rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; font-size: 0.95rem;">▶ Watch on Facebook</a>
+                <a href="/updates/2026/03/08/children-moved-new-facility-catherine-banned.html"
+                   style="background: rgba(255,255,255,0.15); color: white; border: 1.5px solid rgba(255,255,255,0.5); padding: 0.6rem 1.25rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.95rem;">Read Full Update</a>
             </div>
         </div>
 
-        <!-- Trailer Preview -->
-        <div class="sixty-mins-trailer">
-            <div class="trailer-container" id="trailerContainer">
-                <video id="trailerVideo" playsinline preload="metadata" poster="">
-                    <source src="/assets/videos/60-minutes-trailer.mp4" type="video/mp4">
-                </video>
-                <button class="trailer-play-btn" id="trailerPlayBtn" aria-label="Play trailer">
-                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.2)"/><circle cx="30" cy="30" r="28" stroke="white" stroke-width="2" fill="none"/><polygon points="24,18 24,42 44,30" fill="white"/></svg>
-                </button>
-                <span class="trailer-label">▶ Watch the Sneak Peek</span>
-            </div>
+        <!-- Italian TV Coverage -->
+        <div style="background: rgba(0,0,0,0.35); border-radius: 1rem; padding: 1.25rem 1.5rem; margin: 0 auto 1.5rem auto; max-width: 680px; text-align: left;">
+            <p style="color: white; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.75rem;">📺 Italian TV (Canale 5) has been covering this:</p>
+            <ul style="color: rgba(255,255,255,0.85); font-size: 0.9rem; line-height: 1.9; margin: 0; padding-left: 1.25rem;">
+                <li><a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/la-festa-di-compleanno-per-papa-nathan-senza-moglie-e-figli_F314098101128C09" target="_blank" rel="noopener" style="color: #fef08a;">Nathan's birthday alone</a> — <em>"the worst birthday of my life"</em></li>
+                <li><a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-compleanno-separato-per-i-gemellini_F314098101130C09" target="_blank" rel="noopener" style="color: #fef08a;">The twins' 7th birthday — separated from parents</a></li>
+                <li><a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-la-zia-respinge-laccusa-di-condizionare-i-bimbi_F314098101126C11" target="_blank" rel="noopener" style="color: #fef08a;">The aunt rejects accusations on national TV</a></li>
+                <li>Family's lawyer demands: <strong style="color: white;">"Explain to the children why the mother was kicked out"</strong></li>
+            </ul>
         </div>
 
         <!-- Coverage Stats -->
@@ -65,7 +57,7 @@ updated: 2026-02-13-urgent
             </div>
             <div class="hero-stat">
                 <span class="hero-stat-number">🇮🇹</span>
-                <span class="hero-stat-label">Italian Press<br>Coverage</span>
+                <span class="hero-stat-label">Canale 5<br>Italy</span>
             </div>
             <div class="hero-stat">
                 <span class="hero-stat-number">🌍</span>
@@ -74,114 +66,12 @@ updated: 2026-02-13-urgent
         </div>
 
         <div class="hero-cta">
-            <a href="https://www.youtube.com/watch?v=FZPMGep5CKU" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-glow">▶ Watch on YouTube</a>
-            <a href="https://www.facebook.com/share/1C7HNu7Knu/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">📘 Share on Facebook</a>
+            <a href="https://www.youtube.com/watch?v=FZPMGep5CKU" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-glow">▶ Watch 60 Minutes on YouTube</a>
+            <a href="/action/" class="btn btn-secondary btn-lg">Take Action Now</a>
             <a href="/evidence/" class="btn btn-secondary btn-lg">See The Evidence</a>
         </div>
 
-        <p class="sixty-mins-subtext">Three children. Three false claims. Zero valid reasons.<br>Tonight, millions will learn the truth.</p>
-    </div>
-</section>
-
-<!-- 60 Minutes Countdown & Trailer Script -->
-<script>
-(function() {
-    // === COUNTDOWN ===
-    // Air time: March 1, 2026 at 8:45 PM AEST (UTC+11)
-    // AEST offset = +11 hours, so 8:45 PM AEST = 9:45 AM UTC
-    const airTimeUTC = new Date(Date.UTC(2026, 2, 1, 9, 45, 0)); // March 1, 2026 09:45 UTC
-    const showDurationMs = 90 * 60 * 1000; // assume 90 min show
-    const countdownEl = document.getElementById('sixtyMinsCountdown');
-    const badgeEl = document.getElementById('sixtyMinsBadge');
-    const hoursEl = document.getElementById('countHours');
-    const minutesEl = document.getElementById('countMinutes');
-    const secondsEl = document.getElementById('countSeconds');
-
-    function updateCountdown() {
-        const now = new Date();
-        const diff = airTimeUTC - now;
-        const afterShow = now - (airTimeUTC.getTime() + showDurationMs);
-
-        if (diff > 0) {
-            // Before air time — show countdown
-            const h = Math.floor(diff / 3600000);
-            const m = Math.floor((diff % 3600000) / 60000);
-            const s = Math.floor((diff % 60000) / 1000);
-            hoursEl.textContent = String(h).padStart(2, '0');
-            minutesEl.textContent = String(m).padStart(2, '0');
-            secondsEl.textContent = String(s).padStart(2, '0');
-        } else if (afterShow < 0) {
-            // Currently airing
-            countdownEl.innerHTML = '<div class="now-airing"><span class="now-airing-dot"></span> NOW AIRING ON 60 MINUTES</div>';
-            badgeEl.textContent = '🔴 LIVE NOW — 60 Minutes Australia';
-            badgeEl.classList.add('sixty-mins-badge-live');
-        } else {
-            // After show — switch to replay
-            countdownEl.innerHTML = '<a href="https://www.9now.com.au/60-minutes" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-glow">Watch on 9Now →</a>';
-            badgeEl.textContent = '📺 AS SEEN ON 60 MINUTES AUSTRALIA';
-            badgeEl.classList.remove('sixty-mins-badge-live');
-            badgeEl.classList.add('sixty-mins-badge-aired');
-            // Update share button text
-            const shareBtn = document.querySelector('.hero-cta .btn-primary');
-            if (shareBtn && shareBtn.textContent.includes('Before')) {
-                shareBtn.textContent = 'Share This Now';
-            }
-            clearInterval(timer);
-        }
-    }
-
-    updateCountdown();
-    const timer = setInterval(updateCountdown, 1000);
-
-    // === TRAILER PLAYER ===
-    const trailerVideo = document.getElementById('trailerVideo');
-    const playBtn = document.getElementById('trailerPlayBtn');
-    const trailerContainer = document.getElementById('trailerContainer');
-
-    if (playBtn && trailerVideo) {
-        playBtn.addEventListener('click', function() {
-            trailerVideo.controls = true;
-            trailerVideo.play();
-            playBtn.style.display = 'none';
-            trailerContainer.querySelector('.trailer-label').style.display = 'none';
-            trailerContainer.classList.add('trailer-playing');
-        });
-        trailerVideo.addEventListener('ended', function() {
-            playBtn.style.display = '';
-            trailerContainer.querySelector('.trailer-label').style.display = '';
-            trailerContainer.classList.remove('trailer-playing');
-            trailerVideo.controls = false;
-        });
-    }
-})();
-</script>
-
-<!-- BREAKING: CHILDREN MOVED — CATHERINE BANNED FROM NEW FACILITY -->
-<section style="background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%); padding: 2rem 0; position: relative; overflow: hidden;">
-    <div class="container" style="position: relative; z-index: 1;">
-        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
-                <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">🚨 Breaking — March 8, 2026</span>
-            </div>
-            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">After 60 Minutes: Children Moved to New Facility — Catherine Banned From Staying</h2>
-            <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                Following the broadcast of the 60 Minutes segment, Italian authorities have ruled to transfer the children to a <strong style="color: #fef08a;">new facility</strong> — and <strong style="color: #fef08a;">Catherine is not permitted to stay there</strong>. A video captures the heartbreaking moment of goodbye.
-            </p>
-            <div style="background: rgba(0,0,0,0.3); border: 2px solid rgba(254,240,138,0.5); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
-                <p style="color: #fef08a; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem;">📹 Watch: The Goodbye Moment</p>
-                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7; margin-bottom: 1rem;">
-                    The moment Catherine was forced to say goodbye to her children before they were transferred was captured on video. Warning — distressing content.
-                </p>
-                <a href="https://www.facebook.com/share/v/1HpVpWjzMC/" target="_blank" rel="noopener noreferrer"
-                   style="display: inline-block; background: #1877f2; color: white; padding: 0.875rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 700; font-size: 1.05rem;">
-                    ▶ Watch on Facebook
-                </a>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-                <a href="/updates/2026/03/08/children-moved-new-facility-catherine-banned.html" class="btn" style="background: white; color: #7c3aed; font-weight: 600; padding: 0.875rem 2rem;">Read Full Update</a>
-                <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Take Action Now</a>
-            </div>
-        </div>
+        <p class="sixty-mins-subtext">Three children. Three false claims. Zero valid reasons.<br>Catherine is now banned from the facility where her children are held.</p>
     </div>
 </section>
 
@@ -194,7 +84,7 @@ updated: 2026-02-13-urgent
             </div>
             <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Children Planned To Be Held Until June 2026</h2>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                The court is planning to keep these children institutionalized <strong style="color: #fef08a;">until June 2026</strong> — <strong style="color: #fef08a;">7 months of constant trauma</strong>. The twins turn 7 in March — still separated from their parents. Every single day in that institution causes documented, irreparable psychological harm. <strong style="color: #fef08a;">Maximum international pressure is needed NOW.</strong>
+                The court planned to keep these children institutionalized <strong style="color: #fef08a;">until June 2026</strong> — <strong style="color: #fef08a;">now they have been moved to a new facility where Catherine cannot stay</strong>. Every single day causes documented, irreparable psychological harm. <strong style="color: #fef08a;">Maximum international pressure is needed NOW.</strong>
             </p>
             
             <!-- Psychological Trauma Alert -->
@@ -215,8 +105,8 @@ updated: 2026-02-13-urgent
                     <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">Lawyers filed with Italy's Court of Cassation — yet no action taken</p>
                 </div>
                 <div style="background: rgba(0,0,0,0.2); border-radius: 0.75rem; padding: 1rem;">
-                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Birthdays in Separation</p>
-                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">Nathan's birthday Feb 24, twins March 4 — will they be home?</p>
+                    <p style="color: #fef08a; font-weight: 600; margin-bottom: 0.25rem;">Moved to New Facility</p>
+                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">After 60 Minutes aired, Catherine was banned from the new facility where her children are now held</p>
                 </div>
             </div>
             <div style="background: rgba(0,0,0,0.25); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
