@@ -72,3 +72,24 @@ The world is watching. Your voice continues to matter.
 - **Sign and share the petition** linked on this site
 
 The children need to come home. Please keep speaking out.
+
+---
+
+## Italian Television Is Watching Too
+
+This is not a story being hidden. Italy's own mainstream media — **Canale 5**, one of the country's largest TV networks — has aired multiple national segments in recent weeks, including:
+
+<div style="background: var(--color-gray-50); border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0;">
+    <ul style="line-height: 2; margin: 0;">
+        <li><strong>Feb 26</strong> — <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-la-zia-respinge-laccusa-di-condizionare-i-bimbi_F314098101126C11" target="_blank" rel="noopener">The aunt rejects accusations of influencing the children</a></li>
+        <li><strong>Mar 2</strong> — <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/la-festa-di-compleanno-per-papa-nathan-senza-moglie-e-figli_F314098101128C09" target="_blank" rel="noopener">Nathan's birthday — without his wife and children</a> <em>("the worst birthday of my life")</em></li>
+        <li><strong>Mar 4</strong> — <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-compleanno-separato-per-i-gemellini_F314098101130C09" target="_blank" rel="noopener">The twins' 7th birthday — separated from their parents</a></li>
+        <li><strong>Mar 4</strong> — <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-compleanno-lontano-da-casa-per-i-gemellini-parla-la-zia_F314098101130C10" target="_blank" rel="noopener">The aunt speaks about the twins' birthday away from home</a></li>
+    </ul>
+</div>
+
+The family's lawyer has publicly demanded on Italian national television: **"Explain to the children why the mother was kicked out."**
+
+No explanation has been given. The children are now being moved to a new facility where Catherine cannot stay — and still no one in authority has provided a legitimate justification.
+
+See all Italian TV coverage on our [Media page](/media/).

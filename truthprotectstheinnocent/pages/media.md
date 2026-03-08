@@ -49,6 +49,117 @@ permalink: /media/
     </div>
 </section>
 
+<!-- Italian TV Coverage Section -->
+<section class="section" style="padding-top: 0;">
+    <div class="container">
+        <div class="section-header">
+            <h2>📺 Italian Television Coverage</h2>
+            <p><strong>Canale 5 / Dentro la Notizia</strong> — Italy's major commercial TV network has aired multiple segments on the family's case in February and March 2026</p>
+        </div>
+
+        <div style="background: #fef9c3; border-left: 4px solid #ca8a04; border-radius: 0.5rem; padding: 1.25rem 1.5rem; margin-bottom: 2rem;">
+            <p style="margin: 0; color: #78350f; font-size: 0.95rem; line-height: 1.6;">
+                <strong>Note:</strong> These clips are hosted on Mediaset Infinity (Italy). Some may require the Mediaset Infinity app or a free account to view from outside Italy.
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+
+            <!-- Clip 1 -->
+            <div style="background: white; border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-lg); display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #1a56db 0%, #1e429f 100%); padding: 1rem 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="color: rgba(255,255,255,0.8); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Canale 5 · Dentro la Notizia</span>
+                        <span style="color: rgba(255,255,255,0.7); font-size: 0.8rem;">26 Feb 2026</span>
+                    </div>
+                    <p style="color: white; font-weight: 700; font-size: 1rem; margin: 0; line-height: 1.4;">The Aunt Rejects Accusations of Influencing the Children</p>
+                </div>
+                <div style="padding: 1.25rem; flex: 1; display: flex; flex-direction: column;">
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem; line-height: 1.6; flex: 1; margin: 0 0 1rem 0;">
+                        The children's aunt speaks to Italian national television, firmly rejecting accusations that she was conditioning or influencing the children. A powerful defence from inside the family.
+                    </p>
+                    <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-la-zia-respinge-laccusa-di-condizionare-i-bimbi_F314098101126C11"
+                       target="_blank" rel="noopener noreferrer"
+                       style="display: block; text-align: center; background: #1a56db; color: white; padding: 0.75rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                        ▶ Watch on Mediaset Infinity
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clip 2 -->
+            <div style="background: white; border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-lg); display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 1rem 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="color: rgba(255,255,255,0.8); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Canale 5 · Dentro la Notizia</span>
+                        <span style="color: rgba(255,255,255,0.7); font-size: 0.8rem;">2 Mar 2026</span>
+                    </div>
+                    <p style="color: white; font-weight: 700; font-size: 1rem; margin: 0; line-height: 1.4;">Nathan's Birthday — Without His Wife and Children</p>
+                </div>
+                <div style="padding: 1.25rem; flex: 1; display: flex; flex-direction: column;">
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem; line-height: 1.6; flex: 1; margin: 0 0 1rem 0;">
+                        Italian TV covers Nathan's birthday on February 24th — spent entirely alone, without Catherine or his three children. Supporters gathered around him: <em>"We are here to be close to him."</em> Nathan himself called it <strong>"the worst birthday of my life."</strong>
+                    </p>
+                    <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/la-festa-di-compleanno-per-papa-nathan-senza-moglie-e-figli_F314098101128C09"
+                       target="_blank" rel="noopener noreferrer"
+                       style="display: block; text-align: center; background: #dc2626; color: white; padding: 0.75rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                        ▶ Watch on Mediaset Infinity
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clip 3 -->
+            <div style="background: white; border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-lg); display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%); padding: 1rem 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="color: rgba(255,255,255,0.8); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Canale 5 · Dentro la Notizia</span>
+                        <span style="color: rgba(255,255,255,0.7); font-size: 0.8rem;">4 Mar 2026</span>
+                    </div>
+                    <p style="color: white; font-weight: 700; font-size: 1rem; margin: 0; line-height: 1.4;">The Twins' Birthday — Separated</p>
+                </div>
+                <div style="padding: 1.25rem; flex: 1; display: flex; flex-direction: column;">
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem; line-height: 1.6; flex: 1; margin: 0 0 1rem 0;">
+                        The twins turned 7 on March 4th — still in the institution, still separated from Catherine and Nathan. Italian TV covered it: <em>"Another half-celebration day for the forest family."</em>
+                    </p>
+                    <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-compleanno-separato-per-i-gemellini_F314098101130C09"
+                       target="_blank" rel="noopener noreferrer"
+                       style="display: block; text-align: center; background: #7c3aed; color: white; padding: 0.75rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                        ▶ Watch on Mediaset Infinity
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clip 4 -->
+            <div style="background: white; border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-lg); display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #059669 0%, #065f46 100%); padding: 1rem 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="color: rgba(255,255,255,0.8); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Canale 5 · Dentro la Notizia</span>
+                        <span style="color: rgba(255,255,255,0.7); font-size: 0.8rem;">4 Mar 2026</span>
+                    </div>
+                    <p style="color: white; font-weight: 700; font-size: 1rem; margin: 0; line-height: 1.4;">The Aunt Speaks: Twins' Birthday Away From Home</p>
+                </div>
+                <div style="padding: 1.25rem; flex: 1; display: flex; flex-direction: column;">
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem; line-height: 1.6; flex: 1; margin: 0 0 1rem 0;">
+                        The children's aunt speaks directly to Canale 5's microphones about the twins' birthday being spent away from home and separated from their parents. Her words speak directly about the family's pain.
+                    </p>
+                    <a href="https://mediasetinfinity.mediaset.it/video/dentrolanotizia20252026/famiglia-nel-bosco-compleanno-lontano-da-casa-per-i-gemellini-parla-la-zia_F314098101130C10"
+                       target="_blank" rel="noopener noreferrer"
+                       style="display: block; text-align: center; background: #059669; color: white; padding: 0.75rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                        ▶ Watch on Mediaset Infinity
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="background: linear-gradient(135deg, #1a56db 0%, #1e429f 100%); border-radius: 1rem; padding: 1.5rem 2rem; margin-top: 2rem; text-align: center;">
+            <p style="color: white; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Italy's mainstream media is covering this case.</p>
+            <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; margin: 0; line-height: 1.6;">
+                Canale 5 — one of Italy's largest TV channels — has run multiple national segments. The family's lawyer publicly demanded: <strong style="color: #fef08a;">"Explain to the children why the mother was kicked out."</strong> The country is watching.
+            </p>
+        </div>
+    </div>
+</section>
+
 <!-- Video Gallery Section -->
 <section class="section" style="padding-top: 0;">
     <div class="container">
