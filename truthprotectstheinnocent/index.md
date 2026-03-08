@@ -156,6 +156,35 @@ updated: 2026-02-13-urgent
 })();
 </script>
 
+<!-- BREAKING: CHILDREN MOVED — CATHERINE BANNED FROM NEW FACILITY -->
+<section style="background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%); padding: 2rem 0; position: relative; overflow: hidden;">
+    <div class="container" style="position: relative; z-index: 1;">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.5rem; border-radius: 2rem; margin-bottom: 1rem;">
+                <span style="color: white; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">🚨 Breaking — March 8, 2026</span>
+            </div>
+            <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">After 60 Minutes: Children Moved to New Facility — Catherine Banned From Staying</h2>
+            <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Following the broadcast of the 60 Minutes segment, Italian authorities have ruled to transfer the children to a <strong style="color: #fef08a;">new facility</strong> — and <strong style="color: #fef08a;">Catherine is not permitted to stay there</strong>. A video captures the heartbreaking moment of goodbye.
+            </p>
+            <div style="background: rgba(0,0,0,0.3); border: 2px solid rgba(254,240,138,0.5); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <p style="color: #fef08a; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem;">📹 Watch: The Goodbye Moment</p>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7; margin-bottom: 1rem;">
+                    The moment Catherine was forced to say goodbye to her children before they were transferred was captured on video. Warning — distressing content.
+                </p>
+                <a href="https://www.facebook.com/share/v/1HpVpWjzMC/" target="_blank" rel="noopener noreferrer"
+                   style="display: inline-block; background: #1877f2; color: white; padding: 0.875rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 700; font-size: 1.05rem;">
+                    ▶ Watch on Facebook
+                </a>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                <a href="/updates/2026/03/08/children-moved-new-facility-catherine-banned.html" class="btn" style="background: white; color: #7c3aed; font-weight: 600; padding: 0.875rem 2rem;">Read Full Update</a>
+                <a href="/action/" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.875rem 2rem;">Take Action Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- URGENT LEAKED INFORMATION ALERT -->
 <section style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 2rem 0; position: relative; overflow: hidden;">
     <div class="container" style="position: relative; z-index: 1;">
