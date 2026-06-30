@@ -118,15 +118,29 @@
 
         /* Mobile */
         @media (max-width: 768px) {
-            .hero-viral { padding: 0 5% 40px; min-height: 80vh; }
+            .hero-viral { padding: 80px 5% 40px; min-height: 85vh; min-height: 85dvh; }
+            .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem); line-height: 1.15; }
+            .hero-subtitle { font-size: 1rem; line-height: 1.5; }
+            .hero-cta-group { flex-direction: column; gap: 0.75rem; }
+            .btn-viral { width: 100%; justify-content: center; padding: 14px 24px; font-size: 0.95rem; }
             .section-viral { padding: 50px 5%; }
+            .section-title { font-size: clamp(1.5rem, 6vw, 2rem); }
+            .section-desc { font-size: 0.95rem; }
             .nav-links { display: none; }
             .mobile-menu-btn { display: block; }
             .floating-share { right: 10px; bottom: 10px; }
-            .share-btn { width: 40px; height: 40px; font-size: 1.1rem; }
-            .share-btn.main { width: 46px; height: 46px; }
+            .share-btn { width: 44px; height: 44px; font-size: 1.2rem; }
+            .share-btn.main { width: 50px; height: 50px; }
             .card-grid { grid-template-columns: 1fr; }
-            .countdown-number { font-size: 2rem; }
+            .card { padding: 1.25rem; }
+            .card h3 { font-size: 1.05rem; }
+            .card p { font-size: 0.9rem; }
+            .countdown-grid { gap: 0.75rem; }
+            .countdown-item { min-width: 60px; }
+            .countdown-number { font-size: 1.8rem; }
+            .countdown-label { font-size: 0.6rem; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+            .footer-bottom { font-size: 0.7rem; }
         }
     </style>
 </head>
