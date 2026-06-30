@@ -151,13 +151,8 @@
             position: absolute;
             inset: 0;
             z-index: 0;
-        }
-
-        .hero-bg img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.5) contrast(1.1);
+            background: radial-gradient(ellipse at 50% 100%, rgba(245,166,35,0.15) 0%, rgba(10,10,15,0.3) 50%, rgba(10,10,15,0.95) 100%),
+                        linear-gradient(180deg, #0a0a0f 0%, #1a1525 40%, #2a1f15 70%, #0a0a0f 100%);
         }
 
         .hero-bg::after {
@@ -1255,9 +1250,7 @@
 
     <!-- Hero -->
     <section class="hero-viral" id="hero">
-        <div class="hero-bg">
-            <img src="https://pub.hyperagent.com/api/published/pbf01KWC0TDFF_9YJ6ZVD09J2P91FS/0ab57e56-7773-4c52-902f-d976c01c2634.png" alt="Family silhouette against golden sunset" loading="eager">
-        </div>
+        <div class="hero-bg" style="background: radial-gradient(ellipse at 50% 100%, rgba(245,166,35,0.15) 0%, rgba(10,10,15,0.3) 50%, rgba(10,10,15,0.95) 100%), linear-gradient(180deg, #0a0a0f 0%, #1a1525 40%, #2a1f15 70%, #0a0a0f 100%);"></div>
         <div class="hero-content">
             <span class="hero-tag">An Innocent Family Was Taken</span>
             <h1 class="hero-title">A Family Torn From Their Home.<br>1,344 Voices Demand Truth.</h1>
@@ -1401,10 +1394,7 @@
     </section>
 
     <!-- Timeline -->
-    <section class="section-viral" id="timeline">
-        <div class="section-bg-img">
-            <img src="https://pub.hyperagent.com/api/published/pbf01KWC0TDFE_2KN14N23VW9ZFSFT/6739a9bc-0c0f-415a-8406-c7dbdbbe1bd4.png" alt="" loading="lazy">
-        </div>
+    <section class="section-viral" id="timeline" style="background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);">
         <div class="section-content">
             <div class="section-header reveal">
                 <span class="section-label">What Happened</span>
