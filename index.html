@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Worldwide Meditation | Collective Intention for Catherine Birmingham & Nathan Trevallion</title>
-    <meta name="description" content="Join thousands worldwide in meditation and collective intention for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. Schumann resonance. Community voices.">
+    <meta name="description" content="Join people worldwide in meditation and collective intention for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. Schumann resonance. Community voices.">
     <meta name="keywords" content="worldwide meditation, collective intention, full moon meditation, new moon meditation, Catherine Birmingham, Nathan Trevallion, Schumann resonance, community gathering">
     <meta name="author" content="Worldwide Meditation Community">
     <meta name="robots" content="index, follow">
@@ -156,7 +156,7 @@
                 <a href="#meditation" class="btn-viral btn-viral-primary">Join the Next Meditation</a>
                 <a href="#about" class="btn-viral btn-viral-secondary">What Is This?</a>
             </div>
-            <div class="countdown-moon" id="nextMoon">Next: New Moon in Cancer — July 14, 2026</div>
+            <div class="countdown-moon" id="nextMoon">Next Full Moon or New Moon</div>
             <div class="countdown-grid" id="countdown">
                 <div class="countdown-item"><span class="countdown-number" id="days">0</span><span class="countdown-label">Days</span></div>
                 <div class="countdown-item"><span class="countdown-number" id="hours">0</span><span class="countdown-label">Hours</span></div>
@@ -216,12 +216,12 @@
                 <div class="card">
                     <div class="card-icon">〰️</div>
                     <h3>The Daily Ripple</h3>
-                    <p>Every time you see <strong>11:43</strong> on any clock, drop another intention. Each time, another ripple expands outward. Your droplets matter, even when you are alone.</p>
+                    <p>Some participants choose a specific time each day for their daily intention. Others simply do it whenever the moment feels right. Each time, another ripple expands outward. Your droplets matter, even when you are alone.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">🌊</div>
                     <h3>The Coordinated Wave</h3>
-                    <p>On every Full Moon and New Moon, thousands join together at the same universal moment for maximum impact. The energy is amplified when we gather as one.</p>
+                    <p>On every Full Moon and New Moon, people join together at the same universal moment for maximum impact. The energy is amplified when we gather as one.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">🎵</div>
@@ -277,22 +277,22 @@
             </div>
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-meta">July 2022</div>
+                    <div class="card-meta">According to media reports, 2022</div>
                     <h3>Family Relocated to Italy</h3>
                     <p>Catherine Birmingham and Nathan Trevallion moved to rural Italy, where they were raising their children in a natural, low-tech environment. The family was homeschooling and living close to nature.</p>
                 </div>
                 <div class="card">
-                    <div class="card-meta">September 2022</div>
+                    <div class="card-meta">Media reports, 2022</div>
                     <h3>Media Coverage</h3>
                     <p>A television program aired a segment about the family's lifestyle. The program described their unconventional approach to education, technology, and living. Following this, questions about the family's circumstances were raised in Italian media.</p>
                 </div>
                 <div class="card">
-                    <div class="card-meta">October 2022</div>
+                    <div class="card-meta">According to reports, 2022</div>
                     <h3>Children Placed in State Care</h3>
                     <p>Italian authorities placed the children in the care of child welfare services. The parents were not arrested or convicted of any crime. The placement was made under Italian child welfare procedures, which the family has been challenging through legal channels.</p>
                 </div>
                 <div class="card">
-                    <div class="card-meta">2023 – Present</div>
+                    <div class="card-meta">Ongoing</div>
                     <h3>Community Response</h3>
                     <p>Community members organized meditations, awareness campaigns, and petitions in support of family reunification. The case continues to be discussed in Italian and international media. The meditations have become a regular gathering for people who believe in the power of collective intention.</p>
                 </div>
@@ -401,11 +401,30 @@
             }
         }
 
-        // Countdown
+        // Countdown to next Full Moon or New Moon
+        // Simple moon phase calculation - finds the next major phase (new or full)
+        function getNextMoonPhase() {
+            const now = new Date();
+            // Known new moon: January 6, 2025 (approximate reference)
+            const knownNewMoon = new Date('2025-01-06T23:00:00Z');
+            const lunarCycle = 29.53059 * 24 * 60 * 60 * 1000; // 29.53 days in ms
+            
+            // Time since known new moon
+            const timeSinceKnown = now - knownNewMoon;
+            // How many full cycles have passed
+            const cycles = timeSinceKnown / lunarCycle;
+            // Next new moon
+            const nextNew = new Date(knownNewMoon.getTime() + (Math.ceil(cycles) * lunarCycle));
+            // Next full moon (half cycle after new)
+            const nextFull = new Date(nextNew.getTime() + (lunarCycle / 2));
+            
+            // Return whichever is sooner
+            return nextNew < nextFull ? nextNew : nextFull;
+        }
+
         function updateCountdown() {
             const now = new Date();
-            // Next New Moon: July 14, 2026 at 11:43 AM CEST (UTC+2)
-            const nextMoon = new Date('2026-07-14T09:43:00Z');
+            const nextMoon = getNextMoonPhase();
             const diff = nextMoon - now;
             
             if (diff > 0) {
@@ -440,7 +459,7 @@
         // Share to platform
         function shareTo(platform) {
             const url = encodeURIComponent('https://worldwidemeditation.quantummerlin.com/');
-            const text = encodeURIComponent('Join thousands worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. #TruthProtectsTheInnocent');
+            const text = encodeURIComponent('Join people worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. #TruthProtectsTheInnocent');
             let shareUrl = '';
             switch(platform) {
                 case 'x': shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`; break;
@@ -453,7 +472,7 @@
             if (navigator.share) {
                 navigator.share({
                     title: 'Worldwide Meditation | Collective Intention',
-                    text: 'Join thousands worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family.',
+                    text: 'Join people worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family.',
                     url: 'https://worldwidemeditation.quantummerlin.com/'
                 });
             } else {
