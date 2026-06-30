@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Worldwide Meditation | Catherine Birmingham & Nathan Trevallion | Community Awareness</title>
-    <meta name="description" content="Community awareness page for Catherine Birmingham and Nathan Trevallion. This page raises questions about family rights and parental choice in Italy, and shares perspectives from people around the world.">
-    <meta name="keywords" content="family rights, parental choice, homeschooling, natural parenting, Italy, Catherine Birmingham, Nathan Trevallion, community awareness">
+    <title>Worldwide Meditation | Collective Intention for Catherine Birmingham & Nathan Trevallion</title>
+    <meta name="description" content="Join thousands worldwide in meditation and collective intention for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. Schumann resonance. Community voices.">
+    <meta name="keywords" content="worldwide meditation, collective intention, full moon meditation, new moon meditation, Catherine Birmingham, Nathan Trevallion, Schumann resonance, community gathering">
     <meta name="author" content="Worldwide Meditation Community">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0a0a0a">
     <meta name="color-scheme" content="dark">
     <link rel="canonical" href="https://worldwidemeditation.quantummerlin.com/">
@@ -17,8 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="animations.css?v=1.0&t=20260630">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <style>
         :root {
             --bg-primary: #0a0a0f;
@@ -41,19 +38,6 @@
         html { scroll-behavior: smooth; background: var(--bg-primary); }
         body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
-        /* Legal Disclaimer Banner */
-        .legal-banner {
-            background: linear-gradient(135deg, #1a1a2e, #2a1f15);
-            border: 1px solid rgba(245, 166, 35, 0.3);
-            border-radius: 12px;
-            padding: 1.25rem 1.5rem;
-            margin-bottom: 2rem;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-        .legal-banner strong { color: var(--gold); display: block; margin-bottom: 0.5rem; font-size: 0.9rem; }
-
         /* Hero */
         .hero-viral { position: relative; min-height: 90vh; min-height: 90dvh; display: flex; align-items: flex-end; justify-content: center; overflow: hidden; padding: 0 5% 60px; }
         .hero-bg { position: absolute; inset: 0; z-index: 0; background: radial-gradient(ellipse at 50% 100%, rgba(245,166,35,0.12) 0%, rgba(10,10,15,0.3) 50%, rgba(10,10,15,0.95) 100%), linear-gradient(180deg, #0a0a0f 0%, #1a1525 40%, #2a1f15 70%, #0a0a0f 100%); }
@@ -68,6 +52,13 @@
         .btn-viral-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(245, 166, 35, 0.3); }
         .btn-viral-secondary { background: transparent; color: var(--text-primary); border: 1px solid rgba(255, 255, 255, 0.3); }
         .btn-viral-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+        /* Countdown */
+        .countdown-grid { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+        .countdown-item { text-align: center; min-width: 80px; }
+        .countdown-number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--gold); line-height: 1; display: block; }
+        .countdown-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-top: 0.5rem; }
+        .countdown-moon { font-family: var(--font-mono); font-size: 0.75rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-top: 1.5rem; }
 
         /* Sections */
         .section-viral { padding: 80px 5%; position: relative; overflow: hidden; }
@@ -84,6 +75,7 @@
         .card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--text-primary); }
         .card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
         .card .card-meta { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
 
         /* Quote cards */
         .quote-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; position: relative; }
@@ -117,8 +109,6 @@
         .share-btn:hover { transform: scale(1.1); }
         .share-btn.x { background: #000; border: 1px solid #333; }
         .share-btn.fb { background: #1877f2; }
-        .share-btn.ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        .share-btn.tt { background: #000; border: 1px solid #333; }
         .share-btn.copy { background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary); }
         .share-btn.main { width: 52px; height: 52px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); font-size: 1.5rem; }
 
@@ -136,6 +126,7 @@
             .share-btn { width: 40px; height: 40px; font-size: 1.1rem; }
             .share-btn.main { width: 46px; height: 46px; }
             .card-grid { grid-template-columns: 1fr; }
+            .countdown-number { font-size: 2rem; }
         }
     </style>
 </head>
@@ -145,12 +136,11 @@
     <nav class="nav-viral" id="navViral">
         <a href="#" class="nav-logo">Worldwide <span>Meditation</span></a>
         <div class="nav-links">
+            <a href="#meditation">Meditation</a>
             <a href="#about">About</a>
-            <a href="#perspectives">Perspectives</a>
-            <a href="#timeline">Timeline</a>
+            <a href="#voices">Voices</a>
+            <a href="#story">Story</a>
             <a href="#media">Media</a>
-            <a href="#awareness">Awareness</a>
-            <a href="#join">Join</a>
         </div>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
     </nav>
@@ -159,66 +149,99 @@
     <section class="hero-viral" id="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <span class="hero-tag">Community Awareness Initiative</span>
-            <h1 class="hero-title">A Family, a Community, and Questions Worth Asking</h1>
-            <p class="hero-subtitle">Catherine Birmingham and Nathan Trevallion are parents whose children were placed in state care in Italy. This page shares what has been publicly reported, raises questions about parental rights and alternative education, and offers a space for community reflection. <em>Nothing on this page is legal advice.</em></p>
+            <span class="hero-tag">Collective Intention Gathering</span>
+            <h1 class="hero-title">Thousands Unite in Meditation <br><em>for One Family</em></h1>
+            <p class="hero-subtitle">At every Full Moon and New Moon, people around the world gather in silent intention for Catherine Birmingham, Nathan Trevallion, and their family. This is a space for community, reflection, and collective energy.</p>
             <div class="hero-cta-group">
-                <a href="#about" class="btn-viral btn-viral-primary">Learn More</a>
-                <a href="#awareness" class="btn-viral btn-viral-secondary">Share Awareness</a>
+                <a href="#meditation" class="btn-viral btn-viral-primary">Join the Next Meditation</a>
+                <a href="#about" class="btn-viral btn-viral-secondary">What Is This?</a>
+            </div>
+            <div class="countdown-moon" id="nextMoon">Next: New Moon in Cancer — July 14, 2026</div>
+            <div class="countdown-grid" id="countdown">
+                <div class="countdown-item"><span class="countdown-number" id="days">0</span><span class="countdown-label">Days</span></div>
+                <div class="countdown-item"><span class="countdown-number" id="hours">0</span><span class="countdown-label">Hours</span></div>
+                <div class="countdown-item"><span class="countdown-number" id="minutes">0</span><span class="countdown-label">Minutes</span></div>
+                <div class="countdown-item"><span class="countdown-number" id="seconds">0</span><span class="countdown-label">Seconds</span></div>
             </div>
         </div>
     </section>
 
-    <!-- Legal Disclaimer -->
-    <section class="section-viral" style="padding-top: 40px; padding-bottom: 40px;">
-        <div class="section-content">
-            <div class="legal-banner">
-                <strong>⚖️ Important Legal Notice</strong>
-                This is a community awareness page. It is not affiliated with any legal team representing the family, nor is it legal advice. All content is based on publicly available information, media reports, and community perspectives. The family has an ongoing legal matter in Italy. Nothing here should be interpreted as accusing any individual, institution, or government body of wrongdoing. This page has not been reviewed by a lawyer. If you are a lawyer interested in reviewing this content for legal accuracy, please contact us. If you are a journalist or researcher, please verify all facts independently.
-            </div>
-        </div>
-    </section>
-
-    <!-- About / What Happened -->
+    <!-- What Is This -->
     <section class="section-viral" id="about">
         <div class="section-content">
             <div class="section-header">
-                <span class="section-label">What Has Been Reported</span>
-                <h2 class="section-title">Publicly Available Information</h2>
-                <p class="section-desc">The following is based on media reports and public statements. We encourage independent verification.</p>
+                <span class="section-label">What Is This?</span>
+                <h2 class="section-title">A Global Moment of Unity</h2>
+                <p class="section-desc">People from every corner of the world, setting aside a few minutes to focus together on love, truth, and family unity.</p>
             </div>
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-meta">Media Report</div>
-                    <h3>60 Minutes Australia</h3>
-                    <p>In September 2022, 60 Minutes Australia aired a segment about a family living an unconventional lifestyle in rural Italy. The program raised questions about how families who choose alternative approaches to education and living are perceived by authorities.</p>
+                    <div class="card-icon">🌏</div>
+                    <h3>Worldwide Participation</h3>
+                    <p>From Sydney to Los Angeles, London to Tokyo, participants in every timezone join at the same moment in universal time. The collective field grows stronger with each person who joins.</p>
                 </div>
                 <div class="card">
-                    <div class="card-meta">Subsequent Events</div>
-                    <h3>Children Placed in Care</h3>
-                    <p>Following media coverage, the children were placed in the care of Italian child welfare services. The parents have been engaged in legal proceedings. The specific circumstances and reasoning have been subject to ongoing legal process.</p>
+                    <div class="card-icon">❤️</div>
+                    <h3>Heart-Centered Focus</h3>
+                    <p>Together we hold intentions of love, peace, and the highest good for all families. The focus is not on blame or anger, but on the power of collective intention.</p>
                 </div>
                 <div class="card">
-                    <div class="card-meta">Community Response</div>
-                    <h3>1,344 Voices Shared Perspectives</h3>
-                    <p>Across social media and online platforms, 1,344 people from over 12 countries shared their perspectives on the case. These were personal opinions, not legal findings. The range of views expressed highlights how this case touches on broader questions about parental choice.</p>
+                    <div class="card-icon">🤝</div>
+                    <h3>Community Support</h3>
+                    <p>This is about standing together in silence. When we unite our intentions, we create a powerful wave of positive energy that transcends distance and circumstance.</p>
                 </div>
                 <div class="card">
-                    <div class="card-meta">Broader Context</div>
-                    <h3>Questions About Alternative Education</h3>
-                    <p>Italy recognizes parental instruction as a legal educational pathway, with approximately 15,000 children educated this way. The case raises questions about how families who choose homeschooling, natural living, or alternative approaches are evaluated by authorities.</p>
+                    <div class="card-icon">✨</div>
+                    <h3>Simple & Accessible</h3>
+                    <p>No special skills required. Just find a quiet space, breathe deeply, and join thousands in peaceful contemplation. Your presence matters.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Community Perspectives -->
-    <section class="section-viral" id="perspectives" style="background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);">
+    <!-- The Meditation -->
+    <section class="section-viral" id="meditation" style="background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);">
         <div class="section-content">
             <div class="section-header">
-                <span class="section-label">Community Perspectives</span>
-                <h2 class="section-title">What People Have Said</h2>
-                <p class="section-desc">The following are selected opinions from members of the public who shared their thoughts. These are personal perspectives, not verified facts or legal conclusions. They are shared here to reflect the range of views expressed.</p>
+                <span class="section-label">The Meditation</span>
+                <h2 class="section-title">How to Participate</h2>
+                <p class="section-desc">Join us from anywhere in the world. No experience needed. Your intention is enough.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">💧</div>
+                    <h3>The Droplet</h3>
+                    <p>You don't have to wait. This very moment is sacred. Take a breath and pour your positive intention into this family right now. Visualize them together, safe, and whole. Speak or think: <em>"Truth protects the innocent."</em></p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">〰️</div>
+                    <h3>The Daily Ripple</h3>
+                    <p>Every time you see <strong>11:43</strong> on any clock, drop another intention. Each time, another ripple expands outward. Your droplets matter, even when you are alone.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌊</div>
+                    <h3>The Coordinated Wave</h3>
+                    <p>On every Full Moon and New Moon, thousands join together at the same universal moment for maximum impact. The energy is amplified when we gather as one.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎵</div>
+                    <h3>Schumann Resonance</h3>
+                    <p>Some participants tune to Earth's natural frequency — 7.83 Hz — before and during meditation. This is optional. Your intention alone is enough.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://ai.quantummerlin.com/" target="_blank" rel="noopener" class="btn-viral btn-viral-secondary">Full Meditation Guide →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voices -->
+    <section class="section-viral" id="voices">
+        <div class="section-content">
+            <div class="section-header">
+                <span class="section-label">Community Voices</span>
+                <h2 class="section-title">What People Have Shared</h2>
+                <p class="section-desc">The following are selected perspectives from members of the community who have joined the meditations or followed the story. These are personal reflections, not verified facts or legal conclusions.</p>
             </div>
             <div class="card-grid">
                 <div class="quote-card">
@@ -244,13 +267,13 @@
         </div>
     </section>
 
-    <!-- Timeline -->
-    <section class="section-viral" id="timeline">
+    <!-- The Story -->
+    <section class="section-viral" id="story" style="background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);">
         <div class="section-content">
             <div class="section-header">
-                <span class="section-label">Timeline</span>
-                <h2 class="section-title">Publicly Reported Events</h2>
-                <p class="section-desc">Based on media reports and public statements. This is not a legal record. Please verify independently.</p>
+                <span class="section-label">The Story</span>
+                <h2 class="section-title">Why the Meditation Began</h2>
+                <p class="section-desc">A brief overview of the events that led to this community gathering. Based on publicly available media reports. Please verify independently.</p>
             </div>
             <div class="card-grid">
                 <div class="card">
@@ -261,7 +284,7 @@
                 <div class="card">
                     <div class="card-meta">September 2022</div>
                     <h3>Media Coverage</h3>
-                    <p>60 Minutes Australia aired a segment about the family's lifestyle. The program described their unconventional approach to education, technology, and living. Following this, questions about the family's circumstances were raised in the Italian media.</p>
+                    <p>A television program aired a segment about the family's lifestyle. The program described their unconventional approach to education, technology, and living. Following this, questions about the family's circumstances were raised in Italian media.</p>
                 </div>
                 <div class="card">
                     <div class="card-meta">October 2022</div>
@@ -270,15 +293,18 @@
                 </div>
                 <div class="card">
                     <div class="card-meta">2023 – Present</div>
-                    <h3>Ongoing Legal Process</h3>
-                    <p>The family has been engaged in legal proceedings to challenge the placement. Community members have organized awareness campaigns, petitions, and meditations in support of family reunification. The case continues to be discussed in Italian and international media.</p>
+                    <h3>Community Response</h3>
+                    <p>Community members organized meditations, awareness campaigns, and petitions in support of family reunification. The case continues to be discussed in Italian and international media. The meditations have become a regular gathering for people who believe in the power of collective intention.</p>
                 </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border);">
+                <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;"><strong style="color: var(--gold);">⚖️ Important:</strong> This is a community awareness page. It is not affiliated with any legal team representing the family. All information is based on publicly available media reports. Facts should be independently verified. This page has not been reviewed by a lawyer. Respect the ongoing legal process in Italy.</p>
             </div>
         </div>
     </section>
 
     <!-- Media Coverage -->
-    <section class="section-viral" id="media" style="background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);">
+    <section class="section-viral" id="media">
         <div class="section-content">
             <div class="section-header">
                 <span class="section-label">Media Coverage</span>
@@ -287,9 +313,9 @@
             </div>
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-meta">60 Minutes Australia</div>
+                    <div class="card-meta">Television Program</div>
                     <h3>Original Program</h3>
-                    <p>The 60 Minutes segment that first brought this case to international attention. It described the family's lifestyle and raised questions about how alternative parenting is perceived.</p>
+                    <p>A television segment that first brought this case to international attention. It described the family's lifestyle and raised questions about how alternative parenting is perceived.</p>
                     <a href="https://www.youtube.com/watch?v=3j4w9iY5e5E" target="_blank" rel="noopener" style="display: inline-block; margin-top: 0.75rem; color: var(--gold); text-decoration: none; font-size: 0.85rem; font-weight: 600;">Watch on YouTube →</a>
                 </div>
                 <div class="card">
@@ -314,88 +340,36 @@
         </div>
     </section>
 
-    <!-- Awareness -->
-    <section class="section-viral" id="awareness">
-        <div class="section-content">
-            <div class="section-header">
-                <span class="section-label">Share Awareness</span>
-                <h2 class="section-title">Help More People Learn About This</h2>
-                <p class="section-desc">Sharing this page helps raise awareness about questions of parental rights, alternative education, and family choice. Please share responsibly and respectfully.</p>
-            </div>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Share This Page</h3>
-                    <p>Copy this link and share it on social media, in messages, or with anyone who might be interested in learning about this case.</p>
-                    <button class="btn-viral btn-viral-secondary" onclick="copyUrl()" style="margin-top: 1rem; width: 100%;">📋 Copy Page Link</button>
-                </div>
-                <div class="card">
-                    <h3>Share Responsibly</h3>
-                    <p>When sharing, please:<br>• Stick to publicly reported facts<br>• Avoid accusing any individual or institution<br>• Frame this as raising questions, not declaring conclusions<br>• Respect the ongoing legal process</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join -->
-    <section class="section-viral" id="join" style="background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);">
-        <div class="section-content">
-            <div class="section-header">
-                <span class="section-label">Stay Informed</span>
-                <h2 class="section-title">Join the Community</h2>
-                <p class="section-desc">Sign up to receive updates about this case, community awareness events, and information about family rights and alternative education. No spam. Unsubscribe anytime.</p>
-            </div>
-            <div style="max-width: 500px; margin: 0 auto;">
-                <form class="hero-cta-group" action="https://formspree.io/f/mgowrolb" method="POST" style="flex-direction: column; gap: 0.75rem;">
-                    <input type="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 14px 20px; border-radius: 50px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem; outline: none;">
-                    <button type="submit" class="btn-viral btn-viral-primary" style="width: 100%; justify-content: center;">Join Now</button>
-                </form>
-                <p style="text-align: center; color: var(--text-muted); font-size: 0.75rem; margin-top: 1rem;">Your email is protected. We will not share it with any third parties. You can unsubscribe at any time.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Legal Footer Notice -->
-    <section class="section-viral" style="padding-top: 20px; padding-bottom: 40px;">
-        <div class="section-content">
-            <div class="legal-banner" style="font-size: 0.8rem; opacity: 0.8;">
-                <strong>⚖️ Disclaimer</strong>
-                This page is a community awareness initiative. It is not affiliated with any legal representation for the family. All information is sourced from publicly available media reports, community discussions, and online platforms. Facts should be independently verified by journalists, researchers, and legal professionals. This page has not been reviewed by a lawyer. If you are a legal professional interested in reviewing or contributing to this content, please contact us. We welcome corrections and updates based on verified information. No content on this page should be interpreted as legal advice, accusation of wrongdoing, or endorsement of any specific legal position. Respect the ongoing legal process in Italy.
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer-viral">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Learn</h4>
-                <a href="#about">About the Case</a>
-                <a href="#timeline">Timeline</a>
-                <a href="#media">Media Coverage</a>
-                <a href="https://ai.quantummerlin.com/" target="_blank">Community Perspectives</a>
+                <h4>Meditation</h4>
+                <a href="#meditation">How to Participate</a>
+                <a href="https://ai.quantummerlin.com/" target="_blank">Full Guide</a>
+                <a href="https://ai.quantummerlin.com/" target="_blank">Schumann Resonance</a>
             </div>
             <div class="footer-col">
-                <h4>Act</h4>
-                <a href="#awareness">Share Awareness</a>
-                <a href="#join">Join the List</a>
-                <a href="mailto:info@worldwidemeditation.com">Contact</a>
+                <h4>Learn</h4>
+                <a href="#story">The Story</a>
+                <a href="#voices">Community Voices</a>
+                <a href="#media">Media Coverage</a>
             </div>
             <div class="footer-col">
                 <h4>Resources</h4>
-                <a href="https://ai.quantummerlin.com/" target="_blank">Full Documentation</a>
-                <a href="https://www.youtube.com/watch?v=3j4w9iY5e5E" target="_blank">60 Minutes Report</a>
+                <a href="https://ai.quantummerlin.com/" target="_blank">Community Perspectives</a>
+                <a href="https://www.youtube.com/watch?v=3j4w9iY5e5E" target="_blank">Media Report</a>
                 <a href="https://www.mediasetplay.mediaset.it/video/cinque/cinque_F310829701006C11" target="_blank">Canale 5 Coverage</a>
             </div>
             <div class="footer-col">
                 <h4>About</h4>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
+                <a href="#about">What Is This?</a>
                 <a href="mailto:info@worldwidemeditation.com">Contact</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 Worldwide Meditation Community. This is a community awareness initiative, not a legal campaign.</p>
-            <p style="margin-top: 0.5rem;">All information is sourced from publicly available reports and community perspectives. Please verify independently.</p>
+            <p>© 2026 Worldwide Meditation Community. This is a community gathering initiative, not a legal campaign.</p>
+            <p style="margin-top: 0.5rem;">All information is sourced from publicly available reports and community perspectives. Please verify independently. Respect the ongoing legal process in Italy.</p>
         </div>
     </footer>
 
@@ -427,6 +401,28 @@
             }
         }
 
+        // Countdown
+        function updateCountdown() {
+            const now = new Date();
+            // Next New Moon: July 14, 2026 at 11:43 AM CEST (UTC+2)
+            const nextMoon = new Date('2026-07-14T09:43:00Z');
+            const diff = nextMoon - now;
+            
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days;
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('minutes').textContent = minutes;
+                document.getElementById('seconds').textContent = seconds;
+            }
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
         // Toast
         function showToast(message) {
             const toast = document.getElementById('toast');
@@ -444,7 +440,7 @@
         // Share to platform
         function shareTo(platform) {
             const url = encodeURIComponent('https://worldwidemeditation.quantummerlin.com/');
-            const text = encodeURIComponent('Questions about family rights and parental choice in Italy: A community awareness page about the case of Catherine Birmingham and Nathan Trevallion. Based on publicly available information. Please verify independently.');
+            const text = encodeURIComponent('Join thousands worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. #TruthProtectsTheInnocent');
             let shareUrl = '';
             switch(platform) {
                 case 'x': shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`; break;
@@ -456,8 +452,8 @@
         function shareMain() {
             if (navigator.share) {
                 navigator.share({
-                    title: 'Worldwide Meditation | Community Awareness',
-                    text: 'Questions about family rights and parental choice in Italy. Based on publicly available information. Please verify independently.',
+                    title: 'Worldwide Meditation | Collective Intention',
+                    text: 'Join thousands worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family.',
                     url: 'https://worldwidemeditation.quantummerlin.com/'
                 });
             } else {
