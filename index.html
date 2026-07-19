@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Worldwide Meditation | Collective Intention for Catherine Birmingham & Nathan Trevallion</title>
-    <meta name="description" content="Join people worldwide in meditation and collective intention for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. Schumann resonance. Community voices.">
+    <title>The Morning That Could Bring Them Home | Worldwide Meditation for Catherine &amp; Nathan's Family</title>
+    <meta name="description" content="On Monday 20 July at 9:00 AM in Italy, as the court decides whether Catherine and Nathan's children can come home after eight months, join people worldwide in one silent intention for their safe return.">
     <meta name="keywords" content="worldwide meditation, collective intention, full moon meditation, new moon meditation, Catherine Birmingham, Nathan Trevallion, Schumann resonance, community gathering">
     <meta name="author" content="Worldwide Meditation Community">
     <meta name="robots" content="index, follow">
@@ -24,8 +24,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://worldwidemeditation.quantummerlin.com/">
-    <meta property="og:title" content="Worldwide Meditation | Collective Intention for Catherine Birmingham & Nathan Trevallion">
-    <meta property="og:description" content="Join people worldwide in meditation and collective intention. Full Moon & New Moon gatherings. Truth protects the innocent. 🌙✨">
+    <meta property="og:title" content="The Morning That Could Bring Them Home | Worldwide Meditation">
+    <meta property="og:description" content="Monday 20 July, 9:00 AM in Italy. As the court decides whether Catherine and Nathan's children can come home after eight months, we gather worldwide in one silent intention for their safe return.">
     <meta property="og:image" content="/truthprotectstheinnocent/assets/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -35,8 +35,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://worldwidemeditation.quantummerlin.com/">
-    <meta name="twitter:title" content="Worldwide Meditation | Collective Intention">
-    <meta name="twitter:description" content="Join people worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon & New Moon gatherings. 🌙✨">
+    <meta name="twitter:title" content="The Morning That Could Bring Them Home">
+    <meta name="twitter:description" content="Monday 20 July, 9:00 AM in Italy. As the court decides whether Catherine and Nathan's children can come home after eight months, we gather worldwide in one silent intention for their safe return.">
     <meta name="twitter:image" content="/truthprotectstheinnocent/assets/images/og-image.jpg">
     <meta name="twitter:image:alt" content="Worldwide Meditation - Collective Intention Gathering">
     <!-- WhatsApp / iMessage -->
@@ -203,6 +203,12 @@
         .face-tile:hover { transform: translateY(-4px); border-color: var(--border-hover); box-shadow: var(--shadow-gold); }
         @media (max-width: 640px) { .face-tile { width: 140px; height: 98px; } }
 
+            /* Court-day gathering additions */
+        .gathering-when { display:flex; flex-wrap:wrap; gap:0.4rem 0.9rem; justify-content:center; align-items:center; margin:0.5rem 0 1.75rem; font-family:var(--font-mono); font-size:0.78rem; letter-spacing:1px; color:var(--gold-light); }
+        .gathering-when strong { color:var(--gold); font-weight:600; }
+        .gathering-when-sep { color:var(--text-muted); }
+        .gathering-invite { max-width:560px; margin:1.9rem auto 0; font-family:var(--font-body); font-style:italic; font-size:1.05rem; line-height:1.75; color:var(--gold-light); }
+        @media (max-width:640px){ .gathering-invite{ font-size:0.98rem; } .gathering-when{ font-size:0.72rem; } }
     </style>
 </head>
 <body>
@@ -225,20 +231,22 @@
     <section class="hero-viral" id="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <span class="hero-tag">Collective Intention Gathering</span>
-            <h1 class="hero-title">When Many Voices Become One <br><em>for a Family</em></h1>
-            <p class="hero-subtitle">At every Full Moon and New Moon, people gather in silent intention for Catherine Birmingham, Nathan Trevallion, and their family. Some meditate. Some pray. Some simply hold the thought. All are welcome. This is a space for community, reflection, and collective energy.</p>
+            <span class="hero-tag">One Intention · As the Court Decides</span>
+            <h1 class="hero-title">The Morning That Could <br><em>Bring Them Home</em></h1>
+            <p class="hero-subtitle">After eight months apart, an Italian court comes together on Monday to decide whether Catherine and Nathan's children can finally come home. At 9:00 in the morning in Italy, as that decision is made, people across the world will pause together in one silent intention for their safe return. Some will meditate. Some will pray. Some will simply hold the thought. All are welcome.</p>
+            <div class="gathering-when"><span class="gathering-when-item"><strong>Monday 20 July</strong> · 9:00 AM in Italy</span><span class="gathering-when-sep">•</span><span class="gathering-when-item">5:00 PM in Melbourne</span><span class="gathering-when-sep">•</span><span class="gathering-when-item">and your own time, below</span></div>
             <div class="hero-cta-group">
-                <a href="#meditation" class="btn-viral btn-viral-primary">Join the Next Meditation</a>
-                <a href="#about" class="btn-viral btn-viral-secondary">Learn More</a>
+                <a href="#meditation" class="btn-viral btn-viral-primary">Join the Gathering</a>
+                <a href="#story" class="btn-viral btn-viral-secondary">Read Their Story</a>
             </div>
-            <div class="countdown-moon" id="nextMoon">Next Full Moon or New Moon</div>
+            <div class="countdown-moon" id="nextMoon">A worldwide gathering for their return</div>
             <div class="countdown-grid" id="countdown">
                 <div class="countdown-item"><span class="countdown-number" id="days">0</span><span class="countdown-label">Days</span></div>
                 <div class="countdown-item"><span class="countdown-number" id="hours">0</span><span class="countdown-label">Hours</span></div>
                 <div class="countdown-item"><span class="countdown-number" id="minutes">0</span><span class="countdown-label">Minutes</span></div>
                 <div class="countdown-item"><span class="countdown-number" id="seconds">0</span><span class="countdown-label">Seconds</span></div>
             </div>
+            <p class="gathering-invite">When the count reaches zero, wherever you are, pause for a few quiet minutes. Breathe. Hold them in the light. Picture them home.</p>
         </div>
     </section>
 
@@ -766,75 +774,45 @@ Learn more:</p>
             }
         });
 
-        // ── Moon phase calculation ────────────────────────
-        // Exact reference: New Moon on 14 July 2026 at 19:43 AEST (Melbourne)
-        // AEST = UTC+10, so 19:43 AEST = 09:43 UTC
-        // Using Date.UTC for maximum browser compatibility (no string parsing)
-        const REF_NEW_MOON = Date.UTC(2026, 6, 14, 9, 43, 0); // July 14, 2026, 09:43:00 UTC
-        const SYNODIC_MS = 29.53058868 * 86400000; // 29.53058868 days in ms
-
-        function getNextMoonPhase() {
-            const now = Date.now();
-            const elapsed = now - REF_NEW_MOON;
-            const cycle = Math.floor(elapsed / SYNODIC_MS);
-
-            // All phases in and near the current cycle
-            const phaseTimes = [
-                REF_NEW_MOON + cycle * SYNODIC_MS,          // recent new
-                REF_NEW_MOON + (cycle + 0.5) * SYNODIC_MS,  // recent/full
-                REF_NEW_MOON + (cycle + 1) * SYNODIC_MS,    // next new
-                REF_NEW_MOON + (cycle + 1.5) * SYNODIC_MS,  // next full
-                REF_NEW_MOON + (cycle + 2) * SYNODIC_MS,    // next next new
-            ];
-            const phaseNames = ['New Moon', 'Full Moon', 'New Moon', 'Full Moon', 'New Moon'];
-
-            let closest = null;
-            let minDist = Infinity;
-            for (let i = 0; i < phaseTimes.length; i++) {
-                if (phaseTimes[i] >= now) {
-                    const dist = phaseTimes[i] - now;
-                    if (dist < minDist) {
-                        minDist = dist;
-                        closest = { date: new Date(phaseTimes[i]), name: phaseNames[i] };
-                    }
-                }
-            }
-            return closest;
-        }
+        // ── Court-day gathering countdown ─────
+        // The next 9:00 AM in Italy (CEST, UTC+2), as the court convenes:
+        // Monday 20 July 2026, 09:00 in Rome = 07:00 UTC = 5:00 PM in Melbourne.
+        const GATHERING = Date.UTC(2026, 6, 20, 7, 0, 0);
 
         function updateCountdown() {
             try {
-                const now = new Date();
-                const phase = getNextMoonPhase();
-                if (!phase) return;
-
-                const diff = phase.date - now;
-                const days = Math.floor(diff / 86400000);
-                const hours = Math.floor((diff % 86400000) / 3600000);
-                const minutes = Math.floor((diff % 3600000) / 60000);
-                const seconds = Math.floor((diff % 60000) / 1000);
-
+                const now = Date.now();
+                const diff = GATHERING - now;
                 const daysEl = document.getElementById('days');
                 const hoursEl = document.getElementById('hours');
                 const minutesEl = document.getElementById('minutes');
                 const secondsEl = document.getElementById('seconds');
                 const label = document.getElementById('nextMoon');
-
-                if (daysEl) daysEl.textContent = days;
-                if (hoursEl) hoursEl.textContent = hours;
-                if (minutesEl) minutesEl.textContent = minutes;
-                if (secondsEl) secondsEl.textContent = seconds;
-
-                if (label) {
-                    const localStr = phase.date.toLocaleString('en-US', {
-                        weekday: 'long', month: 'short', day: 'numeric',
-                        hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
-                    });
-                    label.textContent = `Next ${phase.name}: ${localStr}`;
+                if (diff > 0) {
+                    const days = Math.floor(diff / 86400000);
+                    const hours = Math.floor((diff % 86400000) / 3600000);
+                    const minutes = Math.floor((diff % 3600000) / 60000);
+                    const seconds = Math.floor((diff % 60000) / 1000);
+                    if (daysEl) daysEl.textContent = days;
+                    if (hoursEl) hoursEl.textContent = hours;
+                    if (minutesEl) minutesEl.textContent = minutes;
+                    if (secondsEl) secondsEl.textContent = seconds;
+                    if (label) {
+                        const localStr = new Date(GATHERING).toLocaleString(undefined, {
+                            weekday: 'long', month: 'long', day: 'numeric',
+                            hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+                        });
+                        label.textContent = 'Your local time: ' + localStr;
+                    }
+                } else {
+                    [daysEl, hoursEl, minutesEl, secondsEl].forEach(function(el){ if (el) el.textContent = 0; });
+                    if (label) {
+                        label.textContent = (diff > -3 * 3600000)
+                            ? 'The gathering is happening now. Wherever you are, pause with us.'
+                            : 'We gathered as one this morning. Thank you for holding the light for them.';
+                    }
                 }
-            } catch (e) {
-                console.error('Countdown error:', e);
-            }
+            } catch (e) { console.error('Countdown error:', e); }
         }
 
         // Run immediately and every second
@@ -874,7 +852,7 @@ Learn more:</p>
         // Share to platform
         function shareTo(platform) {
             const url = encodeURIComponent('https://worldwidemeditation.quantummerlin.com/');
-            const text = encodeURIComponent('Join people worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family. Full Moon and New Moon gatherings. #TruthProtectsTheInnocent');
+            const text = encodeURIComponent('On Monday, join people worldwide in one silent intention for Catherine Birmingham, Nathan Trevallion, and their children as an Italian court decides whether they can come home. 9:00 AM in Italy. #TruthProtectsTheInnocent');
             let shareUrl = '';
             switch(platform) {
                 case 'x': shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`; break;
@@ -887,7 +865,7 @@ Learn more:</p>
             if (navigator.share) {
                 navigator.share({
                     title: 'Worldwide Meditation | Collective Intention',
-                    text: 'Join people worldwide in meditation for Catherine Birmingham, Nathan Trevallion, and their family.',
+                    text: 'On Monday at 9:00 AM in Italy, join people worldwide in one silent intention for Catherine, Nathan and their children as the court decides whether they come home.',
                     url: 'https://worldwidemeditation.quantummerlin.com/'
                 });
             } else {
